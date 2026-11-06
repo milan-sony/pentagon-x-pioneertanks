@@ -33,8 +33,8 @@ export function SpecTable({ specs, caption, className, classNames = {}, showSour
             </th>
             <td className={cn("py-3 leading-relaxed", classNames.value)}>
               {s.value}
-              {showSource && s.source === "document" ? <span className={cn("ml-2 inline-block text-xs opacity-70", classNames.tag)}>(datasheet{s.documentRef ? ` ${s.documentRef.replace("datasheet-", "").toUpperCase()}` : ""})</span> : null}
-              {s.note ? <span className={cn("mt-1 block text-xs opacity-70", classNames.tag)}>Note: {s.note}</span> : null}
+              {showSource && s.source === "document" ? <span className={cn("ml-2 inline-block text-xs", classNames.tag)}>(datasheet{s.documentRef ? ` ${s.documentRef.replace("datasheet-", "").toUpperCase()}` : ""})</span> : null}
+              {s.note ? <span className={cn("mt-1 block text-xs", classNames.tag)}>Note: {s.note}</span> : null}
             </td>
           </tr>
         ))}
