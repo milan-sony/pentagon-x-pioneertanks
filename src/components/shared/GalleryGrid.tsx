@@ -79,9 +79,12 @@ export function GalleryGrid({ groups, classNames = {} }: GalleryGridProps) {
       <ul className={cn("mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3", classNames.grid)}>
         {visible.map((a, i) => (
           <li key={a.id}>
-            <button type="button" onClick={() => setIndex(i)} className={cn("group block w-full overflow-hidden text-left focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring", classNames.tile)} aria-label={`Open image: ${a.alt}`}>
+            <button type="button" onClick={() => setIndex(i)} className={cn("group block w-full overflow-hidden text-left focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring", classNames.tile)}>
               <Image src={card(a)} alt={a.alt} width={a.width} height={a.height} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
-              <span className={cn("block pt-3 text-sm", classNames.caption)}>{a.group}</span>
+              <span className={cn("block pt-3 text-sm", classNames.caption)}>
+                {a.group}
+                <span className="sr-only"> – open image</span>
+              </span>
             </button>
           </li>
         ))}

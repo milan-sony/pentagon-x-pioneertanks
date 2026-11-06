@@ -24,24 +24,30 @@ export function Counter({ value, prefix = "", suffix = "", decimals = 0, duratio
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "0px 0px -10% 0px" });
   const reduce = useReducedMotion();
-  const [display, setDisplay] = useState(value);
-  const [started, setStarted] = useState(false);
+  const [display, setDisplay] = useState<number | null>(null);
+  const started = useRef(false);
 
   useEffect(() => {
-    if (!inView || started) return;
-    setStarted(true);
-    if (reduce) return;
+    if (!inView || started.current || reduce) return;
+    started.current = true;
     const controls = animate(0, value, {
       duration,
       ease: [0.22, 1, 0.36, 1],
       onUpdate: (v) => setDisplay(v),
+      onComplete: () => setDisplay(value),
     });
     return () => controls.stop();
-  }, [inView, started, reduce, value, duration]);
+  }, [inView, reduce, value, duration]);
 
-  const formatted = (started && !reduce ? display : value).toLocaleString("en-US", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  const shown = display ?? value;
+  const formatted = shown.toLocaleString("en-US", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
   return (
-    <span ref={ref} className={className} aria-label={`${prefix}${value.toLocaleString("en-US")}${suffix}`}>
+    <span ref={ref} className={className}>
+      <span className="sr-only">
+        {prefix}
+        {value.toLocaleString("en-US", { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}
+        {suffix}
+      </span>
       <span aria-hidden="true">
         {prefix}
         {formatted}

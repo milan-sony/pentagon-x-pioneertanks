@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState, type FormEvent } from "react";
+import { useEffect, useId, useState, type FormEvent } from "react";
 import { z } from "zod";
 import { cn } from "@/lib/utils";
 import { ENQUIRY_EMAIL } from "@/lib/constants";
@@ -51,6 +51,15 @@ export function EnquiryForm({ productOptions = [], defaultProduct = "", classNam
   const id = useId();
   const [errors, setErrors] = useState<Errors>({});
   const [status, setStatus] = useState<"idle" | "sent">("idle");
+  const [product, setProduct] = useState(defaultProduct);
+
+  // Preselect from ?product=<slug> (set by product-page CTAs) without making the route dynamic.
+  useEffect(() => {
+    const slug = new URLSearchParams(window.location.search).get("product");
+    if (!slug) return;
+    const match = productOptions.find((o) => o.value === slug);
+    if (match) setProduct(match.label);
+  }, [productOptions]);
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -113,7 +122,7 @@ export function EnquiryForm({ productOptions = [], defaultProduct = "", classNam
         </Field>
         {productOptions.length ? (
           <Field label="Product of interest" error={errors.product} errorId={`${id}-product-error`} labelClass={classNames.label} errorClass={classNames.error}>
-            <select {...field("product")} defaultValue={defaultProduct} className={classNames.input}>
+            <select {...field("product")} value={product} onChange={(e) => setProduct(e.target.value)} className={classNames.input}>
               <option value="">Not sure yet</option>
               {productOptions.map((o) => (
                 <option key={o.value} value={o.label}>
