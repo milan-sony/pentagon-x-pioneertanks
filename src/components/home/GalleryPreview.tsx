@@ -6,7 +6,7 @@ import { Stagger, StaggerItem } from "@/components/shared/Reveal";
 import { Cta } from "@/components/shared/Cta";
 import { assetSrc, getGallery } from "@/lib/content";
 
-/** Two large project tiles + two small (reference: Intrio latest projects), drawn from the gallery groups. */
+/** Two large project tiles + two small, drawn from the gallery groups. */
 export function GalleryPreview() {
   const groups = getGallery();
   const tiles = [

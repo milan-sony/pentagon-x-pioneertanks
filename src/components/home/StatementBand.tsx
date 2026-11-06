@@ -3,7 +3,7 @@ import { Reveal } from "@/components/shared/Reveal";
 import { Parallax } from "@/components/shared/Parallax";
 import { assetSrc, getAsset } from "@/lib/content";
 
-/** Dark photographic band with a large statement (reference: Intrio testimonial band). The statement is the brochure's own wording. */
+/** Dark photographic band with a large statement. The statement is the brochure's own wording. */
 export function StatementBand() {
   const photo = getAsset("corrugated-5");
   return (

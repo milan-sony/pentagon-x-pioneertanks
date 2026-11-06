@@ -1,4 +1,4 @@
-# Test report – Design 1 · Editorial Warm (Intrio-guided)
+# Test report – Design 1 · Editorial Warm
 
 Branch `design-1` · 2026-11-06 · production build (`next build` + `next start`) · Playwright 1.65 / Chromium · axe-core 4.14 · Lighthouse 13.6. **All twelve routes are implemented and tested on this branch.**
 
@@ -33,7 +33,7 @@ Issues found and fixed during the run:
 
 Full table and failing audits: `docs/lighthouse/design-1-summary.md`.
 
-**Analysis.** CLS is 0 and accessibility 100 everywhere. Performance is lower than the A/B/C branches for two reasons: every page opens with a full-width photographic banner (the LCP element, 3.7–4.1 s under simulated slow 4G, ≈ 1 s unthrottled), and this theme loads framer-motion for the reference-level animations (~35 KB extra gzipped JavaScript; total JS ≈ 275 KB). INP is a field metric; TBT ≤ 210 ms is its lab proxy. Options if the client prefers this direction: an AVIF/lower-quality hero, a smaller art-directed mobile crop, and lazy-loading the parallax/marquee code.
+**Analysis.** CLS is 0 and accessibility 100 everywhere. Performance is held back by two things: every page opens with a full-width photographic banner (the LCP element, 3.7–4.1 s under simulated slow 4G, ≈ 1 s unthrottled), and the design loads framer-motion for the full animations (~35 KB extra gzipped JavaScript; total JS ≈ 275 KB). INP is a field metric; TBT ≤ 210 ms is its lab proxy. Options if the client prefers this direction: an AVIF/lower-quality hero, a smaller art-directed mobile crop, and lazy-loading the parallax/marquee code.
 
 ## Manual checks (Playwright MCP, Chromium)
 

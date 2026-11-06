@@ -85,6 +85,6 @@ main ─ baseline: scaffold + content + shared components + test harness + docs
 | 2026-11-06 | Forms: client validation + `mailto:` fallback | No backend in scope; honest behaviour |
 | 2026-11-06 | English only | Client choice; structure stays i18n-friendly |
 | 2026-11-06 | Future routes render a shared `FuturePage` (superseded: every page is now implemented) | Honest, not misleading, no redirects to home |
-| 2026-11-06 | Keep only the Intrio- and Qleviq-guided designs (renamed Design 1 and Design 2); delete the first-round branches (01-industrial-heritage, 02-engineering-precision, 03-premium-industrial) | Client choice after reviewing all five |
+| 2026-11-06 | Keep only Design 1 and Design 2; delete the first-round branches (01-industrial-heritage, 02-engineering-precision, 03-premium-industrial) | Client choice after reviewing all five |
 | 2026-11-06 | Lorem-ipsum news post, `/sample-page/`, WP theme docs recorded but not rendered | Not business content |
 | 2026-11-06 | Fonts through `next/font/google` | Performance + CLS; still Google Fonts as required |

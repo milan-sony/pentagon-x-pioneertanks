@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Stagger, StaggerItem } from "@/components/shared/Reveal";
 import { assetSrc, getAsset, getCertifications, getDownloads, getNewsArticles } from "@/lib/content";
 
-/** Three editorial cards (reference: Intrio blog row): brochure, licences, latest news. */
+/** Three editorial cards: brochure, licences, latest news. */
 export function ResourcesSection() {
   const brochure = getDownloads().find((d) => d.type === "brochure")!;
   const datasheets = getDownloads().filter((d) => d.type === "datasheet");

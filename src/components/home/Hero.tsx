@@ -6,7 +6,7 @@ import { assetSrc, company, getAsset } from "@/lib/content";
 
 /**
  * Full-width photographic hero with a two-line uppercase headline set on
- * opposite edges (reference: Intrio), intro paragraph and two CTAs.
+ * opposite edges, intro paragraph and two CTAs.
  */
 export function Hero() {
   const photo = getAsset("product-banner");

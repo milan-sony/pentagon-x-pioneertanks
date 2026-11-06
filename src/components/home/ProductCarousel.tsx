@@ -14,7 +14,7 @@ export interface CarouselCard {
   image: ImageAsset;
 }
 
-/** Horizontal strip of image-overlay cards with previous/next buttons (reference: Intrio services slider). Scroll-snap, no auto-play. */
+/** Horizontal strip of image-overlay cards with previous/next buttons. Scroll-snap, no auto-play. */
 export function ProductCarousel({ cards, label }: { cards: CarouselCard[]; label: string }) {
   const ref = useRef<HTMLUListElement>(null);
   const scrollBy = (dir: 1 | -1) => {
