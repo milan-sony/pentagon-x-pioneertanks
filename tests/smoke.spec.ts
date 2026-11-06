@@ -40,9 +40,19 @@ for (const p of PAGES) {
     test("every image has alt text and loads", async ({ page }) => {
       await page.goto(p.path);
       await settle(page);
-      const results = await page.$$eval("img", (imgs) =>
-        imgs.map((img) => ({ src: img.currentSrc || img.src, alt: img.getAttribute("alt"), ok: img.complete && img.naturalWidth > 0 })),
-      );
+      // Lazy images only start loading once scrolled into view: bring each one in and wait for decode.
+      const results = await page.evaluate(async () => {
+        const imgs = [...document.querySelectorAll("img")];
+        const out: { src: string; alt: string | null; ok: boolean }[] = [];
+        for (const img of imgs) {
+          img.scrollIntoView({ block: "center" });
+          const timeout = new Promise<void>((r) => setTimeout(r, 4000));
+          await Promise.race([img.decode().catch(() => undefined), timeout]);
+          out.push({ src: img.currentSrc || img.src, alt: img.getAttribute("alt"), ok: img.complete && img.naturalWidth > 0 });
+        }
+        window.scrollTo(0, 0);
+        return out;
+      });
       const missingAlt = results.filter((r) => r.alt === null);
       expect(missingAlt, "images without alt attribute").toEqual([]);
       const broken = results.filter((r) => !r.ok);

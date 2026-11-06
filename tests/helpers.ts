@@ -1,8 +1,8 @@
 import type { Page, ConsoleMessage, Request } from "@playwright/test";
 import { designConfig } from "../src/data/design-config";
 
-export const DESIGN_ID = designConfig.designId;
-export const SCREENSHOT_DIR = `screenshots/${DESIGN_ID === "baseline" ? "baseline" : DESIGN_ID}`;
+export const DESIGN_ID: string = designConfig.designId;
+export const SCREENSHOT_DIR = `screenshots/${DESIGN_ID}`;
 
 export const PAGES = [
   { name: "home", path: "/" },

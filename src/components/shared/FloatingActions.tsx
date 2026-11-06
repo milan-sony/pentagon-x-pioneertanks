@@ -28,13 +28,13 @@ export function FloatingActions({ whatsappClassName, contactClassName, contactHr
       <a
         href={contactHref}
         className={cn(
-          "inline-flex min-h-12 min-w-12 items-center gap-2 px-4 text-sm font-semibold shadow-lg transition-transform focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 motion-safe:hover:-translate-y-0.5",
+          "inline-flex min-h-12 min-w-12 items-center justify-center gap-2 px-3 text-sm font-semibold shadow-lg md:px-4 transition-transform focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 motion-safe:hover:-translate-y-0.5",
           contactClassName,
         )}
         data-testid="floating-contact"
       >
         <PhoneCall className="size-5" aria-hidden="true" />
-        <span>Contact us</span>
+        <span className="sr-only md:not-sr-only">Contact us</span>
       </a>
       <a
         href={whatsappHref()}
