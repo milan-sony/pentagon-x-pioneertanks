@@ -1,0 +1,1010 @@
+{
+  "url": "https://pioneertanks.ae/",
+  "finalUrl": "https://pioneertanks.ae/",
+  "slug": "home",
+  "status": 200,
+  "crawledAt": "2026-11-06T09:08:21.948Z",
+  "title": "Pioneer Water Tanks | Home",
+  "lang": "en-US",
+  "meta": {
+    "description": null,
+    "keywords": null,
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImage": null,
+    "robots": "max-image-preview:large",
+    "generator": null,
+    "canonical": "https://pioneertanks.ae/"
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "PIONEERS IN WATER STORAGE SOLUTIONS",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE",
+      "region": "main"
+    },
+    {
+      "level": 1,
+      "text": "PIONEERS IN WATER STORAGE SOLUTIONS",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE",
+      "region": "main"
+    },
+    {
+      "level": 1,
+      "text": "PIONEERS IN WATER STORAGE SOLUTIONS",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE",
+      "region": "main"
+    },
+    {
+      "level": 1,
+      "text": "PIONEERS IN WATER STORAGE SOLUTIONS",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE",
+      "region": "main"
+    },
+    {
+      "level": 1,
+      "text": "PIONEERS IN WATER STORAGE SOLUTIONS",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Who We Are?",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "WELCOME TO PIONEER WATER TANKS LLC",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Mission & Vision",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "MISSION & VISION",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "AREAS OF EXPERTISE",
+      "region": "main"
+    },
+    {
+      "level": 2,
+      "text": "Our Products",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "STEEL LINER TANKS",
+      "region": "main"
+    },
+    {
+      "level": 3,
+      "text": "FLEXIBLE TANKS",
+      "region": "main"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo.jpg",
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "nav",
+      "items": [
+        {
+          "text": "HOME",
+          "href": "https://pioneertanks.ae/",
+          "children": []
+        },
+        {
+          "text": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": [
+            {
+              "text": "LICENSES",
+              "href": "https://pioneertanks.ae/licenses/"
+            }
+          ]
+        },
+        {
+          "text": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": [
+            {
+              "text": "FLEXIBLE PVC STORAGE TANKS",
+              "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/"
+            },
+            {
+              "text": "FLAT PANEL HDG STEEL",
+              "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/"
+            },
+            {
+              "text": "CORRUGATED ZINCALUM STEEL",
+              "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/"
+            }
+          ]
+        },
+        {
+          "text": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "text": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "text": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "text": "CONTACT",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ],
+      "isMenu": true
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Phone:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "E-mail:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Fax:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Address",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Location",
+      "level": 1
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "main",
+      "items": [
+        {
+          "text": "PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE",
+          "href": null,
+          "children": []
+        },
+        {
+          "text": "PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE",
+          "href": null,
+          "children": []
+        },
+        {
+          "text": "PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE",
+          "href": null,
+          "children": []
+        },
+        {
+          "text": "PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE",
+          "href": null,
+          "children": []
+        },
+        {
+          "text": "PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE",
+          "href": null,
+          "children": []
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "main",
+      "items": [
+        {
+          "text": "Previous",
+          "href": "https://pioneertanks.ae/#",
+          "children": []
+        },
+        {
+          "text": "Next",
+          "href": "https://pioneertanks.ae/#",
+          "children": []
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "main",
+      "items": [
+        {
+          "text": "WHO WE ARE?",
+          "href": "https://pioneertanks.ae/#sec1",
+          "children": []
+        },
+        {
+          "text": "MISSION & VISION",
+          "href": "https://pioneertanks.ae/#sec2",
+          "children": []
+        },
+        {
+          "text": "AREAS OF EXPERTISE",
+          "href": "https://pioneertanks.ae/#sec3",
+          "children": []
+        },
+        {
+          "text": "OUR PRODUCTS",
+          "href": "https://pioneertanks.ae/#sec4",
+          "children": []
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "Who We Are?",
+      "level": 2
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "WELCOME TO PIONEER WATER TANKS LLC",
+      "level": 3
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE, Gulf and Middle East Region and since 1993 we have continued to service the water storage needs of our expanding list of satisfied clients. We look forward to service your water storage needs!"
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "Mission & Vision",
+      "level": 2
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/news-left.jpg",
+      "alt": "",
+      "title": null,
+      "width": 953,
+      "height": 824
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "MISSION & VISION",
+      "level": 3
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "OUR MISSION: To provide top quality liner tanks to the UAE and Gulf Regions while catering to our goal of having reliable future proof products. OUR VISION: We aim for everyone become more water conscious by providing water preservation information and quality of life products."
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/new.jpg",
+      "alt": "",
+      "title": null,
+      "width": 953,
+      "height": 824
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "AREAS OF EXPERTISE",
+      "level": 3
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "Pioneer Water Tanks are experts at providing custom and innovative water storage solutions. We have over 25 years of experience in the field and have some of the best minds at work to solving your problems."
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "Our Products",
+      "level": 2
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "STEEL LINER TANKS",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "main",
+      "items": [
+        {
+          "text": "Cylindrical tanks that are either corrugated or flat.",
+          "href": null,
+          "children": []
+        },
+        {
+          "text": "Popular for Potable water storage using an internal liner system.",
+          "href": null,
+          "children": []
+        },
+        {
+          "text": "Used for Water Storage applications such as firefighting, mining and camp sites.",
+          "href": null,
+          "children": []
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "FLEXIBLE TANKS",
+      "level": 3
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "Custom-made to suit your needs. Our fabric tanks are can be used anywhere and in any way for both water and diesel storage purposes."
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo-foot.png",
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "main",
+      "items": [
+        {
+          "text": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": []
+        },
+        {
+          "text": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": []
+        },
+        {
+          "text": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "text": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "text": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "text": "CONTACT US",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "text",
+      "region": "main",
+      "text": "Copyright © 2018 Pioneer Water Tanks l.l.C.",
+      "element": "span"
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "M14 Mussafah Industrial Area, P.O. Box 110810, Abu Dhabi, UAE"
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/by.png",
+      "alt": "",
+      "title": null,
+      "width": 35,
+      "height": 23
+    }
+  ],
+  "menus": [
+    {
+      "region": "nav",
+      "id": "menu-header-menu",
+      "className": "nav navbar-nav",
+      "items": [
+        {
+          "label": "HOME",
+          "href": "https://pioneertanks.ae/",
+          "children": []
+        },
+        {
+          "label": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": [
+            {
+              "label": "LICENSES",
+              "href": "https://pioneertanks.ae/licenses/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": [
+            {
+              "label": "FLEXIBLE PVC STORAGE TANKS",
+              "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+              "children": []
+            },
+            {
+              "label": "FLAT PANEL HDG STEEL",
+              "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+              "children": []
+            },
+            {
+              "label": "CORRUGATED ZINCALUM STEEL",
+              "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "label": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "label": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "label": "CONTACT",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pioneertanks.ae/",
+      "text": "[image: ]",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/",
+      "text": "HOME",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "ABOUT",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/licenses/",
+      "text": "LICENSES",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/products/",
+      "text": "PRODUCTS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+      "text": "FLEXIBLE PVC STORAGE TANKS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+      "text": "FLAT PANEL HDG STEEL",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+      "text": "CORRUGATED ZINCALUM STEEL",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/news/",
+      "text": "NEWS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/gallery/",
+      "text": "GALLERY",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/downloads/",
+      "text": "DOWNLOADS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "CONTACT",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "mailto:pwt@pioneertanks.ae",
+      "text": "",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "READ MORE",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "READ MORE",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "READ MORE",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "READ MORE",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "READ MORE",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#",
+      "text": "Previous",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#",
+      "text": "Next",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#section2",
+      "text": "QUICK LINKS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#sec1",
+      "text": "WHO WE ARE?",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#sec2",
+      "text": "MISSION & VISION",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#sec3",
+      "text": "AREAS OF EXPERTISE",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#sec4",
+      "text": "OUR PRODUCTS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#",
+      "text": "Previous",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/#",
+      "text": "Next",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "http://pioneertanks.ae/product/flat-panel-hdg-steel/",
+      "text": "VIEW MORE",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "http://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+      "text": "VIEW MORE",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "ABOUT",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/products/",
+      "text": "PRODUCTS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/news/",
+      "text": "NEWS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/gallery/",
+      "text": "GALLERY",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/downloads/",
+      "text": "DOWNLOADS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "CONTACT US",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "mailto:pwt@pioneertanks.ae",
+      "text": "pwt@pioneertanks.ae",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://www.facebook.com/PioneerTanksUAE",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://twitter.com/PioneerTanksUae",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://plus.google.com/u/0/+PioneerWaterTanksLLCAbuDhabi",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://pioneertanks.ae/#",
+      "text": "[image: ]",
+      "region": "main",
+      "rel": null,
+      "target": null
+    }
+  ],
+  "images": [
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/ban02.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 1920,
+      "height": 980,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/ban01.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 1920,
+      "height": 980,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/ban03.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 1920,
+      "height": 980,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/ban02.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 1920,
+      "height": 980,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/ban01.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 1920,
+      "height": 980,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/news-left.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 953,
+      "height": 824,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/new.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 953,
+      "height": 824,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/bt01.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 952,
+      "height": 824,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/bt01.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 952,
+      "height": 824,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/th.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 953,
+      "height": 824,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/second.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 953,
+      "height": 824,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/bt01.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 952,
+      "height": 824,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/bt01.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 952,
+      "height": 824,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo-foot.png",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/by.png",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 35,
+      "height": 23,
+      "region": "main",
+      "visible": true
+    }
+  ],
+  "forms": [],
+  "contactHrefs": [
+    "mailto:pwt@pioneertanks.ae",
+    "mailto:pwt@pioneertanks.ae"
+  ],
+  "bodyText": "HOME ABOUT LICENSES PRODUCTS FLEXIBLE PVC STORAGE TANKS FLAT PANEL HDG STEEL CORRUGATED ZINCALUM STEEL NEWS GALLERY DOWNLOADS CONTACT CONTACT PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE PIONEERS IN WATER STORAGE SOLUTIONS Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE READ MORE Previous Next QUICK LINKS WHO WE ARE? MISSION & VISION AREAS OF EXPERTISE OUR PRODUCTS Who We Are? WELCOME TO PIONEER WATER TANKS LLC Pioneer Water Tanks LLC are the Regional suppliers of Liner water storage systems for the UAE, Gulf and Middle East Region and since 1993 we have continued to service the water storage needs of our expanding list of satisfied clients. We look forward to service your water storage needs! Mission & Vision MISSION & VISION OUR MISSION: To provide top quality liner tanks to the UAE and Gulf Regions while catering to our goal of having reliable future proof products. OUR VISION: We aim for everyone become more water conscious by providing water preservation information and quality of life products. AREAS OF EXPERTISE Pioneer Water Tanks are experts at providing custom and innovative water storage solutions. We have over 25 years of experience in the field and have some of the best minds at work to solving your problems. Our Products Previous Next STEEL LINER TANKS Cylindrical tanks that are either corrugated or flat. Popular for Potable water storage using an internal liner system. Used for Water Storage applications such as firefighting, mining and camp sites. VIEW MORE FLEXIBLE TANKS Custom-made to suit your needs. Our fabric tanks are can be used anywhere and in any way for both water and diesel storage purposes. VIEW MORE ABOUT PRODUCTS NEWS GALLERY DOWNLOADS CONTACT US Copyright © 2018 Pioneer Water Tanks l.l.C. M14 Mussafah Industrial Area, P.O. Box 110810, Abu Dhabi, UAE Phone: +971-2-555-1855, Fax: +971-2-555-1755, E-mail: pwt@pioneertanks.ae follow us",
+  "internalLinks": [
+    "https://pioneertanks.ae/",
+    "https://pioneertanks.ae/about/",
+    "https://pioneertanks.ae/licenses/",
+    "https://pioneertanks.ae/products/",
+    "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+    "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+    "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+    "https://pioneertanks.ae/news/",
+    "https://pioneertanks.ae/gallery/",
+    "https://pioneertanks.ae/downloads/",
+    "https://pioneertanks.ae/contact/"
+  ],
+  "externalLinks": [
+    "https://www.facebook.com/PioneerTanksUAE",
+    "https://twitter.com/PioneerTanksUae",
+    "https://plus.google.com/u/0/+PioneerWaterTanksLLCAbuDhabi"
+  ],
+  "documents": []
+}

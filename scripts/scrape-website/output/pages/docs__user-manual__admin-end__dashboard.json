@@ -1,0 +1,944 @@
+{
+  "url": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/",
+  "finalUrl": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/",
+  "slug": "docs__user-manual__admin-end__dashboard",
+  "status": 200,
+  "crawledAt": "2026-11-06T09:08:43.183Z",
+  "title": "Pioneer Water Tanks | Dashboard",
+  "lang": "en-US",
+  "meta": {
+    "description": null,
+    "keywords": null,
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImage": null,
+    "robots": "max-image-preview:large",
+    "generator": null,
+    "canonical": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/"
+  },
+  "headings": [
+    {
+      "level": 3,
+      "text": "User Manual",
+      "region": "main"
+    },
+    {
+      "level": 1,
+      "text": "Dashboard",
+      "region": "header"
+    },
+    {
+      "level": 3,
+      "text": "Doc navigation",
+      "region": "nav"
+    },
+    {
+      "level": 3,
+      "text": "How can we help?",
+      "region": "main"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo.jpg",
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "nav",
+      "items": [
+        {
+          "text": "HOME",
+          "href": "https://pioneertanks.ae/",
+          "children": []
+        },
+        {
+          "text": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": [
+            {
+              "text": "LICENSES",
+              "href": "https://pioneertanks.ae/licenses/"
+            }
+          ]
+        },
+        {
+          "text": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": [
+            {
+              "text": "FLEXIBLE PVC STORAGE TANKS",
+              "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/"
+            },
+            {
+              "text": "FLAT PANEL HDG STEEL",
+              "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/"
+            },
+            {
+              "text": "CORRUGATED ZINCALUM STEEL",
+              "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/"
+            }
+          ]
+        },
+        {
+          "text": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "text": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "text": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "text": "CONTACT",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ],
+      "isMenu": true
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Phone:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "E-mail:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Fax:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Address",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Location",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "User Manual",
+      "level": 3
+    },
+    {
+      "type": "text",
+      "region": "main",
+      "text": "⌘K",
+      "element": "div"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "main",
+      "items": [
+        {
+          "text": "Getting Started",
+          "href": "https://pioneertanks.ae/docs/user-manual/getting-started/",
+          "children": []
+        },
+        {
+          "text": "Front End",
+          "href": "https://pioneertanks.ae/docs/user-manual/front-end/",
+          "children": [
+            {
+              "text": "Home",
+              "href": "https://pioneertanks.ae/docs/user-manual/front-end/home/"
+            },
+            {
+              "text": "About",
+              "href": "https://pioneertanks.ae/docs/user-manual/front-end/about/"
+            },
+            {
+              "text": "Products",
+              "href": "https://pioneertanks.ae/docs/user-manual/front-end/products/"
+            },
+            {
+              "text": "News",
+              "href": "https://pioneertanks.ae/docs/user-manual/front-end/news/"
+            },
+            {
+              "text": "Gallery",
+              "href": "https://pioneertanks.ae/docs/user-manual/front-end/gallery/"
+            },
+            {
+              "text": "Downloads",
+              "href": "https://pioneertanks.ae/docs/user-manual/front-end/downloads/"
+            },
+            {
+              "text": "Contact",
+              "href": "https://pioneertanks.ae/docs/user-manual/front-end/contact/"
+            }
+          ]
+        },
+        {
+          "text": "Admin End",
+          "href": "https://pioneertanks.ae/docs/user-manual/admin-end/",
+          "children": [
+            {
+              "text": "Dashboard",
+              "href": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/"
+            },
+            {
+              "text": "Pages",
+              "href": "https://pioneertanks.ae/docs/user-manual/admin-end/pages/"
+            },
+            {
+              "text": "Banners",
+              "href": "https://pioneertanks.ae/docs/user-manual/admin-end/banners/"
+            },
+            {
+              "text": "News",
+              "href": "https://pioneertanks.ae/docs/user-manual/admin-end/news/"
+            },
+            {
+              "text": "Products",
+              "href": "https://pioneertanks.ae/docs/user-manual/admin-end/products/"
+            },
+            {
+              "text": "Contact",
+              "href": "https://pioneertanks.ae/docs/user-manual/admin-end/contact/"
+            },
+            {
+              "text": "Theme Options",
+              "href": "https://pioneertanks.ae/docs/user-manual/admin-end/theme-options/"
+            }
+          ]
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "region": "main",
+      "items": [
+        {
+          "text": "Home",
+          "href": "https://pioneertanks.ae/",
+          "children": []
+        },
+        {
+          "text": "Docs",
+          "href": "https://pioneertanks.ae/docs/",
+          "children": []
+        },
+        {
+          "text": "User Manual",
+          "href": "https://pioneertanks.ae/docs/user-manual/",
+          "children": []
+        },
+        {
+          "text": "Admin End",
+          "href": "https://pioneertanks.ae/docs/user-manual/admin-end/",
+          "children": []
+        },
+        {
+          "text": "Dashboard",
+          "href": null,
+          "children": []
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "heading",
+      "region": "header",
+      "text": "Dashboard",
+      "level": 1
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "Dashboard is the administration section of website.It is the place where all of your site’s admin tasks are performed."
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/dasboard-1.png",
+      "alt": "",
+      "width": 1440,
+      "height": 1404
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Doc navigation",
+      "level": 3
+    },
+    {
+      "type": "text",
+      "region": "footer",
+      "text": "Updated on April 25, 2018",
+      "element": "time"
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo-foot.png",
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "main",
+      "items": [
+        {
+          "text": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": []
+        },
+        {
+          "text": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": []
+        },
+        {
+          "text": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "text": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "text": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "text": "CONTACT US",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "text",
+      "region": "main",
+      "text": "Copyright © 2018 Pioneer Water Tanks l.l.C.",
+      "element": "span"
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "M14 Mussafah Industrial Area, P.O. Box 110810, Abu Dhabi, UAE"
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/by.png",
+      "alt": "",
+      "title": null,
+      "width": 35,
+      "height": 23
+    }
+  ],
+  "menus": [
+    {
+      "region": "nav",
+      "id": "menu-header-menu",
+      "className": "nav navbar-nav",
+      "items": [
+        {
+          "label": "HOME",
+          "href": "https://pioneertanks.ae/",
+          "children": []
+        },
+        {
+          "label": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": [
+            {
+              "label": "LICENSES",
+              "href": "https://pioneertanks.ae/licenses/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": [
+            {
+              "label": "FLEXIBLE PVC STORAGE TANKS",
+              "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+              "children": []
+            },
+            {
+              "label": "FLAT PANEL HDG STEEL",
+              "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+              "children": []
+            },
+            {
+              "label": "CORRUGATED ZINCALUM STEEL",
+              "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "label": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "label": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "label": "CONTACT",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pioneertanks.ae/",
+      "text": "[image: ]",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/",
+      "text": "HOME",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "ABOUT",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/licenses/",
+      "text": "LICENSES",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/products/",
+      "text": "PRODUCTS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+      "text": "FLEXIBLE PVC STORAGE TANKS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+      "text": "FLAT PANEL HDG STEEL",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+      "text": "CORRUGATED ZINCALUM STEEL",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/news/",
+      "text": "NEWS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/gallery/",
+      "text": "GALLERY",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/downloads/",
+      "text": "DOWNLOADS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "CONTACT",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "mailto:pwt@pioneertanks.ae",
+      "text": "",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/getting-started/",
+      "text": "Getting Started",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/front-end/",
+      "text": "Front End",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/front-end/home/",
+      "text": "Home",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/front-end/about/",
+      "text": "About",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/front-end/products/",
+      "text": "Products",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/front-end/news/",
+      "text": "News",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/front-end/gallery/",
+      "text": "Gallery",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/front-end/downloads/",
+      "text": "Downloads",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/front-end/contact/",
+      "text": "Contact",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/",
+      "text": "Admin End",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/",
+      "text": "Dashboard",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/pages/",
+      "text": "Pages",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/banners/",
+      "text": "Banners",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/news/",
+      "text": "News",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/products/",
+      "text": "Products",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/contact/",
+      "text": "Contact",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/theme-options/",
+      "text": "Theme Options",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/",
+      "text": "Home",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/",
+      "text": "Docs",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/",
+      "text": "User Manual",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/",
+      "text": "Admin End",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/#",
+      "text": "Print this article",
+      "region": "header",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/pages/",
+      "text": "Pages →",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/#",
+      "text": "How can we help?",
+      "region": "footer",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/#",
+      "text": "No",
+      "region": "footer",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/#",
+      "text": "Yes",
+      "region": "footer",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/#",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "ABOUT",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/products/",
+      "text": "PRODUCTS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/news/",
+      "text": "NEWS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/gallery/",
+      "text": "GALLERY",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/downloads/",
+      "text": "DOWNLOADS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "CONTACT US",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "mailto:pwt@pioneertanks.ae",
+      "text": "pwt@pioneertanks.ae",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://www.facebook.com/PioneerTanksUAE",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://twitter.com/PioneerTanksUae",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://plus.google.com/u/0/+PioneerWaterTanksLLCAbuDhabi",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/#",
+      "text": "[image: ]",
+      "region": "main",
+      "rel": null,
+      "target": null
+    }
+  ],
+  "images": [
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/dasboard-1.png",
+      "srcset": "https://pioneertanks.ae/wp-content/uploads/2018/04/dasboard-1.png 1583w, https://pioneertanks.ae/wp-content/uploads/2018/04/dasboard-1-300x293.png 300w, https://pioneertanks.ae/wp-content/uploads/2018/04/dasboard-1-768x749.png 768w, https://pioneertanks.ae/wp-content/uploads/2018/04/dasboard-1-1024x999.png 1024w",
+      "alt": "",
+      "title": null,
+      "width": 1440,
+      "height": 1404,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo-foot.png",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/by.png",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 35,
+      "height": 23,
+      "region": "main",
+      "visible": true
+    }
+  ],
+  "forms": [
+    {
+      "action": null,
+      "method": "post",
+      "id": "wedocs-contact-modal-form",
+      "className": null,
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": null,
+          "required": true,
+          "label": "Name"
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "you@example.com",
+          "required": true,
+          "label": "Email"
+        },
+        {
+          "name": "subject",
+          "type": "text",
+          "placeholder": null,
+          "required": true,
+          "label": "Subject"
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "placeholder": null,
+          "required": true,
+          "label": "Message"
+        }
+      ],
+      "submitLabel": "Send",
+      "hiddenFields": [
+        "doc_id",
+        "action"
+      ]
+    },
+    {
+      "action": null,
+      "method": "get",
+      "id": null,
+      "className": "doc-search-form",
+      "fields": [
+        {
+          "name": null,
+          "type": "text",
+          "placeholder": "Search documentation",
+          "required": false,
+          "label": null
+        }
+      ],
+      "submitLabel": null,
+      "hiddenFields": []
+    }
+  ],
+  "contactHrefs": [
+    "mailto:pwt@pioneertanks.ae",
+    "mailto:pwt@pioneertanks.ae"
+  ],
+  "bodyText": "HOME ABOUT LICENSES PRODUCTS FLEXIBLE PVC STORAGE TANKS FLAT PANEL HDG STEEL CORRUGATED ZINCALUM STEEL NEWS GALLERY DOWNLOADS CONTACT CONTACT User Manual ⌘K Getting Started Front End Admin End Dashboard Pages Banners News Products Contact Theme Options Home Docs User Manual Admin End Dashboard Dashboard Dashboard is the administration section of website.It is the place where all of your site’s admin tasks are performed. Doc navigation Pages → Still stuck? How can we help? Updated on April 25, 2018 Was this article helpful to you? NoYes ABOUT PRODUCTS NEWS GALLERY DOWNLOADS CONTACT US Copyright © 2018 Pioneer Water Tanks l.l.C. M14 Mussafah Industrial Area, P.O. Box 110810, Abu Dhabi, UAE Phone: +971-2-555-1855, Fax: +971-2-555-1755, E-mail: pwt@pioneertanks.ae follow us",
+  "internalLinks": [
+    "https://pioneertanks.ae/",
+    "https://pioneertanks.ae/about/",
+    "https://pioneertanks.ae/licenses/",
+    "https://pioneertanks.ae/products/",
+    "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+    "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+    "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+    "https://pioneertanks.ae/news/",
+    "https://pioneertanks.ae/gallery/",
+    "https://pioneertanks.ae/downloads/",
+    "https://pioneertanks.ae/contact/",
+    "https://pioneertanks.ae/docs/user-manual/getting-started/",
+    "https://pioneertanks.ae/docs/user-manual/front-end/",
+    "https://pioneertanks.ae/docs/user-manual/front-end/home/",
+    "https://pioneertanks.ae/docs/user-manual/front-end/about/",
+    "https://pioneertanks.ae/docs/user-manual/front-end/products/",
+    "https://pioneertanks.ae/docs/user-manual/front-end/news/",
+    "https://pioneertanks.ae/docs/user-manual/front-end/gallery/",
+    "https://pioneertanks.ae/docs/user-manual/front-end/downloads/",
+    "https://pioneertanks.ae/docs/user-manual/front-end/contact/",
+    "https://pioneertanks.ae/docs/user-manual/admin-end/",
+    "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/",
+    "https://pioneertanks.ae/docs/user-manual/admin-end/pages/",
+    "https://pioneertanks.ae/docs/user-manual/admin-end/banners/",
+    "https://pioneertanks.ae/docs/user-manual/admin-end/news/",
+    "https://pioneertanks.ae/docs/user-manual/admin-end/products/",
+    "https://pioneertanks.ae/docs/user-manual/admin-end/contact/",
+    "https://pioneertanks.ae/docs/user-manual/admin-end/theme-options/",
+    "https://pioneertanks.ae/docs/",
+    "https://pioneertanks.ae/docs/user-manual/"
+  ],
+  "externalLinks": [
+    "https://www.facebook.com/PioneerTanksUAE",
+    "https://twitter.com/PioneerTanksUae",
+    "https://plus.google.com/u/0/+PioneerWaterTanksLLCAbuDhabi"
+  ],
+  "documents": []
+}

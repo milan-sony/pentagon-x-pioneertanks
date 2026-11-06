@@ -1,0 +1,58 @@
+Specifications for Pioneer Flat Panel (PFP) Tank series
+Description
+Cylindrical-shaped, Modular-built, Bolted Steel Water storage tanks with
+internal liner.
+Tanks are fitted with a Dome Roof structure to protect the stored liquids
+or kept with no roof (open-top) for special applications.
+Wall Panels
+Tank wall panels are made of high-grade flat steel plates, curved and
+shaped to tank diameter. Holes for bolted connections are done with
+CNC laser-cutting machine for high accuracy.
+Corrosion Treatment
+Steel Flat panels are protected with a factory applied Hot-Dip
+Galvanized treatment to min 450 gr/m2.
+Further application of Epoxy & Polyurethane paint coats is also available
+for high-corrosive storage applications.
+Bolting Specification
+Hot-Dip Galvanized, high tensile steel bolts, Grade 8.8, are used for the
+tank wall panels and tank fittings.
+Bolts are placed inside fully enclosed covers.
+Roof Trusses
+Made of welded- steel tubular sections with Hot-Dip galvanized coating
+Grade AZ 200.
+Roof trusses shall be bolted to tank wall and shall be self-supporting
+without any ground columns.
+Roof Panels Aluzinc corrugated steel sheets, 0.50mm thick, are deployed over the
+roof trusses and joined using HDG Tek-screws.
+Tank Liner
+A high tear resistant, one-piece heavy duty, Reinforced PVC-Polyester
+liner shall be installed inside the tank to contain the stored liquid.
+The liner shall have an internal woven scrim for reinforcement, with a
+tensile strength of 4300N per 5cm in the Warp direction and a coated
+weight of 930gr/m2.
+The Liner is suitable for liquid storage with a pH range of 3-11 and is
+also rated for the storage of potable water with a relevant test certificate
+to “DIN EN 12873-1: 20” European Standard.
+Nozzles
+Tank nozzles and fittings shall be of Hot Dip Galvanized (HDG) steel
+with an outer flange connection to external piping systems. Tanks shall
+be supplied with an overflow with downpipe and a scour drain.
+
+-- 1 of 2 --
+
+Accessories
+-All tanks are fitted with External Ladders (HDG). A safety cage is
+added for tanks above 4.0m in height.
+-Lockable Roof Access Hatch with platform and handrail (HDG).
+-Full-Length Level Indicator with HDG column.
+-Roof Ventilator to be of Dynamic type (Whirlybird or similar).
+Foundation
+Tanks shall be designed for installation onto a reinforced concrete ring
+beam foundation encasing a clean compacted sand base.
+Steel Hold-down brackets shall be bolted to the tank walls and fixed to
+the ring beam using expansion bolts.
+Tanks up to 2.2m in height may be positioned on a compacted sand
+pad with gravel protection outside the tank wall.
+
+-- 2 of 2 --
+

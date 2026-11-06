@@ -1,0 +1,350 @@
+{
+  "source": "https://pioneertanks.ae",
+  "startedAt": "2026-11-06T09:08:06.382Z",
+  "finishedAt": "2026-11-06T09:10:14.615Z",
+  "pagesCrawled": 37,
+  "pagesFailed": 0,
+  "byType": {
+    "page": 37,
+    "skipped": 1,
+    "asset": 77,
+    "document": 5
+  },
+  "nonOkPages": [],
+  "failures": [],
+  "pages": [
+    {
+      "url": "https://pioneertanks.ae/hello-world/",
+      "slug": "hello-world",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Hello world!",
+      "blocks": 15,
+      "images": 4,
+      "links": 25
+    },
+    {
+      "url": "https://pioneertanks.ae/sample-page/",
+      "slug": "sample-page",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Sample Page",
+      "blocks": 19,
+      "images": 4,
+      "links": 26
+    },
+    {
+      "url": "https://pioneertanks.ae/",
+      "slug": "home",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Home",
+      "blocks": 30,
+      "images": 16,
+      "links": 41
+    },
+    {
+      "url": "https://pioneertanks.ae/about/",
+      "slug": "about",
+      "status": 200,
+      "title": "Pioneer Water Tanks | About Us",
+      "blocks": 20,
+      "images": 5,
+      "links": 28
+    },
+    {
+      "url": "https://pioneertanks.ae/licenses/",
+      "slug": "licenses",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Licenses",
+      "blocks": 20,
+      "images": 13,
+      "links": 28
+    },
+    {
+      "url": "https://pioneertanks.ae/products/",
+      "slug": "products",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Products",
+      "blocks": 23,
+      "images": 7,
+      "links": 32
+    },
+    {
+      "url": "https://pioneertanks.ae/news/",
+      "slug": "news",
+      "status": 200,
+      "title": "Pioneer Water Tanks | News Updates",
+      "blocks": 19,
+      "images": 5,
+      "links": 26
+    },
+    {
+      "url": "https://pioneertanks.ae/downloads/",
+      "slug": "downloads",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Downloads",
+      "blocks": 17,
+      "images": 4,
+      "links": 33
+    },
+    {
+      "url": "https://pioneertanks.ae/gallery/",
+      "slug": "gallery",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Media Gallery",
+      "blocks": 50,
+      "images": 36,
+      "links": 41
+    },
+    {
+      "url": "https://pioneertanks.ae/contact/",
+      "slug": "contact",
+      "status": 200,
+      "title": "Pioneer Water Tanks | contact",
+      "blocks": 18,
+      "images": 4,
+      "links": 26
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/",
+      "slug": "docs",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Documentation",
+      "blocks": 15,
+      "images": 4,
+      "links": 44
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/",
+      "slug": "docs__user-manual",
+      "status": 200,
+      "title": "Pioneer Water Tanks | User Manual",
+      "blocks": 19,
+      "images": 3,
+      "links": 66
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/getting-started/",
+      "slug": "docs__user-manual__getting-started",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Getting Started",
+      "blocks": 20,
+      "images": 3,
+      "links": 51
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/front-end/home/",
+      "slug": "docs__user-manual__front-end__home",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Home",
+      "blocks": 22,
+      "images": 5,
+      "links": 52
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/",
+      "slug": "docs__user-manual__admin-end__dashboard",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Dashboard",
+      "blocks": 21,
+      "images": 4,
+      "links": 52
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/front-end/",
+      "slug": "docs__user-manual__front-end",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Front End",
+      "blocks": 23,
+      "images": 4,
+      "links": 59
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/front-end/about/",
+      "slug": "docs__user-manual__front-end__about",
+      "status": 200,
+      "title": "Pioneer Water Tanks | About",
+      "blocks": 23,
+      "images": 6,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/admin-end/pages/",
+      "slug": "docs__user-manual__admin-end__pages",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Pages",
+      "blocks": 22,
+      "images": 5,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/front-end/products/",
+      "slug": "docs__user-manual__front-end__products",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Products",
+      "blocks": 27,
+      "images": 7,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/admin-end/banners/",
+      "slug": "docs__user-manual__admin-end__banners",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Banners",
+      "blocks": 22,
+      "images": 5,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/admin-end/",
+      "slug": "docs__user-manual__admin-end",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Admin End",
+      "blocks": 23,
+      "images": 4,
+      "links": 58
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/admin-end/news/",
+      "slug": "docs__user-manual__admin-end__news",
+      "status": 200,
+      "title": "Pioneer Water Tanks | News",
+      "blocks": 24,
+      "images": 5,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/front-end/news/",
+      "slug": "docs__user-manual__front-end__news",
+      "status": 200,
+      "title": "Pioneer Water Tanks | News",
+      "blocks": 23,
+      "images": 5,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/front-end/gallery/",
+      "slug": "docs__user-manual__front-end__gallery",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Gallery",
+      "blocks": 22,
+      "images": 5,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/admin-end/products/",
+      "slug": "docs__user-manual__admin-end__products",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Products",
+      "blocks": 25,
+      "images": 5,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/front-end/downloads/",
+      "slug": "docs__user-manual__front-end__downloads",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Downloads",
+      "blocks": 21,
+      "images": 4,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/admin-end/contact/",
+      "slug": "docs__user-manual__admin-end__contact",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Contact",
+      "blocks": 23,
+      "images": 5,
+      "links": 53
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/front-end/contact/",
+      "slug": "docs__user-manual__front-end__contact",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Contact",
+      "blocks": 21,
+      "images": 4,
+      "links": 52
+    },
+    {
+      "url": "https://pioneertanks.ae/banner/pioneers-in-water-storage-solutions-3/",
+      "slug": "banner__pioneers-in-water-storage-solutions-3",
+      "status": 200,
+      "title": "Pioneer Water Tanks | PIONEERS IN WATER STORAGE SOLUTIONS",
+      "blocks": 15,
+      "images": 4,
+      "links": 25
+    },
+    {
+      "url": "https://pioneertanks.ae/docs/user-manual/admin-end/theme-options/",
+      "slug": "docs__user-manual__admin-end__theme-options",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Theme Options",
+      "blocks": 26,
+      "images": 6,
+      "links": 52
+    },
+    {
+      "url": "https://pioneertanks.ae/banner/pioneers-in-water-storage-solutions-2/",
+      "slug": "banner__pioneers-in-water-storage-solutions-2",
+      "status": 200,
+      "title": "Pioneer Water Tanks | PIONEERS IN WATER STORAGE SOLUTIONS",
+      "blocks": 15,
+      "images": 4,
+      "links": 25
+    },
+    {
+      "url": "https://pioneertanks.ae/banner/pioneers-in-water-storage-solutions/",
+      "slug": "banner__pioneers-in-water-storage-solutions",
+      "status": 200,
+      "title": "Pioneer Water Tanks | PIONEERS IN WATER STORAGE SOLUTIONS",
+      "blocks": 15,
+      "images": 4,
+      "links": 25
+    },
+    {
+      "url": "https://pioneertanks.ae/news/nemo-enim-ipsam-voluptatem-quia/",
+      "slug": "news__nemo-enim-ipsam-voluptatem-quia",
+      "status": 200,
+      "title": "Pioneer Water Tanks | The launch of our new Website",
+      "blocks": 19,
+      "images": 5,
+      "links": 25
+    },
+    {
+      "url": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+      "slug": "product__flexible-pvc-storage-tanks",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Flexible PVC Storage Tanks",
+      "blocks": 22,
+      "images": 6,
+      "links": 28
+    },
+    {
+      "url": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+      "slug": "product__flat-panel-hdg-steel",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Flat Panel HDG Steel",
+      "blocks": 22,
+      "images": 6,
+      "links": 28
+    },
+    {
+      "url": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+      "slug": "product__corrugated-zincalum-steel",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Corrugated Zincalum Steel",
+      "blocks": 60,
+      "images": 6,
+      "links": 28
+    },
+    {
+      "url": "https://pioneertanks.ae/category/uncategorized/",
+      "slug": "category__uncategorized",
+      "status": 200,
+      "title": "Pioneer Water Tanks | Uncategorized",
+      "blocks": 12,
+      "images": 3,
+      "links": 25
+    }
+  ]
+}

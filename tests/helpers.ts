@@ -1,0 +1,55 @@
+import type { Page, ConsoleMessage, Request } from "@playwright/test";
+import { designConfig } from "../src/data/design-config";
+
+export const DESIGN_ID = designConfig.designId;
+export const SCREENSHOT_DIR = `screenshots/${DESIGN_ID === "baseline" ? "baseline" : DESIGN_ID}`;
+
+export const PAGES = [
+  { name: "home", path: "/" },
+  { name: "products", path: "/products" },
+] as const;
+
+export const VIEWPORTS = [
+  { name: "mobile-small", width: 360, height: 800 },
+  { name: "mobile", width: 390, height: 844 },
+  { name: "tablet", width: 768, height: 1024 },
+  { name: "laptop", width: 1366, height: 768 },
+  { name: "desktop", width: 1440, height: 900 },
+  { name: "desktop-large", width: 1920, height: 1080 },
+] as const;
+
+/** Collects console errors and failed network requests for a page. */
+export function watchPage(page: Page) {
+  const consoleErrors: string[] = [];
+  const failedRequests: string[] = [];
+  page.on("console", (msg: ConsoleMessage) => {
+    if (msg.type() === "error") consoleErrors.push(msg.text());
+  });
+  page.on("requestfailed", (req: Request) => {
+    failedRequests.push(`${req.method()} ${req.url()} – ${req.failure()?.errorText}`);
+  });
+  page.on("response", (res) => {
+    if (res.status() >= 400 && !res.url().includes("/_next/image")) failedRequests.push(`${res.status()} ${res.url()}`);
+  });
+  return { consoleErrors, failedRequests };
+}
+
+/** Scrolls through the whole page so lazy content and reveal animations settle. */
+export async function settle(page: Page) {
+  await page.evaluate(async () => {
+    const step = Math.max(400, window.innerHeight * 0.8);
+    for (let y = 0; y < document.body.scrollHeight; y += step) {
+      window.scrollTo(0, y);
+      await new Promise((r) => setTimeout(r, 60));
+    }
+    window.scrollTo(0, 0);
+  });
+  await page.waitForTimeout(400);
+}
+
+export async function horizontalOverflow(page: Page) {
+  return page.evaluate(() => ({
+    scrollWidth: document.documentElement.scrollWidth,
+    clientWidth: document.documentElement.clientWidth,
+  }));
+}

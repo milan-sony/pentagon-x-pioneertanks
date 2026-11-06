@@ -1,0 +1,1126 @@
+[
+  {
+    "url": "https://pioneertanks.ae/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "seed",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/about/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/banner/pioneers-in-water-storage-solutions-2/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/banner/pioneers-in-water-storage-solutions-3/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/banner/pioneers-in-water-storage-solutions/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/category/uncategorized/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/contact/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/admin-end/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/admin-end/banners/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/admin-end/contact/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/admin-end/news/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/admin-end/pages/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/admin-end/products/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/admin-end/theme-options/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/front-end/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/front-end/about/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/front-end/contact/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/front-end/downloads/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/front-end/gallery/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/front-end/home/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/front-end/news/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/front-end/products/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/docs/user-manual/getting-started/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/downloads/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/gallery/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/hello-world/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/licenses/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/news/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/news/nemo-enim-ipsam-voluptatem-quia/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/products/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/sample-page/",
+    "type": "page",
+    "status": 200,
+    "discoveredFrom": "sitemap",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-admin/",
+    "type": "skipped",
+    "status": null,
+    "discoveredFrom": "https://pioneertanks.ae/sample-page/",
+    "redirectedTo": null,
+    "error": null
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/themes/pioneer/images/about-banner.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/hello-world/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 493224
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/themes/pioneer/images/by.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/hello-world/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 1548
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo-foot.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/hello-world/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 8366
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/hello-world/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 4568
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/about-banner.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/about/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 493224
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/about.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/about/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 2058233
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/admin.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 84364
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/ban01.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 129388
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/ban02.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 161011
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/ban03.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 99281
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/Banners.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/banners/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 83161
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/bt01.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 99601
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/contact-1.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/contact/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 105966
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/contact-banner.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/contact/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 98036
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/contact.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/contact/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 991650
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/corrugated-1.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 57129
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/corrugated-2.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 72091
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/corrugated-3.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 51219
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/corrugated-4.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 56814
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/corrugated-5.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 74677
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/corrugated-6.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 57061
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/corrugated-7.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 76657
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/corrugated-8.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 44048
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/dasboard-1.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/dashboard/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 203563
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/down-banner.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/downloads/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 104490
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/downloads.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/downloads/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 948876
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/edit_banners.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/banners/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 149503
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/edit_contact.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/contact/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 133227
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/edit_news.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/news/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 245077
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/edit_page.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/pages/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 171138
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/edit_product.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 355305
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/flat-panel-1.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 48293
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/flat-panel-2.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 38701
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/flexible-tank.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 650965
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/gallery_popup.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 1070532
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/gallery-banner.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 191432
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/gallery.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 2747319
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/home_cnt.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/home/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 52476
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/home-1.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/home/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 3533799
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/home.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 3533799
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/intro-img.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/about/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 200148
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/license_popup.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/about/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 538546
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/license-banner.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/licenses/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 100040
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/license.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/about/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 1399795
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/new.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 53569
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/news_single.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/news/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 1162629
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/news-1.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/news/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 71487
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/news-banner.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/news/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 95490
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/news-left.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 105429
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/news.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/news/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 1226454
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/onion-1.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 35854
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/onion-2.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 38580
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/onion-tanks.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 66406
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/pages.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/pages/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 111740
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/pillow-1.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 53334
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/pillow-2.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 35304
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/pillow-3.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 32149
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/pillow-4.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/gallery/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 35859
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/pillow-tank.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 82194
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/Pioneer-Flexible-Tanks-Specifications-Onion-OLT.pdf",
+    "type": "document",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/downloads/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "application/pdf",
+    "contentLength": 192025
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/Pioneer-Flexible-Tanks-Specifications-Pillow-FLT-1.pdf",
+    "type": "document",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/downloads/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "application/pdf",
+    "contentLength": 192979
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/Pioneer-Steel-Specifications-Flat-Panel-PFP.pdf",
+    "type": "document",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/downloads/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "application/pdf",
+    "contentLength": 337496
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/Pioneer-Steel-Tank-Specifications-Corrugated-PLT.pdf",
+    "type": "document",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/downloads/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "application/pdf",
+    "contentLength": 263940
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/Pioneer-Warranty-2017-PQ.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/licenses/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 101732
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/product_corrugated.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 3172724
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/product_flat.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 2508298
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/product_flexible.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 2642476
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/product-1.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 79425
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/product-banner-1.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 158841
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/product-banner-2.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 158841
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/product-banner.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 158841
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/product.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/front-end/products/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 3323537
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/PWT-Brochure.pdf",
+    "type": "document",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/downloads/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "application/pdf",
+    "contentLength": 4282982
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/PWT-ISO-Certificate.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/licenses/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 64760
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/PWT-LICENSE-18.10.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/licenses/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 33247
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/second.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 123779
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/site-img.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/news/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 234149
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/th.jpg",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/jpeg",
+    "contentLength": 70193
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/theme_footer.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/theme-options/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 143442
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/theme_header.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/theme-options/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 411156
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/theme_social.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/docs/user-manual/admin-end/theme-options/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 86353
+  },
+  {
+    "url": "https://pioneertanks.ae/wp-content/uploads/2018/04/zoom-in-plus.png",
+    "type": "asset",
+    "status": 200,
+    "discoveredFrom": "https://pioneertanks.ae/licenses/",
+    "redirectedTo": null,
+    "error": null,
+    "contentType": "image/png",
+    "contentLength": 1595
+  }
+]

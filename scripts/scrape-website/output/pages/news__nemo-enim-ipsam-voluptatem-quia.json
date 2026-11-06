@@ -1,0 +1,578 @@
+{
+  "url": "https://pioneertanks.ae/news/nemo-enim-ipsam-voluptatem-quia/",
+  "finalUrl": "https://pioneertanks.ae/news/nemo-enim-ipsam-voluptatem-quia/",
+  "slug": "news__nemo-enim-ipsam-voluptatem-quia",
+  "status": 200,
+  "crawledAt": "2026-11-06T09:09:08.490Z",
+  "title": "Pioneer Water Tanks | The launch of our new Website",
+  "lang": "en-US",
+  "meta": {
+    "description": null,
+    "keywords": null,
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImage": null,
+    "robots": "max-image-preview:large",
+    "generator": null,
+    "canonical": "https://pioneertanks.ae/news/nemo-enim-ipsam-voluptatem-quia/"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "THE LAUNCH OF OUR NEW WEBSITE",
+      "region": "main"
+    },
+    {
+      "level": 5,
+      "text": "Apr",
+      "region": "main"
+    },
+    {
+      "level": 6,
+      "text": "24",
+      "region": "main"
+    },
+    {
+      "level": 4,
+      "text": "The launch of our new Website",
+      "region": "main"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo.jpg",
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "nav",
+      "items": [
+        {
+          "text": "HOME",
+          "href": "https://pioneertanks.ae/",
+          "children": []
+        },
+        {
+          "text": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": [
+            {
+              "text": "LICENSES",
+              "href": "https://pioneertanks.ae/licenses/"
+            }
+          ]
+        },
+        {
+          "text": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": [
+            {
+              "text": "FLEXIBLE PVC STORAGE TANKS",
+              "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/"
+            },
+            {
+              "text": "FLAT PANEL HDG STEEL",
+              "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/"
+            },
+            {
+              "text": "CORRUGATED ZINCALUM STEEL",
+              "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/"
+            }
+          ]
+        },
+        {
+          "text": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "text": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "text": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "text": "CONTACT",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ],
+      "isMenu": true
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Phone:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "E-mail:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Fax:",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Address",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "region": "nav",
+      "text": "Location",
+      "level": 1
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/license-banner.jpg",
+      "alt": "",
+      "title": null,
+      "width": 1920,
+      "height": 650
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "THE LAUNCH OF OUR NEW WEBSITE",
+      "level": 2
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/site-img.jpg",
+      "alt": "news-1",
+      "title": null,
+      "width": 600,
+      "height": 350
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "Apr",
+      "level": 5
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "24",
+      "level": 6
+    },
+    {
+      "type": "heading",
+      "region": "main",
+      "text": "The launch of our new Website",
+      "level": 4
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "Pioneer Water Tanks (PWT) introduces you to our range of steel storage tanks. Corrugated and Flat bolted liner tanks are what we manufacture and distribute in the region."
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo-foot.png",
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "region": "main",
+      "items": [
+        {
+          "text": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": []
+        },
+        {
+          "text": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": []
+        },
+        {
+          "text": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "text": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "text": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "text": "CONTACT US",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ],
+      "isMenu": false
+    },
+    {
+      "type": "text",
+      "region": "main",
+      "text": "Copyright © 2018 Pioneer Water Tanks l.l.C.",
+      "element": "span"
+    },
+    {
+      "type": "paragraph",
+      "region": "main",
+      "text": "M14 Mussafah Industrial Area, P.O. Box 110810, Abu Dhabi, UAE"
+    },
+    {
+      "type": "image",
+      "region": "main",
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/by.png",
+      "alt": "",
+      "title": null,
+      "width": 35,
+      "height": 23
+    }
+  ],
+  "menus": [
+    {
+      "region": "nav",
+      "id": "menu-header-menu",
+      "className": "nav navbar-nav",
+      "items": [
+        {
+          "label": "HOME",
+          "href": "https://pioneertanks.ae/",
+          "children": []
+        },
+        {
+          "label": "ABOUT",
+          "href": "https://pioneertanks.ae/about/",
+          "children": [
+            {
+              "label": "LICENSES",
+              "href": "https://pioneertanks.ae/licenses/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "PRODUCTS",
+          "href": "https://pioneertanks.ae/products/",
+          "children": [
+            {
+              "label": "FLEXIBLE PVC STORAGE TANKS",
+              "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+              "children": []
+            },
+            {
+              "label": "FLAT PANEL HDG STEEL",
+              "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+              "children": []
+            },
+            {
+              "label": "CORRUGATED ZINCALUM STEEL",
+              "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "NEWS",
+          "href": "https://pioneertanks.ae/news/",
+          "children": []
+        },
+        {
+          "label": "GALLERY",
+          "href": "https://pioneertanks.ae/gallery/",
+          "children": []
+        },
+        {
+          "label": "DOWNLOADS",
+          "href": "https://pioneertanks.ae/downloads/",
+          "children": []
+        },
+        {
+          "label": "CONTACT",
+          "href": "https://pioneertanks.ae/contact/",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "https://pioneertanks.ae/",
+      "text": "[image: ]",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/",
+      "text": "HOME",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "ABOUT",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/licenses/",
+      "text": "LICENSES",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/products/",
+      "text": "PRODUCTS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+      "text": "FLEXIBLE PVC STORAGE TANKS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+      "text": "FLAT PANEL HDG STEEL",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+      "text": "CORRUGATED ZINCALUM STEEL",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/news/",
+      "text": "NEWS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/gallery/",
+      "text": "GALLERY",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/downloads/",
+      "text": "DOWNLOADS",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "CONTACT",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "mailto:pwt@pioneertanks.ae",
+      "text": "",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "",
+      "region": "nav",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/about/",
+      "text": "ABOUT",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/products/",
+      "text": "PRODUCTS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/news/",
+      "text": "NEWS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/gallery/",
+      "text": "GALLERY",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/downloads/",
+      "text": "DOWNLOADS",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://pioneertanks.ae/contact/",
+      "text": "CONTACT US",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "mailto:pwt@pioneertanks.ae",
+      "text": "pwt@pioneertanks.ae",
+      "region": "main",
+      "rel": null,
+      "target": null
+    },
+    {
+      "href": "https://www.facebook.com/PioneerTanksUAE",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://twitter.com/PioneerTanksUae",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://plus.google.com/u/0/+PioneerWaterTanksLLCAbuDhabi",
+      "text": "",
+      "region": "main",
+      "rel": null,
+      "target": "_blank"
+    },
+    {
+      "href": "https://pioneertanks.ae/news/nemo-enim-ipsam-voluptatem-quia/#",
+      "text": "[image: ]",
+      "region": "main",
+      "rel": null,
+      "target": null
+    }
+  ],
+  "images": [
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/license-banner.jpg",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 1920,
+      "height": 650,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/uploads/2018/04/site-img.jpg",
+      "srcset": null,
+      "alt": "news-1",
+      "title": null,
+      "width": 600,
+      "height": 350,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/logo-foot.png",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 202,
+      "height": 56,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "src": "https://pioneertanks.ae/wp-content/themes/pioneer/images/by.png",
+      "srcset": null,
+      "alt": "",
+      "title": null,
+      "width": 35,
+      "height": 23,
+      "region": "main",
+      "visible": true
+    }
+  ],
+  "forms": [],
+  "contactHrefs": [
+    "mailto:pwt@pioneertanks.ae",
+    "mailto:pwt@pioneertanks.ae"
+  ],
+  "bodyText": "HOME ABOUT LICENSES PRODUCTS FLEXIBLE PVC STORAGE TANKS FLAT PANEL HDG STEEL CORRUGATED ZINCALUM STEEL NEWS GALLERY DOWNLOADS CONTACT CONTACT THE LAUNCH OF OUR NEW WEBSITE Apr 24 The launch of our new Website Pioneer Water Tanks (PWT) introduces you to our range of steel storage tanks. Corrugated and Flat bolted liner tanks are what we manufacture and distribute in the region. ABOUT PRODUCTS NEWS GALLERY DOWNLOADS CONTACT US Copyright © 2018 Pioneer Water Tanks l.l.C. M14 Mussafah Industrial Area, P.O. Box 110810, Abu Dhabi, UAE Phone: +971-2-555-1855, Fax: +971-2-555-1755, E-mail: pwt@pioneertanks.ae follow us",
+  "internalLinks": [
+    "https://pioneertanks.ae/",
+    "https://pioneertanks.ae/about/",
+    "https://pioneertanks.ae/licenses/",
+    "https://pioneertanks.ae/products/",
+    "https://pioneertanks.ae/product/flexible-pvc-storage-tanks/",
+    "https://pioneertanks.ae/product/flat-panel-hdg-steel/",
+    "https://pioneertanks.ae/product/corrugated-zincalum-steel/",
+    "https://pioneertanks.ae/news/",
+    "https://pioneertanks.ae/gallery/",
+    "https://pioneertanks.ae/downloads/",
+    "https://pioneertanks.ae/contact/",
+    "https://pioneertanks.ae/news/nemo-enim-ipsam-voluptatem-quia/"
+  ],
+  "externalLinks": [
+    "https://www.facebook.com/PioneerTanksUAE",
+    "https://twitter.com/PioneerTanksUae",
+    "https://plus.google.com/u/0/+PioneerWaterTanksLLCAbuDhabi"
+  ],
+  "documents": []
+}
