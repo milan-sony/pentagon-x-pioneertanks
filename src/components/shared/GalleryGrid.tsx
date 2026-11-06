@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -40,22 +40,20 @@ export function GalleryGrid({ groups, classNames = {} }: GalleryGridProps) {
   const [index, setIndex] = useState<number | null>(null);
   const current = index === null ? null : visible[index];
 
-  const step = useCallback(
-    (dir: 1 | -1) => {
-      setIndex((i) => (i === null ? null : (i + dir + visible.length) % visible.length));
-    },
-    [visible.length],
-  );
+  const step = (dir: 1 | -1) => {
+    setIndex((i) => (i === null ? null : (i + dir + visible.length) % visible.length));
+  };
 
-  useEffect(() => {
-    if (index === null) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") step(1);
-      if (e.key === "ArrowLeft") step(-1);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [index, step]);
+  // Focus is trapped inside the dialog while it is open, so arrow keys can be handled on it directly.
+  const onDialogKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "ArrowRight") {
+      e.preventDefault();
+      step(1);
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      step(-1);
+    }
+  };
 
   return (
     <div>
@@ -91,7 +89,7 @@ export function GalleryGrid({ groups, classNames = {} }: GalleryGridProps) {
       </ul>
 
       <Dialog open={index !== null} onOpenChange={(o) => !o && setIndex(null)}>
-        <DialogContent showCloseButton={false} className={cn("max-w-[min(96vw,1200px)] border-0 bg-black p-0 text-white sm:max-w-[min(96vw,1200px)]", classNames.dialog)}>
+        <DialogContent showCloseButton={false} onKeyDown={onDialogKeyDown} className={cn("max-w-[min(96vw,1200px)] border-0 bg-black p-0 text-white sm:max-w-[min(96vw,1200px)]", classNames.dialog)}>
           {current ? (
             <figure className="relative">
               <DialogTitle className="sr-only">{current.alt}</DialogTitle>
