@@ -15,11 +15,11 @@ Requirements: Node.js ≥ 20 (developed on 24), npm.
 | Branch | Design | Direction |
 |---|---|---|
 | `main` | Baseline | Content, shared components, test harness, docs. Plain unstyled pages for every route. |
-| `design/01-intrio-editorial` | **Design 1 – Editorial Warm** (Intrio-guided) | Cream/espresso + water blue, Urbanist + Nunito Sans, photography-led, reveals, counters, marquee, parallax |
-| `design/02-qleviq-corporate` | **Design 2 – Corporate Bento** (Qleviq-guided) | Navy/sky/mint + orange, rounded bento panels, Plus Jakarta Sans + DM Sans, reveals, counters, marquee |
+| `design-1` | **Design 1 – Editorial Warm** (Intrio-guided) | Cream/espresso + water blue, Urbanist + Nunito Sans, photography-led, reveals, counters, marquee, parallax |
+| `design-2` | **Design 2 – Corporate Bento** (Qleviq-guided) | Navy/sky/mint + orange, rounded bento panels, Plus Jakarta Sans + DM Sans, reveals, counters, marquee |
 
 ```bash
-git switch design/01-intrio-editorial   # or design/02-qleviq-corporate
+git switch design-1   # or design-2
 npm install
 npm run dev          # http://localhost:3000
 ```

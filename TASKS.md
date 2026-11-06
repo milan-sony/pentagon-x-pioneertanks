@@ -34,8 +34,8 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress
 
 ## Phase 6 – Reference-guided themes (all pages)
 - [x] Shared foundation on main: baseline routes for every page, Counter/Marquee/Parallax/Stagger, GalleryGrid lightbox, generic SpecTable/CapacityChart, tests across all 12 routes
-- [x] Design 1 `design/01-intrio-editorial` – every page, Intrio-guided, reference-level animation, 73/73 tests, Lighthouse a11y 100
-- [x] Design 2 `design/02-qleviq-corporate` – every page, Qleviq-guided, reference-level animation, 73/73 tests, Lighthouse a11y 100
+- [x] Design 1 `design-1` – every page, Intrio-guided, reference-level animation, 73/73 tests, Lighthouse a11y 100
+- [x] Design 2 `design-2` – every page, Qleviq-guided, reference-level animation, 73/73 tests, Lighthouse a11y 100
 - [ ] 06 Antra-guided theme – skipped on the client's instruction (preview behind a bot check)
 
 ## Next phase (not started)

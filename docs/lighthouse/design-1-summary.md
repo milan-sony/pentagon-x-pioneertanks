@@ -1,4 +1,4 @@
-# Lighthouse – design-01
+# Lighthouse – design-1
 
 Run: 2026-11-06T12:07:20.891Z · Lighthouse 13.6.0 · production build served by `next start` on localhost · simulated throttling.
 

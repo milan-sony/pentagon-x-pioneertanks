@@ -1,6 +1,6 @@
 # Test report – Design 1 · Editorial Warm (Intrio-guided)
 
-Branch `design/01-intrio-editorial` · 2026-11-06 · production build (`next build` + `next start`) · Playwright 1.65 / Chromium · axe-core 4.14 · Lighthouse 13.6. **All twelve routes are implemented and tested on this branch.**
+Branch `design-1` · 2026-11-06 · production build (`next build` + `next start`) · Playwright 1.65 / Chromium · axe-core 4.14 · Lighthouse 13.6. **All twelve routes are implemented and tested on this branch.**
 
 ## Playwright (73 tests, all passing)
 
@@ -20,7 +20,7 @@ Issues found and fixed during the run:
 
 ## Screenshots
 
-`screenshots/design-01/`: `home-*`, `products-*` (six viewports), `product-corrugated|flat-panel|flexible-*`, `about-*`, `licenses-*`, `gallery-*`, `downloads-*`, `news-*`, `news-article-*`, `contact-*` (mobile + desktop), and `state-mobile-menu-open`, `state-desktop-dropdown-open`, `state-form-validation`, `state-gallery-lightbox`.
+`screenshots/design-1/`: `home-*`, `products-*` (six viewports), `product-corrugated|flat-panel|flexible-*`, `about-*`, `licenses-*`, `gallery-*`, `downloads-*`, `news-*`, `news-article-*`, `contact-*` (mobile + desktop), and `state-mobile-menu-open`, `state-desktop-dropdown-open`, `state-form-validation`, `state-gallery-lightbox`.
 
 ## Lighthouse (simulated throttling, localhost)
 
@@ -31,7 +31,7 @@ Issues found and fixed during the run:
 | Products | mobile | 86 | 100 | 100 | 100 | 3.8 s | 0 | 210 ms |
 | Products | desktop | 78 | 100 | 100 | 100 | 3.7 s | 0 | 80 ms |
 
-Full table and failing audits: `docs/lighthouse/design-01-summary.md`.
+Full table and failing audits: `docs/lighthouse/design-1-summary.md`.
 
 **Analysis.** CLS is 0 and accessibility 100 everywhere. Performance is lower than the A/B/C branches for two reasons: every page opens with a full-width photographic banner (the LCP element, 3.7–4.1 s under simulated slow 4G, ≈ 1 s unthrottled), and this theme loads framer-motion for the reference-level animations (~35 KB extra gzipped JavaScript; total JS ≈ 275 KB). INP is a field metric; TBT ≤ 210 ms is its lab proxy. Options if the client prefers this direction: an AVIF/lower-quality hero, a smaller art-directed mobile crop, and lazy-loading the parallax/marquee code.
 

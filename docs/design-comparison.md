@@ -4,7 +4,7 @@ Two designs are maintained. Both share the same content (`src/data/website-conte
 
 | | Design 1 · Editorial Warm | Design 2 · Corporate Bento |
 |---|---|---|
-| Branch | `design/01-intrio-editorial` | `design/02-qleviq-corporate` |
+| Branch | `design-1` | `design-2` |
 | Reference | Intrio (interior-design template) | Qleviq (IT-consulting template) |
 | Pages | Home, Products, 3 product details, About, Licenses, Gallery, Downloads, News, Article, Contact | same |
 | Feel | Editorial, photography-led, warm | Clean corporate, rounded bento panels |

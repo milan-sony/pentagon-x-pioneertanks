@@ -58,8 +58,8 @@ All content comes from a single, curated content file (`src/data/website-content
 
 | Branch | Direction | Palette | Type |
 |---|---|---|---|
-| `design/01-intrio-editorial` | Editorial Warm (Intrio-guided) – photography-led, editorial | cream, espresso, water blue, bronze | Urbanist + Nunito Sans |
-| `design/02-qleviq-corporate` | Corporate Bento (Qleviq-guided) – rounded bento panels | white, navy, sky, mint, orange | Plus Jakarta Sans + DM Sans |
+| `design-1` | Editorial Warm (Intrio-guided) – photography-led, editorial | cream, espresso, water blue, bronze | Urbanist + Nunito Sans |
+| `design-2` | Corporate Bento (Qleviq-guided) – rounded bento panels | white, navy, sky, mint, orange | Plus Jakarta Sans + DM Sans |
 
 Full tokens per design: `docs/design-system.md` on each branch.
 

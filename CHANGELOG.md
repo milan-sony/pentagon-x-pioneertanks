@@ -2,6 +2,15 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-06 – Branches renamed to design-1 and design-2
+
+**Changed**
+- `design/01-intrio-editorial` → `design-1` and `design/02-qleviq-corporate` → `design-2`, at the client's request (short names, no reference wording).
+- Every reference to the branch names updated; `designId`, screenshot folders and Lighthouse summaries renamed to `design-1` / `design-2`.
+
+**Checked**
+- `git branch` lists `main`, `design-1`, `design-2`; no tracked file outside this changelog still uses the old names; `npm run typecheck` clean on both design branches.
+
 ## 2026-11-06 – Renumbered: Design 1 and Design 2
 
 **Changed**
