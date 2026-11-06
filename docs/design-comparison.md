@@ -1,29 +1,46 @@
 # Design alternatives – comparison summary
 
-All three branches share the same content (`src/data/website-content.js`), navigation, shared components and test harness. Only the design layer differs. Switch with `git switch <branch> && npm install && npm run dev`.
+All branches share the same content (`src/data/website-content.js`), navigation, shared components and test harness. Only the design layer differs. Switch with `git switch <branch> && npm install && npm run dev`.
+
+## Phase 1 – three bold industrial directions (home + products)
 
 | | A · Industrial Heritage | B · Engineering Precision | C · Premium Industrial Modern |
 |---|---|---|---|
 | Branch | `design/01-industrial-heritage` | `design/02-engineering-precision` | `design/03-premium-industrial` |
+| Pages | Home, Products (others are "planned" pages) | same | same |
 | Feel | Strength, durability, engineering | Precision, technical knowledge | Innovation, scale, confidence |
-| Palette | Charcoal #1B1D1F · sand #EFE9DF · steel #7F8A93 · safety orange #F26A1B | White · grey #F3F5F7 · navy #0B2545 · blue #1D63D8 | Graphite #141618 · navy #0E1A2B · brass #C9A24B · warm white #F7F4EE |
-| Type | Barlow Condensed (uppercase) + Barlow | IBM Plex Sans + IBM Plex Mono | Bricolage Grotesque (oversized) + Manrope |
-| Hero | Full-bleed two-tank photo, condensed 3-line headline, 3 facts | Split blueprint grid: headline + 4 facts, tank photo with spec callouts | Oversized headline overlapping an edge-to-edge branded tank photo, 4 facts |
-| Product presentation (home) | Two family plates + three product plates with spec tags | Three-column comparison table with photos | Navy product strip (snap-scroll on mobile) |
-| Applications | Icon grid on charcoal | Application × product matrix | Oversized typographic list |
-| Products page | Full-width bands per product, accordion specs, sticky category rail | Datasheet layout: sticky meta column + spec blocks with source tags, interactive capacity explorer | Alternating dark/light chapters with gallery + sticky spec panel, capacity chart on paper |
+| Palette | Charcoal · sand · steel · safety orange | White · grey · navy · blue | Graphite · navy · brass · warm white |
+| Type | Barlow Condensed + Barlow | IBM Plex Sans + Mono | Bricolage Grotesque + Manrope |
 | Motion | Hover only | Hover only | One CSS hero reveal + hover |
-| framer-motion loaded | No | No | No |
+
+## Phase 2 – reference-guided themes (every page, reference-level animation)
+
+| | 04 · Editorial Warm | 05 · Corporate Bento |
+|---|---|---|
+| Branch | `design/04-intrio-editorial` | `design/05-qleviq-corporate` |
+| Reference | Intrio (interior-design template) | Qleviq (IT-consulting template) |
+| Pages | Home, Products, 3 product details, About, Licenses, Gallery, Downloads, News, Article, Contact | same |
+| Feel | Editorial, photography-led, warm | Clean corporate, rounded bento panels |
+| Palette | Cream · espresso · water blue · bronze | White · navy · sky · mint · orange |
+| Type | Urbanist (uppercase) + Nunito Sans | Plus Jakarta Sans + DM Sans |
+| Hero | Full-width photo, two-line split headline, parallax | Navy panel + rounded photo + two counter cards |
+| Products | Image-overlay carousel; editorial rows with tabbed specs | Card slider in sky panel; panelled rows with accordion specs |
+| Motion | Hero entrance, reveals/staggers, counters, marquee, parallax, hover | Hero entrance, reveals/staggers, counters, marquee, hover |
+| framer-motion loaded | Yes | Yes |
+
+The Antra reference was skipped on the client's instruction (its preview is behind a bot check).
 
 ## Test results (all on production builds)
 
-| Branch | Playwright | axe WCAG 2.2 AA (serious/critical) | Overflow 360–1920 | Lighthouse home mobile / desktop | Lighthouse products mobile / desktop |
-|---|---|---|---|---|---|
-| A | 31/31 | 0 | none | 90 / 80 (a11y 100) | 92 / 81 (a11y 100) |
-| B | 31/31 | 0 | none | 99 / 80 (a11y 100) | 97 / 91 (a11y 100) |
-| C | 31/31 | 0 | none | 90 / 85 (a11y 100) | 96 / 96 (a11y 100) |
+| Branch | Routes tested | Playwright | axe WCAG 2.2 AA serious/critical | Overflow | Lighthouse home mobile / desktop | Lighthouse products mobile / desktop |
+|---|---|---|---|---|---|---|
+| A | 2 | 31/31 | 0 | none | 90 / 80 (a11y 100) | 92 / 81 (a11y 100) |
+| B | 2 | 31/31 | 0 | none | 99 / 80 (a11y 100) | 97 / 91 (a11y 100) |
+| C | 2 | 31/31 | 0 | none | 90 / 85 (a11y 100) | 96 / 96 (a11y 100) |
+| 04 | 12 | 73/73 | 0 | none | 83 / 77 (a11y 100) | 86 / 78 (a11y 100) |
+| 05 | 12 | 73/73 | 0 | none | 86 / 74 (a11y 100) | 81 / 66 (a11y 100) |
 
-Performance scores below 90 are all caused by the hero photograph's LCP under Lighthouse's simulated slow-4G throttling (2.5–3.7 s); CLS is 0 everywhere and best-practices/SEO are 100. Details per branch in `docs/test-report.md` and `docs/lighthouse/<design>-summary.md`.
+Performance scores below 90 are caused by photographic LCP elements under Lighthouse's simulated slow-4G throttling (≈ 1 s unthrottled) and, on 04/05, the framer-motion bundle and full specification accordions on the products overview; CLS is ≤ 0.005 everywhere and best-practices/SEO are 100. Details per branch in `docs/test-report.md` and `docs/lighthouse/<design>-summary.md`.
 
 ## Blockers to resolve before launch (any design)
 

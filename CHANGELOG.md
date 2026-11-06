@@ -2,6 +2,17 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-06 – Phase 2: two reference-guided themes with every page
+
+**Changed**
+- `main` foundation: baseline routes for about, licenses, gallery, downloads, news, news/[slug], contact and product/[slug]; shared `Counter`, `Marquee`, `Parallax`, `Stagger`/`Entrance`, `GalleryGrid` (Radix dialog lightbox), generic `SpecTable` and `CapacityChart`; news/stats selectors; tests extended to all 12 routes; reference screenshots in `docs/references/`.
+- New branches `design/04-intrio-editorial` (Intrio-guided, editorial warm) and `design/05-qleviq-corporate` (Qleviq-guided, corporate bento), each implementing every page with the full extracted content and reference-level animation (hero entrances, scroll reveals/staggers, counters, marquee, parallax on 04, hover motion), all disabled under reduced motion.
+- Shared fixes cherry-picked back to `main`: counter completion + accessible name, spec-note contrast, gallery tile accessible name, enquiry form `?product=` preselect.
+- `docs/design-comparison.md` now covers all five branches. The Antra-guided theme was skipped on the client's instruction.
+
+**Checked**
+- Branches 04 and 05: `npm run build` (19 static routes), lint, typecheck, `npx playwright test` 73/73 (axe WCAG 2.2 AA zero serious/critical on 12 routes × 2 viewports; no overflow at 360–1920), Lighthouse accessibility 100 on home and products; performance 66–86 documented with causes in each branch's `docs/test-report.md`.
+
 ## 2026-11-06 – Phase 1 complete: three design branches delivered
 
 **Changed**

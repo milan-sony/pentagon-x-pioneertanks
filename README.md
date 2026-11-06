@@ -18,6 +18,8 @@ Requirements: Node.js ≥ 20 (developed on 24), npm.
 | `design/01-industrial-heritage` | **A – Industrial Heritage** | Charcoal + warm neutral + safety orange, Barlow Condensed, heavy geometry |
 | `design/02-engineering-precision` | **B – Engineering Precision** | White + deep blue, IBM Plex Sans/Mono, datasheet aesthetic, comparison tables |
 | `design/03-premium-industrial` | **C – Premium Industrial Modern** | Graphite/navy + brass, Bricolage Grotesque + Manrope, oversized type, asymmetric layouts |
+| `design/04-intrio-editorial` | **04 – Editorial Warm** (Intrio-guided) | **All pages.** Cream/espresso + water blue, Urbanist + Nunito Sans, photography-led, reveals, counters, marquee, parallax |
+| `design/05-qleviq-corporate` | **05 – Corporate Bento** (Qleviq-guided) | **All pages.** Navy/sky/mint + orange, rounded bento panels, Plus Jakarta Sans + DM Sans, reveals, counters, marquee |
 
 ```bash
 git switch design/01-industrial-heritage   # or 02 / 03
@@ -25,7 +27,7 @@ npm install
 npm run dev          # http://localhost:3000
 ```
 
-Each branch is self-contained: it builds, runs and tests on its own and carries its own `docs/design-system.md` and `screenshots/design-<x>/`. The designs are never merged into one another.
+Each branch is self-contained: it builds, runs and tests on its own and carries its own `docs/design-system.md`, `docs/test-report.md` and `screenshots/design-<x>/`. The designs are never merged into one another. Branches A–C implement the homepage and products page (other routes show a "planned" page); branches 04 and 05 implement every page: home, products, three product details, about, licenses, gallery, downloads, news + article and contact.
 
 ## Commands
 
@@ -35,7 +37,7 @@ Each branch is self-contained: it builds, runs and tests on its own and carries 
 | `npm run build` | Production build |
 | `npm run start` | Serve the production build |
 | `npm run lint` / `npm run typecheck` | ESLint / TypeScript (also type-checks the JS content file) |
-| `npm run test` | Playwright suites against a production build on port 3100 (run `npm run build` first) |
+| `npm run test` | Playwright suites (smoke, links, axe WCAG 2.2 AA, overflow + screenshots) against a production build on port 3100 (run `npm run build` first) |
 | `npm run test:build` | Build, then test |
 | `npm run test:report` | Open the HTML test report |
 | `npm run lighthouse` | Lighthouse (mobile + desktop, home + products) → `docs/lighthouse/` |
