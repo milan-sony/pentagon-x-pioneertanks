@@ -57,8 +57,8 @@ docs             extraction-report, design-system, implementation-notes, test-re
 
 ```
 main ─ baseline: scaffold + content + shared components + test harness + docs
-├── design/01-intrio-editorial
-└── design/02-qleviq-corporate
+├── design-1
+└── design-2
 ```
 
 - The two design branches are cut from the same baseline commit on `main` and never merged into each other. (The first-round branches 01-industrial-heritage, 02-engineering-precision and 03-premium-industrial were deleted on 2026-11-06 at the client's request; the two remaining designs were then renumbered Design 1 and Design 2.)
