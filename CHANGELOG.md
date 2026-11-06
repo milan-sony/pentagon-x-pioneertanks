@@ -2,6 +2,15 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-06 – Shortlist: keep designs 04 and 05, remove 01–03
+
+**Changed**
+- Deleted branches `design/01-industrial-heritage`, `design/02-engineering-precision` and `design/03-premium-industrial` at the client's request.
+- README, PRD, ARCHITECTURE, TASKS and `docs/design-comparison.md` now describe only `design/04-intrio-editorial` and `design/05-qleviq-corporate`; both branches carry the same updated README and comparison.
+
+**Checked**
+- `git branch` lists `main`, `design/04-intrio-editorial`, `design/05-qleviq-corporate` only; no doc on `main` references the removed branches except this changelog's history.
+
 ## 2026-11-06 – Phase 2: two reference-guided themes with every page
 
 **Changed**

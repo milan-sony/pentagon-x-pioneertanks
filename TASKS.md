@@ -17,15 +17,13 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress
 
 ## Phase 2 – Shared baseline (main)
 - [x] `navigation.js`, `constants.ts`, `lib/content.ts`
-- [x] Shared components: FloatingActions, EnquiryForm, FuturePage, SkipLink, MotionProvider, Reveal, DesktopNav, MobileNav
+- [x] Shared components: FloatingActions, EnquiryForm, FuturePage (later removed), SkipLink, MotionProvider, Reveal, DesktopNav, MobileNav
 - [x] Root layout metadata, sitemap.ts, robots.ts, not-found, future routes
 - [x] Playwright config + suites (smoke, links, a11y, screenshots, overflow) + Lighthouse script
 - [x] Baseline commit
 
-## Phase 3 – Design branches
-- [x] A `design/01-industrial-heritage`: tokens, fonts, header/footer, home, products, design-system.md
-- [x] B `design/02-engineering-precision`: same
-- [x] C `design/03-premium-industrial`: same
+## Phase 3 – Design branches (retired)
+- [x] A, B, C – Industrial Heritage, Engineering Precision, Premium Industrial Modern (home + products only). Branches deleted on 2026-11-06 at the client's request.
 
 ## Phase 4 – QA per branch
 - [x] Build passes, Playwright passes (31/31 per branch), screenshots, Lighthouse, test-report.md, known-issues.md
@@ -41,8 +39,8 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress
 - [ ] 06 Antra-guided theme – skipped on the client's instruction (preview behind a bot check)
 
 ## Next phase (not started)
-- [ ] Client picks a design direction
-- [ ] Build About, Licenses, Gallery, Downloads, News, Contact and product detail pages from the content file
+- [x] Client shortlisted designs 04 and 05; branches 01–03 removed
+- [ ] Client picks one of 04 / 05
 - [ ] Wire the enquiry form to a backend / CRM
 - [ ] Replace placeholder WhatsApp with the business number; swap in vector logo and high-res photography
 

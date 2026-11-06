@@ -1,13 +1,12 @@
-# PRD – Pioneer Water Tanks website redesign (Phase 1: design alternatives)
+# PRD – Pioneer Water Tanks website redesign (design alternatives)
 
 ## 1. What we are building
 
 A modern, bold, industrial B2B website for **Pioneer Water Tanks L.L.C.** (Abu Dhabi, UAE), replacing the 2018 WordPress site at https://pioneertanks.ae/.
 
-Phase 1 delivers **three visually distinct design alternatives**, each on its own git branch, so the client can run them side by side and pick a direction. Every alternative implements the same two pages from the same content source:
+Two visually distinct design alternatives are maintained, each on its own git branch, so the client can run them side by side and pick a direction. Both implement every page of the site from the same content source: home, products, three product detail pages, about, licenses, gallery, downloads, news + article and contact.
 
-1. **Homepage**
-2. **Products page**
+(An earlier round of three home-and-products-only designs – Industrial Heritage, Engineering Precision, Premium Industrial Modern – was retired on the client's instruction; see CHANGELOG.)
 
 All content comes from a single, curated content file (`src/data/website-content.js`) extracted from the live site. Nothing is invented.
 
@@ -27,7 +26,7 @@ All content comes from a single, curated content file (`src/data/website-content
 
 ## 4. Goals
 
-- Three substantially different designs (layout, typography, composition), all bold and industrial.
+- Two substantially different designs (layout, typography, composition), both bold and professional.
 - Clear product presentation with real specifications, downloadable datasheets and quote CTAs.
 - Strong lead capture: enquiry form, floating WhatsApp, floating contact CTA, phone/email everywhere.
 - WCAG 2.2 AA evaluated with axe; responsive from 360 px to 1920 px; strong Core Web Vitals.
@@ -35,18 +34,17 @@ All content comes from a single, curated content file (`src/data/website-content
 
 ## 5. Non-goals (deliberately not built in this phase)
 
-- About, News, Gallery, Downloads, Contact, Licenses and individual product **detail pages** – routes exist and render a shared "planned for phase 2" page with a link to the current live page. They are not finished pages and are not presented as such.
 - Back-end form handling, CRM, email sending. Forms validate client-side and fall back to a pre-filled `mailto:`.
 - CMS integration. Content lives in the JS content file.
 - Arabic / RTL. English only; data and layout are kept i18n-friendly.
-- Merging the three designs into one.
+- Merging the two designs into one.
 
 ## 6. Anti-goals (would make the work a failure even if it "works")
 
 - Copying the old site's layout, slider or styling.
 - Fabricated statistics, projects, testimonials, certifications, contact numbers or specs.
 - Decorative buttons that do nothing, or links silently redirected to the homepage.
-- Three colour swaps of the same layout.
+- Colour swaps of the same layout.
 - Template-looking SaaS sections, excessive rounded cards, heavy animation.
 
 ## 7. Constraints and inputs
@@ -60,9 +58,8 @@ All content comes from a single, curated content file (`src/data/website-content
 
 | Branch | Direction | Palette | Type |
 |---|---|---|---|
-| `design/01-industrial-heritage` | Industrial Heritage – strength, durability | charcoal, warm neutral, steel grey, safety orange | Barlow Condensed + Barlow |
-| `design/02-engineering-precision` | Engineering Precision – datasheet aesthetic | white, light grey, deep blue, accent blue | IBM Plex Sans + IBM Plex Mono |
-| `design/03-premium-industrial` | Premium Industrial Modern – scale, confidence | graphite, navy, brass metallic, warm white | Bricolage Grotesque + Manrope |
+| `design/04-intrio-editorial` | Editorial Warm (Intrio-guided) – photography-led, editorial | cream, espresso, water blue, bronze | Urbanist + Nunito Sans |
+| `design/05-qleviq-corporate` | Corporate Bento (Qleviq-guided) – rounded bento panels | white, navy, sky, mint, orange | Plus Jakarta Sans + DM Sans |
 
 Full tokens per design: `docs/design-system.md` on each branch.
 
@@ -75,12 +72,12 @@ Research and content
 - [ ] Missing / inconsistent information documented for client verification.
 
 Design
-- [ ] Three genuinely different designs, all bold-industrial, none copying the old site.
-- [ ] Each has a complete homepage and Products page, responsive and polished.
+- [ ] Two genuinely different designs, none copying the old site.
+- [ ] Each implements every page, responsive and polished, with reference-level animation that rests under reduced motion.
 - [ ] Only genuine business information is shown.
 
 Functionality
-- [ ] Navigation, product links and contact actions work; future pages are handled honestly.
+- [ ] Navigation, product links and contact actions work on every page.
 - [ ] WhatsApp action uses the configured number (or the documented placeholder behaviour).
 - [ ] No decorative/broken buttons; no broken local assets.
 
@@ -90,7 +87,7 @@ Quality
 - [ ] Lighthouse run and results documented.
 
 Git
-- [ ] `main` + three design branches, each independently runnable with its own screenshots.
+- [ ] `main` + two design branches, each independently runnable with its own screenshots.
 
 ## 10. Open blockers
 
@@ -98,4 +95,5 @@ Git
 |---|---|---|---|
 | BLOCKER-1 | WhatsApp business number | Client | Floating WhatsApp button currently uses share-link fallback |
 | BLOCKER-2 | Vector / high-res logo | Client | Logo is soft above ~400 px wide; cannot be recoloured cleanly |
+| BLOCKER-3 | High-resolution photography | Client | Largest genuine photo is 1920×650; gallery 700×550 |
 | VERIFY-* | Items in `docs/extraction-report.md` § "Requires client verification" | Client | Copy accuracy |
