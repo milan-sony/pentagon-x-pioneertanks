@@ -2,6 +2,16 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-06 – Renumbered: Design 1 and Design 2
+
+**Changed**
+- Branch `design/04-intrio-editorial` renamed to `design/01-intrio-editorial` (Design 1 – Editorial Warm) and `design/05-qleviq-corporate` renamed to `design/02-qleviq-corporate` (Design 2 – Corporate Bento).
+- Labels in docs, footer credit line, code comments and `designId` updated to match; screenshot folders and Lighthouse summaries moved to `design-01` / `design-02`.
+- Note: older entries below that mention `design/01-industrial-heritage`, `design/02-engineering-precision` or `design/03-premium-industrial` refer to the first-round branches that were deleted earlier the same day.
+
+**Checked**
+- `git branch` lists `main`, `design/01-intrio-editorial`, `design/02-qleviq-corporate`; no tracked file outside this changelog still refers to the old 04/05 names; `npm run typecheck` and `npm run lint` clean.
+
 ## 2026-11-06 – Shortlist: keep designs 04 and 05, remove 01–03
 
 **Changed**

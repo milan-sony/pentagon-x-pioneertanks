@@ -34,13 +34,13 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress
 
 ## Phase 6 – Reference-guided themes (all pages)
 - [x] Shared foundation on main: baseline routes for every page, Counter/Marquee/Parallax/Stagger, GalleryGrid lightbox, generic SpecTable/CapacityChart, tests across all 12 routes
-- [x] 04 `design/04-intrio-editorial` – every page, Intrio-guided, reference-level animation, 73/73 tests, Lighthouse a11y 100
-- [x] 05 `design/05-qleviq-corporate` – every page, Qleviq-guided, reference-level animation, 73/73 tests, Lighthouse a11y 100
+- [x] Design 1 `design/01-intrio-editorial` – every page, Intrio-guided, reference-level animation, 73/73 tests, Lighthouse a11y 100
+- [x] Design 2 `design/02-qleviq-corporate` – every page, Qleviq-guided, reference-level animation, 73/73 tests, Lighthouse a11y 100
 - [ ] 06 Antra-guided theme – skipped on the client's instruction (preview behind a bot check)
 
 ## Next phase (not started)
-- [x] Client shortlisted designs 04 and 05; branches 01–03 removed
-- [ ] Client picks one of 04 / 05
+- [x] Client shortlisted the Intrio- and Qleviq-guided designs (now Design 1 and Design 2); first-round branches removed
+- [ ] Client picks Design 1 or Design 2
 - [ ] Wire the enquiry form to a backend / CRM
 - [ ] Replace placeholder WhatsApp with the business number; swap in vector logo and high-res photography
 
