@@ -24,3 +24,8 @@ See `docs/extraction-report.md` § 5–6 (expired certificate scans, spec confli
 ## Branch-specific issues
 
 _Filled in on each design branch after QA._
+
+### Design 04 – Editorial Warm (Intrio-guided)
+- All pages implemented. The marquee strip and parallax banners are CSS/transform only and pause under reduced motion; the marquee has a visible pause control.
+- Product pages pass `?product=<slug>` to the contact form; the preselect runs client-side after hydration so every route stays static.
+- Hero photographs are the same 1920×650 / 1920×980 originals as before (BLOCKER-3); inner-page banners reuse the old site's stock banners at 60 % opacity behind an espresso gradient.

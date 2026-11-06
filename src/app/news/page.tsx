@@ -1,31 +1,48 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { getNewsArticles, getPage } from "@/lib/content";
+import { Section } from "@/components/shared/Section";
+import { PageHero } from "@/components/shared/PageHero";
+import { SectionHeading } from "@/components/shared/SectionHeading";
+import { Stagger, StaggerItem } from "@/components/shared/Reveal";
+import { Cta } from "@/components/shared/Cta";
+import { assetSrc, getAsset, getNewsArticles, getPage } from "@/lib/content";
 
 const page = getPage("news");
 export const metadata: Metadata = { title: page.title, description: "News and updates from Pioneer Water Tanks." };
 
-/** Baseline News page – themes replace this file. */
 export default function NewsPage() {
+  const articles = getNewsArticles();
   return (
-    <article className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-      <h1 className="text-4xl font-bold">{page.title}</h1>
-      <ul className="mt-10 grid gap-6">
-        {getNewsArticles().map((n) => (
-          <li key={n.slug} className="border p-4">
-            <p className="text-sm">
-              {n.dateLabel}
-              {n.isoDate ? ` ${n.isoDate.slice(0, 4)}` : ""}
-            </p>
-            <h2 className="text-xl font-semibold">
-              <Link href={n.route} className="underline">
-                {n.title}
-              </Link>
-            </h2>
-            <p className="mt-2">{n.excerpt}</p>
-          </li>
-        ))}
-      </ul>
-    </article>
+    <>
+      <PageHero title={page.title} eyebrow="Company news" intro="Updates from Pioneer Water Tanks LLC, Abu Dhabi." image="news-banner" crumbs={[{ label: "News", href: "/news" }]} />
+      <Section className="bg-cream py-16 lg:py-24" aria-labelledby="news-list-title">
+        <SectionHeading id="news-list-title" eyebrow="Latest" title={`${articles.length} ${articles.length === 1 ? "article" : "articles"}`} description="Follow Pioneer on Facebook and Twitter for day-to-day updates; longer announcements are published here." />
+        <Stagger as="ul" className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {articles.map((n) => {
+            const img = n.image ? getAsset(n.image) : null;
+            return (
+              <StaggerItem as="li" key={n.slug}>
+                <Link href={n.route} className="group block">
+                  {img ? (
+                    <div className="overflow-hidden rounded-md">
+                      <Image src={assetSrc(img.id)} alt={img.alt} width={img.width} height={img.height} sizes="(min-width: 1024px) 33vw, 100vw" className="aspect-[16/10] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+                    </div>
+                  ) : null}
+                  <p className="eyebrow mt-5 text-taupe-text">
+                    {n.dateLabel} {n.isoDate?.slice(0, 4)}
+                  </p>
+                  <h2 className="mt-2 font-display text-xl font-bold uppercase leading-tight tracking-wide text-ink group-hover:text-water">{n.title}</h2>
+                  <p className="mt-2 text-sm leading-relaxed text-taupe-text">{n.excerpt}</p>
+                </Link>
+              </StaggerItem>
+            );
+          })}
+        </Stagger>
+        <Cta href="/contact" variant="outline" className="mt-12">
+          Ask about a project
+        </Cta>
+      </Section>
+    </>
   );
 }

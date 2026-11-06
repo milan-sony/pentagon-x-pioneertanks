@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Nunito_Sans, Urbanist } from "next/font/google";
 import "./globals.css";
 import { SkipLink } from "@/components/shared/SkipLink";
 import { MotionProvider } from "@/components/shared/MotionProvider";
@@ -9,7 +9,8 @@ import { FloatingActions } from "@/components/shared/FloatingActions";
 import { company } from "@/lib/content";
 import { SITE_URL } from "@/lib/constants";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const nunito = Nunito_Sans({ subsets: ["latin"], weight: ["400", "600", "700"], variable: "--font-sans", display: "swap" });
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["600", "700", "800"], variable: "--font-display", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -18,23 +19,19 @@ export const metadata: Metadata = {
     template: `%s | ${company.name}`,
   },
   description: company.description,
-  openGraph: {
-    siteName: company.name,
-    type: "website",
-    locale: "en_AE",
-  },
+  openGraph: { siteName: company.name, type: "website", locale: "en_AE" },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1b1d1f",
+  themeColor: "#2b211b",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} h-full scroll-smooth antialiased`}>
-      <body className="flex min-h-full flex-col bg-background font-sans text-foreground">
+    <html lang="en" className={`${nunito.variable} ${urbanist.variable} h-full scroll-smooth antialiased`}>
+      <body className="flex min-h-full flex-col">
         <MotionProvider>
           <SkipLink />
           <SiteHeader />
@@ -42,7 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             {children}
           </main>
           <SiteFooter />
-          <FloatingActions contactClassName="bg-primary text-primary-foreground" />
+          <FloatingActions contactClassName="rounded-md bg-espresso text-cream hover:bg-espresso-2" whatsappClassName="rounded-md" contactHref="/contact" />
         </MotionProvider>
       </body>
     </html>

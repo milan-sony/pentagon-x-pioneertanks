@@ -1,19 +1,21 @@
 /**
- * Design identity for this branch. Each design branch overrides this file.
+ * Design identity for this branch: 04 – Editorial Warm (guided by the Intrio reference).
  * Tests use `designId` to pick the screenshots folder.
  */
 export const designConfig = {
-  designId: "baseline",
-  name: "Baseline (no design applied)",
-  branch: "main",
-  description: "Design-agnostic baseline: content, shared components and test harness. Design branches replace this file.",
-  fonts: { display: "Inter", body: "Inter" },
+  designId: "design-04",
+  name: "04 – Editorial Warm (Intrio-guided)",
+  branch: "design/04-intrio-editorial",
+  description:
+    "Editorial, photography-led layout in warm neutrals: cream paper, espresso dark bands, a deep water-blue accent, wide uppercase display type, image-overlay cards, stat counters, scroll reveals and a large 'get in touch' footer. All pages implemented.",
+  fonts: { display: "Urbanist", body: "Nunito Sans" },
   colors: {
-    primary: "#1b1d1f",
-    accent: "#0b2545",
-    background: "#ffffff",
-    surface: "#f3f5f7",
-    text: "#101418",
+    cream: "#f2ede4",
+    espresso: "#2b211b",
+    taupe: "#8c7a6b",
+    water: "#1f4e6a",
+    bronze: "#a67c52",
+    ink: "#1d1814",
   },
 } as const;
 

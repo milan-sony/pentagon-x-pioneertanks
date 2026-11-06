@@ -35,7 +35,7 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress
 - [x] Final CHANGELOG entries on every branch
 
 ## Next phase (not started)
-- [ ] Client picks a design direction
+- [ ] Client picks a design direction (now 5 branches: A, B, C, 04, 05)
 - [ ] Build About, Licenses, Gallery, Downloads, News, Contact and product detail pages from the content file
 - [ ] Wire the enquiry form to a backend / CRM
 - [ ] Replace placeholder WhatsApp with the business number; swap in vector logo and high-res photography

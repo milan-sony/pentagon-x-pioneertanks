@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getNewsArticle, getNewsArticles, newsRouteSlug } from "@/lib/content";
+import { Section } from "@/components/shared/Section";
+import { PageHero } from "@/components/shared/PageHero";
+import { Reveal } from "@/components/shared/Reveal";
+import { Cta } from "@/components/shared/Cta";
+import { assetSrc, getAsset, getNewsArticle, getNewsArticles, newsRouteSlug } from "@/lib/content";
 
 export function generateStaticParams() {
   return getNewsArticles().map((n) => ({ slug: newsRouteSlug(n.route) }));
@@ -12,23 +17,31 @@ export async function generateMetadata({ params }: PageProps<"/news/[slug]">): P
   return { title: n?.title ?? "News", description: n?.excerpt };
 }
 
-/** Baseline news article – themes replace this file. */
 export default async function NewsArticlePage({ params }: PageProps<"/news/[slug]">) {
   const { slug } = await params;
   const n = getNewsArticle(slug);
   if (!n) notFound();
+  const img = n.image ? getAsset(n.image) : null;
   return (
-    <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <p className="text-sm">
-        {n.dateLabel}
-        {n.isoDate ? ` ${n.isoDate.slice(0, 4)}` : ""}
-      </p>
-      <h1 className="text-4xl font-bold">{n.title}</h1>
-      {n.body.map((p) => (
-        <p key={p} className="mt-4">
-          {p}
-        </p>
-      ))}
-    </article>
+    <>
+      <PageHero title={n.title} eyebrow={`News · ${n.dateLabel} ${n.isoDate?.slice(0, 4) ?? ""}`} image="news-banner" crumbs={[{ label: "News", href: "/news" }, { label: n.title, href: n.route }]} />
+      <Section className="bg-cream py-16 lg:py-24" aria-label="Article">
+        <div className="mx-auto max-w-3xl">
+          {img ? (
+            <Reveal as="figure" className="overflow-hidden rounded-md">
+              <Image src={assetSrc(img.id)} alt={img.alt} width={img.width} height={img.height} sizes="(min-width: 768px) 768px, 100vw" className="w-full object-cover" />
+            </Reveal>
+          ) : null}
+          <Reveal delay={0.1} className="mt-8 grid gap-5 text-lg leading-relaxed text-ink/85">
+            {n.body.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+          </Reveal>
+          <Cta href="/news" variant="outline" className="mt-10" arrow={false}>
+            Back to news
+          </Cta>
+        </div>
+      </Section>
+    </>
   );
 }

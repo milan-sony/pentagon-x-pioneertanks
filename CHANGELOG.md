@@ -2,6 +2,18 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-06 – Design 04: Editorial Warm, Intrio-guided (branch design/04-intrio-editorial)
+
+**Changed**
+- Reference-guided theme (Intrio): cream/espresso/water-blue tokens, Urbanist + Nunito Sans, `PageHero`, `SectionHeading`, `Cta`, image-overlay `ProductCarousel`.
+- Every page implemented with the full extracted content: home, products (family tiles + editorial product rows with tabbed specifications), product detail (facts panel, tabs, gallery), about (profile, introduction, mission/vision/philosophy/values, who we are, build steps, licences), licenses (lightbox + details), gallery (filterable lightbox), downloads, news + article, contact (detail cards, Google Maps link, form with `?product=` preselect).
+- Reference-level motion: hero entrance, scroll reveals and staggers, stat counters, applications marquee, parallax banners, hover zooms/lifts; all disabled under reduced motion.
+- `docs/design-system.md`, `docs/test-report.md`.
+
+**Checked**
+- `npm run build` (19 static routes), `npm run lint`, `npm run typecheck` clean.
+- `npx playwright test` across all 12 routes and `npm run lighthouse` – see `docs/test-report.md`; screenshots in `screenshots/design-04/`.
+
 ## 2026-11-06 – Phase 1 complete: three design branches delivered
 
 **Changed**
