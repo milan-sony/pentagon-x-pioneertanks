@@ -113,6 +113,8 @@ async function main() {
   ].join("\n");
   await writeFile(path.join(OUT, `${DESIGN}-summary.md`), md, "utf8");
   console.log(`\nSummary written to docs/lighthouse/${DESIGN}-summary.md`);
+  // The spawned `next start` shell can keep the event loop alive on Windows.
+  process.exit(0);
 }
 
 main().catch((e) => {
