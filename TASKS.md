@@ -23,17 +23,24 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress
 - [x] Baseline commit
 
 ## Phase 3 – Design branches
-- [ ] A `design/01-industrial-heritage`: tokens, fonts, header/footer, home, products, design-system.md
-- [ ] B `design/02-engineering-precision`: same
-- [ ] C `design/03-premium-industrial`: same
+- [x] A `design/01-industrial-heritage`: tokens, fonts, header/footer, home, products, design-system.md
+- [x] B `design/02-engineering-precision`: same
+- [x] C `design/03-premium-industrial`: same
 
 ## Phase 4 – QA per branch
-- [ ] Build passes, Playwright passes, screenshots, Lighthouse, test-report.md, known-issues.md
+- [x] Build passes, Playwright passes (31/31 per branch), screenshots, Lighthouse, test-report.md, known-issues.md
 
 ## Phase 5 – Final docs
-- [ ] README: branch switching, screenshots, blockers
-- [ ] Final CHANGELOG entries on every branch
+- [x] README: branch switching, screenshots, blockers; docs/design-comparison.md
+- [x] Final CHANGELOG entries on every branch
+
+## Next phase (not started)
+- [ ] Client picks a design direction
+- [ ] Build About, Licenses, Gallery, Downloads, News, Contact and product detail pages from the content file
+- [ ] Wire the enquiry form to a backend / CRM
+- [ ] Replace placeholder WhatsApp with the business number; swap in vector logo and high-res photography
 
 ## Blockers (need client input)
 - BLOCKER-1 WhatsApp business number
 - BLOCKER-2 Vector / high-res logo
+- BLOCKER-3 High-resolution photography (largest genuine photo is 1920×650; gallery 700×550)

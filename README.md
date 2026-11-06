@@ -2,7 +2,7 @@
 
 Modern, bold, industrial B2B website for **Pioneer Water Tanks L.L.C.** (Abu Dhabi), rebuilt from the content of https://pioneertanks.ae/. This phase delivers three visually distinct design alternatives, each with a complete **Homepage** and **Products page**, on three git branches, all driven by one centralized content file.
 
-See also: [PRD.md](PRD.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [TASKS.md](TASKS.md) · [CHANGELOG.md](CHANGELOG.md) · [docs/extraction-report.md](docs/extraction-report.md)
+See also: [docs/design-comparison.md](docs/design-comparison.md) (side-by-side summary + test results) · [PRD.md](PRD.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [TASKS.md](TASKS.md) · [CHANGELOG.md](CHANGELOG.md) · [docs/extraction-report.md](docs/extraction-report.md)
 
 ## Technology stack
 
