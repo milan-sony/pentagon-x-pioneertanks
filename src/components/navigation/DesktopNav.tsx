@@ -46,7 +46,7 @@ export function DesktopNav({ items, cta, classNames = {} }: DesktopNavProps) {
               </Link>
               <ul
                 className={cn(
-                  "invisible absolute left-0 top-full z-50 min-w-64 translate-y-1 opacity-0 shadow-xl transition-all duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100",
+                  "invisible absolute left-0 top-full z-50 min-w-64 translate-y-1 opacity-0 shadow-xl transition-[opacity,transform] duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100",
                   classNames.dropdown,
                 )}
                 aria-label={`${item.label} submenu`}
