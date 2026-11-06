@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
-import { PAGES, watchPage, settle } from "./helpers";
+import { PRIMARY_PAGES, ALL_PAGES, watchPage, settle } from "./helpers";
 
-for (const p of PAGES) {
+for (const p of PRIMARY_PAGES) {
   test.describe(`${p.name} page`, () => {
     test("renders with one h1, no console errors and no failed requests", async ({ page }) => {
       const watch = watchPage(page);
@@ -98,13 +98,38 @@ test("enquiry form validates and reports errors accessibly", async ({ page }) =>
   await expect(form.locator('[name="name"]')).toBeFocused();
 });
 
-test("product links from the products page resolve to reserved product routes", async ({ page }) => {
+test("product links from the products page resolve to product detail pages", async ({ page }) => {
   await page.goto("/products");
   const links = await page.$$eval('a[href^="/product/"]', (as) => [...new Set(as.map((a) => a.getAttribute("href")!))]);
   expect(links.length).toBeGreaterThanOrEqual(3);
   for (const href of links) {
     const res = await page.goto(href);
     expect(res?.status(), href).toBe(200);
-    await expect(page.getByTestId("future-page-badge")).toBeVisible();
+    await expect(page.locator("h1")).toHaveCount(1);
   }
+});
+
+test("every secondary page renders with one h1 and no errors", async ({ page }) => {
+  for (const p of ALL_PAGES.slice(2)) {
+    const watch = watchPage(page);
+    const res = await page.goto(p.path);
+    expect(res?.status(), p.path).toBe(200);
+    await settle(page);
+    await expect(page.locator("h1"), p.path).toHaveCount(1);
+    expect(watch.consoleErrors, `${p.path} console errors`).toEqual([]);
+    expect(watch.failedRequests, `${p.path} failed requests`).toEqual([]);
+  }
+});
+
+test("gallery lightbox opens, navigates with arrows and closes with Escape", async ({ page }) => {
+  await page.goto("/gallery");
+  await settle(page);
+  const first = page.getByRole("button", { name: /open image/i }).first();
+  await first.click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toBeVisible();
+  await page.keyboard.press("ArrowRight");
+  await expect(dialog.getByText(/2 \/ /)).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(dialog).toBeHidden();
 });

@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { FuturePage } from "@/components/shared/FuturePage";
-import { getPage } from "@/lib/content";
+import { GalleryGrid } from "@/components/shared/GalleryGrid";
+import { getGallery, getPage } from "@/lib/content";
 
 const page = getPage("gallery");
+export const metadata: Metadata = { title: page.title, description: "Photographs of Pioneer corrugated, flat panel, pillow and onion tanks." };
 
-export const metadata: Metadata = { title: page.title, description: "Media gallery of installed tanks: 8 corrugated steel, 4 pillow, 2 flat panel and 2 onion tank photographs." };
-
-/** Future route – see ARCHITECTURE.md § Routing. */
+/** Baseline Gallery page – themes replace this file. */
 export default function GalleryPage() {
-  return <FuturePage page={page} summary="Media gallery of installed tanks: 8 corrugated steel, 4 pillow, 2 flat panel and 2 onion tank photographs." />;
+  return (
+    <article className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <h1 className="text-4xl font-bold">{page.title}</h1>
+      <div className="mt-10">
+        <GalleryGrid groups={getGallery()} classNames={{ filterButton: "border", filterButtonActive: "bg-primary text-primary-foreground" }} />
+      </div>
+    </article>
+  );
 }

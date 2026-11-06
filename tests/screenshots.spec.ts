@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 import { mkdirSync } from "node:fs";
-import { PAGES, VIEWPORTS, SCREENSHOT_DIR, settle, horizontalOverflow } from "./helpers";
+import { PRIMARY_PAGES, ALL_PAGES, VIEWPORTS, SECONDARY_VIEWPORTS, SCREENSHOT_DIR, settle, horizontalOverflow } from "./helpers";
 
 test.beforeAll(() => mkdirSync(SCREENSHOT_DIR, { recursive: true }));
 
-for (const p of PAGES) {
+for (const p of PRIMARY_PAGES) {
   for (const vp of VIEWPORTS) {
     test(`${p.name} @ ${vp.name} (${vp.width}×${vp.height}) – no horizontal overflow + screenshot`, async ({ page }) => {
       await page.setViewportSize({ width: vp.width, height: vp.height });
@@ -17,7 +17,20 @@ for (const p of PAGES) {
   }
 }
 
-test("interactive states: mobile menu open, desktop dropdown open, form errors", async ({ page }) => {
+for (const p of ALL_PAGES.slice(2)) {
+  for (const vp of SECONDARY_VIEWPORTS) {
+    test(`${p.name} @ ${vp.name} – no horizontal overflow + screenshot`, async ({ page }) => {
+      await page.setViewportSize({ width: vp.width, height: vp.height });
+      await page.goto(p.path);
+      await settle(page);
+      const { scrollWidth, clientWidth } = await horizontalOverflow(page);
+      expect(scrollWidth, `horizontal overflow on ${p.path} at ${vp.name}`).toBeLessThanOrEqual(clientWidth);
+      await page.screenshot({ path: `${SCREENSHOT_DIR}/${p.name}-${vp.name}.png`, fullPage: true });
+    });
+  }
+}
+
+test("interactive states: mobile menu open, desktop dropdown open, form errors, lightbox", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
   await page.getByTestId("mobile-menu-button").click();
@@ -38,6 +51,9 @@ test("interactive states: mobile menu open, desktop dropdown open, form errors",
   await page.waitForTimeout(200);
   await form.screenshot({ path: `${SCREENSHOT_DIR}/state-form-validation.png` });
 
-  await page.goto("/product/corrugated-zincalum-steel");
-  await page.screenshot({ path: `${SCREENSHOT_DIR}/state-future-page.png`, fullPage: true });
+  await page.goto("/gallery");
+  await settle(page);
+  await page.getByRole("button", { name: /open image/i }).first().click();
+  await page.waitForTimeout(400);
+  await page.screenshot({ path: `${SCREENSHOT_DIR}/state-gallery-lightbox.png` });
 });

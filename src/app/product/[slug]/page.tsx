@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FuturePage } from "@/components/shared/FuturePage";
-import { getDocument, getPage, getProduct, getProducts } from "@/lib/content";
+import { SpecTable } from "@/components/shared/SpecTable";
+import { CapacityChart } from "@/components/shared/CapacityChart";
+import { getDocument, getProduct, getProducts } from "@/lib/content";
 
 export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
@@ -13,37 +14,39 @@ export async function generateMetadata({ params }: PageProps<"/product/[slug]">)
   return { title: product ? product.name : "Product", description: product?.summary };
 }
 
-/**
- * Future product detail route. Reserved so that every product link resolves
- * today; shows verified key facts and datasheets until the full page is built.
- */
+/** Baseline product detail – themes replace this file. */
 export default async function ProductDetailPage({ params }: PageProps<"/product/[slug]">) {
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) notFound();
-  const page = getPage(`product-${slug}`);
   return (
-    <FuturePage page={{ ...page, title: product.name }} summary={product.summary}>
-      <dl className="grid gap-4 sm:grid-cols-2">
-        {product.keyFacts.map((f) => (
-          <div key={f.label} className="border-l-4 border-current pl-4">
-            <dt className="text-xs font-semibold uppercase tracking-wider opacity-70">{f.label}</dt>
-            <dd className="text-lg font-bold">{f.value}</dd>
-          </div>
-        ))}
-      </dl>
-      <ul className="mt-8 grid gap-2 text-sm font-semibold">
+    <article className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
+      <h1 className="text-4xl font-bold">{product.name}</h1>
+      <p className="mt-4">{product.summary}</p>
+      {product.description.map((p) => (
+        <p key={p} className="mt-3">
+          {p}
+        </p>
+      ))}
+      <h2 className="mt-10 text-2xl font-semibold">Specifications</h2>
+      <SpecTable specs={product.specifications} caption={`${product.name} specifications`} className="mt-4" />
+      {product.capacityChart ? (
+        <div className="mt-10">
+          <CapacityChart chart={product.capacityChart} />
+        </div>
+      ) : null}
+      <ul className="mt-8 grid gap-2">
         {product.documents.map((id) => {
-          const doc = getDocument(id);
+          const d = getDocument(id);
           return (
             <li key={id}>
-              <a href={doc.localPath} className="underline underline-offset-4" download>
-                Download: {doc.title} (PDF)
+              <a href={d.localPath} download className="underline">
+                {d.title}
               </a>
             </li>
           );
         })}
       </ul>
-    </FuturePage>
+    </article>
   );
 }

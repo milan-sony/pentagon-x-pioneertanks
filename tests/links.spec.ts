@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { PAGES } from "./helpers";
+import { ALL_PAGES as PAGES } from "./helpers";
 
 /** Every internal link and document on the implemented pages must resolve. External links are HEAD-checked but only reported. */
 test("all internal links and documents resolve", async ({ page, request, baseURL }) => {

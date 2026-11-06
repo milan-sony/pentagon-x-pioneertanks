@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdirSync, writeFileSync } from "node:fs";
-import { PAGES, settle, DESIGN_ID } from "./helpers";
+import { ALL_PAGES as PAGES, settle, DESIGN_ID } from "./helpers";
 
 const VIEWPORTS = [
   { name: "mobile", width: 390, height: 844 },

@@ -107,3 +107,32 @@ export function getCredibilityFacts(): { label: string; value: string }[] {
     { label: "Design life", value: "25 years" },
   ];
 }
+
+/** News articles (the live site has one). */
+export function getNewsArticles() {
+  return websiteData.news;
+}
+
+export function getNewsArticle(slug: string) {
+  return websiteData.news.find((n) => n.route.endsWith(`/${slug}`) || n.slug === slug);
+}
+
+/** Slug used in the new site's /news/[slug] route. */
+export function newsRouteSlug(route: string) {
+  return route.split("/").pop() ?? route;
+}
+
+/** Non-business pages recorded by the crawl (not rendered). */
+export function getBusinessPages(): PageContent[] {
+  return Object.values(websiteData.pages).filter((p) => !p.nonBusinessContent);
+}
+
+/** Verified company facts for stat rows (all traceable to the source). */
+export function getCompanyStats(): { label: string; value: number; suffix: string; source: string }[] {
+  return [
+    { label: "Years supplying liner tanks", value: yearsInBusiness(), suffix: "+", source: "since 1993 (website)" },
+    { label: "Maximum steel tank capacity, m³", value: 3300, suffix: "", source: "corrugated product page" },
+    { label: "Maximum tank diameter, m", value: 21, suffix: "", source: "corrugated product page" },
+    { label: "Year steel tank warranty", value: 10, suffix: "", source: "PLT datasheet" },
+  ];
+}
