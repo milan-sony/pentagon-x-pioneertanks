@@ -57,11 +57,11 @@ docs             extraction-report, design-system, implementation-notes, test-re
 
 ```
 main ─ baseline: scaffold + content + shared components + test harness + docs
-├── design/04-intrio-editorial
-└── design/05-qleviq-corporate
+├── design/01-intrio-editorial
+└── design/02-qleviq-corporate
 ```
 
-- The two design branches are cut from the same baseline commit on `main` and never merged into each other. (Branches 01–03 from the first design round were deleted on 2026-11-06 at the client's request.)
+- The two design branches are cut from the same baseline commit on `main` and never merged into each other. (The first-round branches 01-industrial-heritage, 02-engineering-precision and 03-premium-industrial were deleted on 2026-11-06 at the client's request; the two remaining designs were then renumbered Design 1 and Design 2.)
 - Each branch owns: `globals.css` tokens, fonts in `layout.tsx`, `src/data/design-config.ts`, `components/{home,products,layout,navigation}`, `docs/design-system.md`, `screenshots/design-<x>/`, its CHANGELOG entries.
 - Shared, design-agnostic code (content, types, constants, `FloatingActions` logic, `EnquiryForm` logic, `GalleryGrid`, `Counter`, `Marquee`, `Parallax`, `Reveal`, `SpecTable`, `CapacityChart`, tests) lives on `main` and is identical on every branch unless a branch needs a fix, in which case the fix is also cherry-picked to `main`.
 
@@ -85,6 +85,6 @@ main ─ baseline: scaffold + content + shared components + test harness + docs
 | 2026-11-06 | Forms: client validation + `mailto:` fallback | No backend in scope; honest behaviour |
 | 2026-11-06 | English only | Client choice; structure stays i18n-friendly |
 | 2026-11-06 | Future routes render a shared `FuturePage` (superseded: every page is now implemented) | Honest, not misleading, no redirects to home |
-| 2026-11-06 | Keep only designs 04 and 05; delete branches 01–03 | Client choice after reviewing all five |
+| 2026-11-06 | Keep only the Intrio- and Qleviq-guided designs (renamed Design 1 and Design 2); delete the first-round branches (01-industrial-heritage, 02-engineering-precision, 03-premium-industrial) | Client choice after reviewing all five |
 | 2026-11-06 | Lorem-ipsum news post, `/sample-page/`, WP theme docs recorded but not rendered | Not business content |
 | 2026-11-06 | Fonts through `next/font/google` | Performance + CLS; still Google Fonts as required |

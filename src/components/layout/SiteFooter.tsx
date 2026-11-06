@@ -5,7 +5,7 @@ import { footerNavigation, mainNavigation } from "@/data/navigation.js";
 import { company, contact, getActiveSocialLinks } from "@/lib/content";
 import { BUILD_YEAR, whatsappHref } from "@/lib/constants";
 
-/** Design 04 footer: espresso ground, link columns left, large "Get in touch" block right. */
+/** Design 1 footer: espresso ground, link columns left, large "Get in touch" block right. */
 export function SiteFooter() {
   const productNav = mainNavigation.find((n) => n.href === "/products")?.children ?? [];
   return (
@@ -103,7 +103,7 @@ export function SiteFooter() {
           </div>
         </div>
         <p className="mt-14 border-t border-cream/15 pt-6 text-center text-xs text-cream/65">
-          © {BUILD_YEAR} {company.legalName}. All rights reserved. Design concept 04 – Editorial Warm.
+          © {BUILD_YEAR} {company.legalName}. All rights reserved. Design concept 1 – Editorial Warm.
         </p>
       </div>
     </footer>

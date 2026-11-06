@@ -1,6 +1,6 @@
-# Design system – 04 · Editorial Warm (Intrio-guided)
+# Design system – Design 1 · Editorial Warm (Intrio-guided)
 
-Branch `design/04-intrio-editorial`. Reference: the Intrio interior-design template (editorial, photography-led, warm neutrals, large "Get in touch" footer). Tokens live in `src/app/globals.css` and `src/data/design-config.ts`. **Every page is implemented** on this branch.
+Branch `design/01-intrio-editorial`. Reference: the Intrio interior-design template (editorial, photography-led, warm neutrals, large "Get in touch" footer). Tokens live in `src/app/globals.css` and `src/data/design-config.ts`. **Every page is implemented** on this branch.
 
 ## Intent
 

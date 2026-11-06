@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/shared/Reveal";
 import { cn } from "@/lib/utils";
 
-/** Design 04 section header: eyebrow, uppercase title left, optional description right. */
+/** Design 1 section header: eyebrow, uppercase title left, optional description right. */
 export function SectionHeading({ eyebrow, title, description, id, dark = false, className, align = "split" }: { eyebrow?: string; title: string; description?: string; id: string; dark?: boolean; className?: string; align?: "split" | "left" | "center" }) {
   return (
     <Reveal className={cn("grid gap-6", align === "split" && "lg:grid-cols-12 lg:items-end", align === "center" && "text-center", className)}>

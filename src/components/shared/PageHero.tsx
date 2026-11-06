@@ -18,7 +18,7 @@ export interface PageHeroProps {
   size?: "short" | "tall";
 }
 
-/** Design 04 inner-page banner: full-width photograph with parallax, uppercase title, breadcrumb. */
+/** Design 1 inner-page banner: full-width photograph with parallax, uppercase title, breadcrumb. */
 export function PageHero({ title, eyebrow, intro, image, crumbs = [], className, size = "short" }: PageHeroProps) {
   const img = getAsset(image);
   return (

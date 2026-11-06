@@ -5,7 +5,7 @@ import { company } from "@/lib/content";
 import { MobileNav } from "@/components/navigation/MobileNav";
 import { DesktopNav } from "@/components/navigation/DesktopNav";
 
-/** Design 04 header: cream bar, wide uppercase links, water-blue CTA. */
+/** Design 1 header: cream bar, wide uppercase links, water-blue CTA. */
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-cream/90 backdrop-blur-md">
