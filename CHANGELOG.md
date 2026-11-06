@@ -2,6 +2,15 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-06 – Shortlist: designs 04 and 05 kept, 01–03 removed
+
+**Changed**
+- Branches `design/01-industrial-heritage`, `design/02-engineering-precision` and `design/03-premium-industrial` were deleted at the client's request; this branch and its sibling are the two remaining alternatives.
+- README and `docs/design-comparison.md` synced from `main` so they describe only designs 04 and 05.
+
+**Checked**
+- `git branch` lists `main`, `design/04-intrio-editorial`, `design/05-qleviq-corporate` only; build unaffected (docs-only change).
+
 ## 2026-11-06 – Design 04: Editorial Warm, Intrio-guided (branch design/04-intrio-editorial)
 
 **Changed**
