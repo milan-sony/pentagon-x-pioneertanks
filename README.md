@@ -15,8 +15,8 @@ Requirements: Node.js ≥ 20 (developed on 24), npm.
 | Branch | Design | Direction |
 |---|---|---|
 | `main` | Baseline | Content, shared components, test harness, docs. Plain unstyled pages for every route. |
-| `design-1` | **Design 1 – Editorial Warm** (Intrio-guided) | Cream/espresso + water blue, Urbanist + Nunito Sans, photography-led, reveals, counters, marquee, parallax |
-| `design-2` | **Design 2 – Corporate Bento** (Qleviq-guided) | Navy/sky/mint + orange, rounded bento panels, Plus Jakarta Sans + DM Sans, reveals, counters, marquee |
+| `design-1` | **Design 1 – Editorial Warm** | Cream/espresso + water blue, Urbanist + Nunito Sans, photography-led, reveals, counters, marquee, parallax |
+| `design-2` | **Design 2 – Corporate Bento** | Navy/sky/mint + orange, rounded bento panels, Plus Jakarta Sans + DM Sans, reveals, counters, marquee |
 
 ```bash
 git switch design-1   # or design-2
@@ -60,7 +60,6 @@ Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_WHATSAPP_NUMBER` once t
 | Scraper | `scripts/scrape-website/` (outputs in `scripts/scrape-website/output/`) |
 | Tests | `tests/*.spec.ts`, `playwright.config.ts` |
 | Screenshots | `screenshots/design-<x>/` on each design branch |
-| Reference screenshots | `docs/references/` |
 | Reports | `docs/extraction-report.md`, `docs/test-report.md`, `docs/known-issues.md` |
 
 ## Open blockers (need client input)

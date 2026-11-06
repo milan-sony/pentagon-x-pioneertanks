@@ -58,8 +58,8 @@ All content comes from a single, curated content file (`src/data/website-content
 
 | Branch | Direction | Palette | Type |
 |---|---|---|---|
-| `design-1` | Editorial Warm (Intrio-guided) – photography-led, editorial | cream, espresso, water blue, bronze | Urbanist + Nunito Sans |
-| `design-2` | Corporate Bento (Qleviq-guided) – rounded bento panels | white, navy, sky, mint, orange | Plus Jakarta Sans + DM Sans |
+| `design-1` | Editorial Warm – photography-led, editorial | cream, espresso, water blue, bronze | Urbanist + Nunito Sans |
+| `design-2` | Corporate Bento – rounded bento panels | white, navy, sky, mint, orange | Plus Jakarta Sans + DM Sans |
 
 Full tokens per design: `docs/design-system.md` on each branch.
 
@@ -73,7 +73,7 @@ Research and content
 
 Design
 - [ ] Two genuinely different designs, none copying the old site.
-- [ ] Each implements every page, responsive and polished, with reference-level animation that rests under reduced motion.
+- [ ] Each implements every page, responsive and polished, with full animation that rests under reduced motion.
 - [ ] Only genuine business information is shown.
 
 Functionality

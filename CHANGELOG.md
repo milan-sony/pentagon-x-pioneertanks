@@ -2,6 +2,15 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-06 – Reference-template wording removed
+
+**Changed**
+- Removed every mention of the reference templates from the README, PRD, ARCHITECTURE, TASKS, design comparison, design-system, test-report and known-issues docs, from `design-config.ts`, `globals.css` and component comments. Designs are referred to only as Design 1 – Editorial Warm and Design 2 – Corporate Bento.
+- Deleted `docs/references/` (reference screenshots and their index).
+
+**Checked**
+- No tracked file outside this changelog mentions the reference templates; `npm run typecheck` and `npm run lint` clean on both design branches.
+
 ## 2026-11-06 – Branches renamed to design-1 and design-2
 
 **Changed**
