@@ -8,6 +8,10 @@ export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
 }
 
+// Every slug is prerendered by generateStaticParams, and unknown slugs must still 404,
+// so this page awaits `params` outside <Suspense> and is allowed to block on navigation.
+export const instant = false;
+
 export async function generateMetadata({ params }: PageProps<"/product/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);

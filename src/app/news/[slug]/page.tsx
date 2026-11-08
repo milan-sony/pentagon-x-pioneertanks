@@ -6,6 +6,10 @@ export function generateStaticParams() {
   return getNewsArticles().map((n) => ({ slug: newsRouteSlug(n.route) }));
 }
 
+// Every slug is prerendered by generateStaticParams, and unknown slugs must still 404,
+// so this page awaits `params` outside <Suspense> and is allowed to block on navigation.
+export const instant = false;
+
 export async function generateMetadata({ params }: PageProps<"/news/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const n = getNewsArticle(slug);
