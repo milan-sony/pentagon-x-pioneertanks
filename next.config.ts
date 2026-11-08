@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [360, 390, 640, 768, 1024, 1366, 1440, 1920],
+    // Hero (72) and PageHero (70) use lighter quality for large banner photos; 75 is the default.
+    qualities: [70, 72, 75],
   },
   turbopack: {
     rules: {

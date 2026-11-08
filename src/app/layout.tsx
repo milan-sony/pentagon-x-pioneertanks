@@ -31,7 +31,8 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${nunito.variable} ${urbanist.variable} h-full scroll-smooth antialiased`}>
-      <body className="flex min-h-full flex-col">
+      {/* Browser extensions (e.g. Grammarly) add attributes to <body> before hydration; ignore only those. */}
+      <body className="flex min-h-full flex-col" suppressHydrationWarning>
         <MotionProvider>
           <SkipLink />
           <SiteHeader />

@@ -2,6 +2,15 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-08 – Dev-server warnings cleared
+
+**Changed**
+- `next.config.ts` allows image qualities 70 and 72 (`images.qualities: [70, 72, 75]`). The page and home heroes request them, and Next.js 16 was coercing both to 75 with a warning on every banner image.
+- `<body>` has `suppressHydrationWarning`, so attributes injected by browser extensions such as Grammarly (`data-gr-ext-installed`, `data-new-gr-c-s-check-loaded`) no longer raise a hydration-mismatch warning. It applies to that element's own attributes only.
+
+**Checked**
+- Dev server restarted. Browser sweep of all 12 routes at 1440 and 390 wide plus click-through navigation: no console errors. Server log after 45 requests: no warnings or errors. `/_next/image?…&q=70` returns 200. `npm run lint` and `npm run typecheck` exit 0.
+
 ## 2026-11-08 – Design 2 removed; Design 1 chosen
 
 **Changed**
