@@ -2,6 +2,15 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-08 – Typecheck works on a fresh clone
+
+**Changed**
+- `npm run typecheck` now runs `next typegen` before `tsc --noEmit`. Pages use the generated `PageProps<"/route">` types, which did not exist on a fresh clone until a build had run, so typecheck failed there (exit 2).
+
+**Checked**
+- In a fresh `design-2` worktree with `.next` removed: plain `tsc --noEmit` exits 2; `next typegen && tsc --noEmit` exits 0.
+- Design 2 re-verified in an isolated worktree: lint 0, build 0, `npx playwright test` 73/73, `/contact?product=flat-panel-hdg-steel` preselects "Flat Panel HDG Steel".
+
 ## 2026-11-06 – Reference-template wording removed
 
 **Changed**
