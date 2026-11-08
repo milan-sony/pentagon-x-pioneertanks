@@ -2,6 +2,14 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-08 – Dev-mode navigation error on detail pages fixed
+
+**Changed**
+- `/product/[slug]` and `/news/[slug]` export `instant = false`. In `next dev`, Next.js reported "encountered URL data during prerendering or a navigation" because both pages await `params` outside `<Suspense>`. Every real slug is prerendered by `generateStaticParams`, and keeping `params` outside Suspense keeps unknown slugs returning a real 404, so the routes are allowed to block instead of streaming a placeholder.
+
+**Checked**
+- `next dev` browser sweep of all 12 routes at 1440 and 390 wide: no console errors, no failed requests, no overflow, one h1 each. Click-through navigation to every detail page: no console errors. `/product/nope` and `/news/nope` still return 404.
+
 ## 2026-11-08 – Typecheck works on a fresh clone
 
 **Changed**
