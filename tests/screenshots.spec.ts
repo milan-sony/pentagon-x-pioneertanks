@@ -1,6 +1,5 @@
-import { test, expect } from "@playwright/test";
 import { mkdirSync } from "node:fs";
-import { PRIMARY_PAGES, ALL_PAGES, VIEWPORTS, SECONDARY_VIEWPORTS, SCREENSHOT_DIR, settle, horizontalOverflow } from "./helpers";
+import { expect, test, PRIMARY_PAGES, ALL_PAGES, VIEWPORTS, SECONDARY_VIEWPORTS, SCREENSHOT_DIR, settle, horizontalOverflow } from "./helpers";
 
 test.beforeAll(() => mkdirSync(SCREENSHOT_DIR, { recursive: true }));
 

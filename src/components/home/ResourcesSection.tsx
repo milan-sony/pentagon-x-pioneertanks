@@ -42,7 +42,7 @@ export function ResourcesSection() {
   ];
   return (
     <Section id="resources" className="bg-cream py-20 lg:py-28" aria-labelledby="resources-title">
-      <SectionHeading id="resources-title" eyebrow="Resources" title="Brochure, documents and news" description="Download the company brochure and datasheets, review the published licences, and read the latest update." />
+      <SectionHeading id="resources-title" eyebrow="Resources" title="Brochure, documents and news" description="Download the company brochure and datasheets, view our licences and read the latest update." />
       <Stagger as="ul" className="mt-10 grid gap-6 md:grid-cols-3">
         {cards.map((c) => {
           const Icon = c.icon;
@@ -55,7 +55,7 @@ export function ResourcesSection() {
                 <Icon className="size-4 text-bronze-text" aria-hidden="true" />
                 {c.kicker}
               </p>
-              <h3 className="mt-2 font-display text-xl font-bold uppercase leading-tight tracking-wide text-ink group-hover:text-water">{c.title}</h3>
+              <h3 className="mt-2 font-display text-xl font-semibold uppercase leading-tight tracking-wide text-ink group-hover:text-water">{c.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-taupe-text">{c.body}</p>
             </>
           );

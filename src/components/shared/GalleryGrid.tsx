@@ -89,7 +89,7 @@ export function GalleryGrid({ groups, classNames = {} }: GalleryGridProps) {
       </ul>
 
       <Dialog open={index !== null} onOpenChange={(o) => !o && setIndex(null)}>
-        <DialogContent showCloseButton={false} onKeyDown={onDialogKeyDown} className={cn("max-w-[min(96vw,1200px)] border-0 bg-black p-0 text-white sm:max-w-[min(96vw,1200px)]", classNames.dialog)}>
+        <DialogContent showCloseButton={false} data-lenis-prevent onKeyDown={onDialogKeyDown} className={cn("max-w-[min(96vw,1200px)] border-0 bg-black p-0 text-white sm:max-w-[min(96vw,1200px)]", classNames.dialog)}>
           {current ? (
             <figure className="relative">
               <DialogTitle className="sr-only">{current.alt}</DialogTitle>

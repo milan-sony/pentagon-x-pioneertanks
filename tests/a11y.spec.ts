@@ -1,7 +1,6 @@
-import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdirSync, writeFileSync } from "node:fs";
-import { ALL_PAGES as PAGES, settle, DESIGN_ID } from "./helpers";
+import { expect, test, ALL_PAGES as PAGES, settle, DESIGN_ID } from "./helpers";
 
 const VIEWPORTS = [
   { name: "mobile", width: 390, height: 844 },
@@ -38,12 +37,21 @@ test("keyboard: skip link is first focusable and reaches main", async ({ page })
   await expect(page).toHaveURL(/#main$/);
 });
 
-test("keyboard: desktop dropdown is reachable with Tab", async ({ page }) => {
+test("keyboard: desktop dropdown opens with its button and closes after a choice", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
-  const productsLink = page.getByTestId("desktop-nav").getByRole("link", { name: "Products", exact: true });
-  await productsLink.focus();
+  const nav = page.getByTestId("desktop-nav");
+  await nav.getByRole("link", { name: "Products", exact: true }).focus();
+  await page.keyboard.press("Tab");
+  // The label flips between "Open/Close Products menu", so locate the toggle by what it controls.
+  const toggle = nav.locator('button[aria-controls="submenu-desktop-products"]');
+  await expect(toggle).toBeFocused();
+  await page.keyboard.press("Enter");
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
   await page.keyboard.press("Tab");
   const focusedText = await page.evaluate(() => document.activeElement?.textContent?.trim());
   expect(focusedText).toMatch(/corrugated|flat panel|flexible/i);
+  await page.keyboard.press("Enter");
+  await page.waitForURL(/\/product\//);
+  await expect(page.locator("#submenu-desktop-products")).toBeHidden();
 });

@@ -1,47 +1,56 @@
 import Image from "next/image";
 import { Section } from "@/components/shared/Section";
-import { Reveal } from "@/components/shared/Reveal";
+import { MaskReveal, Reveal, Stagger, StaggerItem, WordsReveal } from "@/components/shared/Reveal";
+import { Parallax } from "@/components/shared/Parallax";
 import { Counter } from "@/components/shared/Counter";
 import { Cta } from "@/components/shared/Cta";
-import { assetSrc, company, getAsset, getCompanyStats, getPage } from "@/lib/content";
+import { assetSrc, getAsset, getCompanyStats, getPage } from "@/lib/content";
 
-/** About block: photo left, eyebrow + uppercase statement centre, paragraph + signature-style tagline right; stats row beneath. */
+/** First `n` sentences of a paragraph, for short home-page copy. */
+function sentences(text: string | undefined, n: number) {
+  return (text ?? "").split(/(?<=\.)\s+/).slice(0, n).join(" ");
+}
+
+/** About: photo with a mask reveal and slight drift, a short statement, the figures counting up. */
 export function AboutBlock() {
   const photo = getAsset("intro-img");
   const about = getPage("about");
   const intro = about.sections.find((s) => s.id === "introduction")!;
   const stats = getCompanyStats();
   return (
-    <Section id="about" className="bg-cream py-20 lg:py-28" aria-labelledby="about-title">
-      <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-        <Reveal as="figure" x={-24} className="overflow-hidden rounded-md lg:col-span-4">
-          <Image src={assetSrc(photo.id)} alt={photo.alt} width={photo.width} height={photo.height} sizes="(min-width: 1024px) 30vw, 100vw" className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-[1.03]" />
-        </Reveal>
-        <Reveal delay={0.1} className="lg:col-span-4">
-          <p className="eyebrow text-bronze-text">About us</p>
-          <h2 id="about-title" className="mt-4 font-display text-[clamp(2rem,3.6vw,3.25rem)] font-bold uppercase leading-[1.02] tracking-wide text-ink">
-            The first to bring liner tanks to the UAE
-          </h2>
-        </Reveal>
-        <Reveal delay={0.2} className="lg:col-span-4">
-          <p className="leading-relaxed text-taupe-text">{intro.body?.[0]}</p>
-          <p className="mt-6 font-display text-2xl font-semibold uppercase tracking-wide text-ink">{company.tagline}</p>
-          <p className="text-sm text-taupe-text">{company.legalName}, {company.location}</p>
-          <Cta href="/about" variant="outline" className="mt-6">
-            About the company
-          </Cta>
-        </Reveal>
-      </div>
-      <dl className="mt-16 grid grid-cols-2 gap-8 border-t border-border pt-10 lg:grid-cols-4">
-        {stats.map((s, i) => (
-          <Reveal key={s.label} delay={i * 0.08}>
-            <dt className="order-2 mt-2 text-sm text-taupe-text">{s.label}</dt>
-            <dd className="font-display text-5xl font-bold text-ink lg:text-6xl">
-              <Counter value={s.value} suffix={s.suffix} />
-            </dd>
+    <Section id="about" className="bg-cream py-20 sm:py-24 lg:py-32" aria-labelledby="about-title">
+      <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+        <MaskReveal className="overflow-hidden rounded-md lg:col-span-5">
+          <Parallax amount={24} className="aspect-[4/5] w-full">
+            <Image src={assetSrc(photo.id)} alt={photo.alt} width={photo.width} height={photo.height} sizes="(min-width: 1024px) 40vw, 100vw" className="h-[112%] w-full -translate-y-[6%] object-cover" />
+          </Parallax>
+        </MaskReveal>
+        <div className="lg:col-span-7">
+          <Reveal as="p" y={10} className="eyebrow flex items-center gap-3 text-bronze-text">
+            <span className="h-px w-8 bg-bronze-text/50" aria-hidden="true" />
+            About us
           </Reveal>
-        ))}
-      </dl>
+          <h2 id="about-title" className="heading-2 mt-4 max-w-[18ch] text-ink">
+            <WordsReveal text="The first to bring liner tanks to the UAE" />
+          </h2>
+          <Reveal delay={0.15}>
+            <p className="mt-6 max-w-xl text-[1.0625rem] leading-relaxed text-taupe-text">{sentences(intro.body?.[0], 2)}</p>
+            <Cta href="/about" variant="outline" className="mt-8">
+              About the company
+            </Cta>
+          </Reveal>
+          <Stagger as="div" className="mt-12 grid grid-cols-2 gap-x-8 gap-y-8 border-t border-border pt-10 sm:grid-cols-4">
+            {stats.map((s) => (
+              <StaggerItem key={s.label} className="flex flex-col-reverse">
+                <p className="mt-2 text-sm leading-snug text-taupe-text">{s.label}</p>
+                <p className="font-display text-4xl font-semibold text-ink lg:text-5xl">
+                  <Counter value={s.value} suffix={s.suffix} />
+                </p>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
+      </div>
     </Section>
   );
 }

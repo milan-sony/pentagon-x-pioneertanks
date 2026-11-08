@@ -70,7 +70,7 @@ export function SiteFooter() {
           </div>
           <div className="lg:col-span-5">
             <div className="flex items-start justify-between gap-6">
-              <h2 className="font-display text-4xl font-bold uppercase tracking-wide text-white lg:text-5xl">Get in touch</h2>
+              <h2 className="font-display text-4xl font-semibold uppercase tracking-wide text-white lg:text-5xl">Get in touch</h2>
               <Link href="/contact" className="inline-flex size-14 shrink-0 items-center justify-center rounded-full border border-cream/30 text-cream transition-colors hover:border-bronze hover:text-bronze" aria-label="Go to the contact page">
                 <ArrowUpRight className="size-6" aria-hidden="true" />
               </Link>
@@ -103,7 +103,7 @@ export function SiteFooter() {
           </div>
         </div>
         <p className="mt-14 border-t border-cream/15 pt-6 text-center text-xs text-cream/65">
-          © {BUILD_YEAR} {company.legalName}. All rights reserved. Design concept 1 – Editorial Warm.
+          © {BUILD_YEAR} {company.legalName}. All rights reserved.
         </p>
       </div>
     </footer>

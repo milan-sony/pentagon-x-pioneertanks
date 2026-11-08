@@ -42,7 +42,6 @@ export default async function ProductDetailPage({ params }: PageProps<"/product/
                 <p key={p}>{p}</p>
               ))}
             </div>
-            {product.verificationNotes.length ? <p className="mt-6 text-xs text-taupe-text">Source: {product.sourceUrl} and the named datasheets. Items marked “datasheet” come from the PDF documents.</p> : null}
           </Reveal>
           <div className="lg:col-span-5">
             <ProductFacts product={product} />
@@ -51,7 +50,7 @@ export default async function ProductDetailPage({ params }: PageProps<"/product/
       </Section>
 
       <Section className="border-t border-border bg-paper py-16 lg:py-24" aria-labelledby="tech-title">
-        <SectionHeading id="tech-title" eyebrow="Technical" title="Specification and features" description="Everything published for this product, with the source of each value." />
+        <SectionHeading id="tech-title" eyebrow="Technical" title="Specification and features" description="Dimensions, materials, accessories and applications for this tank." />
         <Reveal className="mt-10">
           <ProductTechnicalTabs product={product} />
         </Reveal>
@@ -69,13 +68,13 @@ export default async function ProductDetailPage({ params }: PageProps<"/product/
         <ul className="mt-3 flex flex-wrap gap-x-8 gap-y-2">
           {others.map((o) => (
             <li key={o.slug}>
-              <Link href={o.route} className="font-display text-lg font-bold uppercase tracking-wide text-ink hover:text-water">
+              <Link href={o.route} className="font-display text-lg font-semibold uppercase tracking-wide text-ink hover:text-water">
                 {o.shortName}
               </Link>
             </li>
           ))}
           <li>
-            <Link href="/products" className="font-display text-lg font-bold uppercase tracking-wide text-water hover:underline">
+            <Link href="/products" className="font-display text-lg font-semibold uppercase tracking-wide text-water hover:underline">
               All products
             </Link>
           </li>

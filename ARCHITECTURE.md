@@ -9,7 +9,8 @@
 | Styling | Tailwind CSS 4 + shadcn/ui (radix-vega preset) | Design tokens are CSS variables in `src/app/globals.css`; Tailwind reads them via `@theme inline` |
 | Icons | lucide-react | |
 | Fonts | `next/font/google` | Self-hosted at build, zero layout shift. Fonts differ per design branch |
-| Motion | framer-motion | Wrapped in `MotionConfig reducedMotion="user"`; only opacity/transform animations |
+| Motion | framer-motion | Wrapped in `MotionConfig reducedMotion="user"`; only opacity/transform/clip-path animations |
+| Smooth scrolling | lenis 1.3.26 | `SmoothScroll` client component; wheel/trackpad only (touch native), off under reduced motion, stopped while Radix locks the page (`data-scroll-locked`) |
 | Testing | @playwright/test, @axe-core/playwright, lighthouse | |
 | Scraping | playwright (chromium), pdf-parse, sharp | `scripts/scrape-website/` |
 
@@ -86,5 +87,9 @@ main ─ baseline: scaffold + content + shared components + test harness + docs
 | 2026-11-06 | Future routes render a shared `FuturePage` (superseded: every page is now implemented) | Honest, not misleading, no redirects to home |
 | 2026-11-06 | Keep only Design 1 and Design 2; delete the first-round branches (01-industrial-heritage, 02-engineering-precision, 03-premium-industrial) | Client choice after reviewing all five |
 | 2026-11-08 | Keep only Design 1; delete `design-2` (Corporate Bento) | Client choice after comparing both |
+| 2026-11-08 | Preloader once per browser session, decided before first paint by an inline script (`preloader-off` on `<html>`) | No flash for returning visitors; skipped for reduced motion and without JavaScript; page content is rendered underneath throughout |
+| 2026-11-08 | 404 redirects home after 3 s but shows a "Stay on this page" button | Client asked for an automatic redirect; WCAG 2.2.1 requires a way to stop a time limit |
+| 2026-11-08 | Home product strip auto-scrolls with a visible pause button and pauses on hover/focus/off-screen | Client asked for auto-scroll; WCAG 2.2.2 requires pause for moving content |
+| 2026-11-08 | Source and verification notes stay in the content file but are never rendered | They are internal records for the client, not visitor-facing copy |
 | 2026-11-06 | Lorem-ipsum news post, `/sample-page/`, WP theme docs recorded but not rendered | Not business content |
 | 2026-11-06 | Fonts through `next/font/google` | Performance + CLS; still Google Fonts as required |

@@ -34,7 +34,7 @@ export default function ProductsPage() {
                 <a href={`#family-${f.id}`} className="group relative block overflow-hidden rounded-md bg-espresso text-cream shadow-card">
                   <Image src={assetSrc(img.id)} alt={img.alt} width={img.width} height={img.height} sizes="(min-width: 768px) 50vw, 100vw" className="aspect-[16/10] w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-[1.04]" />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-espresso via-espresso/80 to-transparent p-7 pt-20">
-                    <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-white">{f.name}</h2>
+                    <h2 className="font-display text-3xl font-semibold uppercase tracking-wide text-white">{f.name}</h2>
                     <p className="mt-2 max-w-md text-cream/85">{f.tagline}</p>
                     <span className="eyebrow mt-4 inline-flex items-center gap-2 text-bronze">
                       {f.productSlugs.length} {f.productSlugs.length === 1 ? "product" : "products"} <ArrowUpRight className="size-4" aria-hidden="true" />
@@ -65,7 +65,7 @@ export default function ProductsPage() {
                       </Reveal>
                       <Reveal delay={0.1} className="lg:col-span-7">
                         <p className="eyebrow text-bronze-text">Series {p.series.join(" / ")}</p>
-                        <h3 className="mt-3 font-display text-[clamp(1.75rem,3vw,2.75rem)] font-bold uppercase leading-[1.05] tracking-wide text-ink">
+                        <h3 className="mt-3 font-display text-[clamp(1.75rem,3vw,2.75rem)] font-semibold uppercase leading-[1.05] tracking-wide text-ink">
                           <Link href={p.route} className="hover:text-water">
                             {p.name}
                           </Link>
@@ -75,7 +75,7 @@ export default function ProductsPage() {
                           {p.keyFacts.slice(0, 6).map((k) => (
                             <div key={k.label} className="rounded-md bg-cream p-3">
                               <dt className="text-xs text-taupe-text">{k.label}</dt>
-                              <dd className="font-display text-lg font-bold text-ink">{k.value}</dd>
+                              <dd className="font-display text-lg font-semibold text-ink">{k.value}</dd>
                             </div>
                           ))}
                         </dl>

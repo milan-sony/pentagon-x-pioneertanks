@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { motion, type HTMLMotionProps, type Variants } from "framer-motion";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -69,5 +70,55 @@ export function Entrance({ children, delay = 0, y = 24, as = "div", duration = 0
     <Component initial={{ opacity: 0, y }} animate={{ opacity: 1, y: 0 }} transition={{ duration, delay, ease: EASE }} {...rest}>
       {children}
     </Component>
+  );
+}
+
+/**
+ * Image reveal: the frame opens from a clipped inset while the image settles from a slight zoom.
+ * Under reduced motion MotionConfig drops the transform and the image simply appears.
+ */
+export function MaskReveal({ children, className, delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
+  return (
+    <motion.div
+      className={className}
+      initial={{ clipPath: "inset(14% 10% 14% 10% round 6px)", opacity: 0.4 }}
+      whileInView={{ clipPath: "inset(0% 0% 0% 0% round 6px)", opacity: 1 }}
+      viewport={{ once: true, margin: "0px 0px -10% 0px" }}
+      transition={{ duration: 1.1, delay, ease: EASE }}
+    >
+      <motion.div className="h-full w-full" initial={{ scale: 1.14 }} whileInView={{ scale: 1 }} viewport={{ once: true, margin: "0px 0px -10% 0px" }} transition={{ duration: 1.4, delay, ease: EASE }}>
+        {children}
+      </motion.div>
+    </motion.div>
+  );
+}
+
+const wordsContainer: Variants = { hidden: {}, show: (delay: number = 0) => ({ transition: { staggerChildren: 0.06, delayChildren: delay } }) };
+const wordItem: Variants = {
+  hidden: { y: "105%", opacity: 0 },
+  show: { y: "0%", opacity: 1, transition: { duration: 0.75, ease: EASE } },
+};
+
+/**
+ * Splits a heading into words that rise into place one after another. The words stay plain text
+ * separated by real spaces, so screen readers and search engines read the heading normally.
+ * `trigger="load"` runs on page load (heroes); the default runs when scrolled into view.
+ */
+export function WordsReveal({ text, className, trigger = "view", delay = 0 }: { text: string; className?: string; trigger?: "view" | "load"; delay?: number }) {
+  const words = text.split(" ");
+  const play = trigger === "load" ? { animate: "show" } : { whileInView: "show", viewport: { once: true, margin: "0px 0px -8% 0px" } };
+  return (
+    <motion.span className={className} variants={wordsContainer} custom={delay} initial="hidden" {...play}>
+      {words.map((w, i) => (
+        <Fragment key={`${w}-${i}`}>
+          <span className="inline-block overflow-hidden pb-[0.08em] align-bottom">
+            <motion.span className="inline-block" variants={wordItem}>
+              {w}
+            </motion.span>
+          </span>
+          {i < words.length - 1 ? " " : null}
+        </Fragment>
+      ))}
+    </motion.span>
   );
 }

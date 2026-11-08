@@ -15,7 +15,7 @@ export default function DownloadsPage() {
   const kb = (b: number | null) => (b ? `${Math.round(b / 1024)} KB` : "");
   return (
     <>
-      <PageHero title={page.title} eyebrow="Brochure · Technical specifications" intro="The company brochure and the technical specification sheets for every tank series, exactly as published by Pioneer Water Tanks." image="down-banner" crumbs={[{ label: "Downloads", href: "/downloads" }]} />
+      <PageHero title={page.title} eyebrow="Brochure · Technical specifications" intro="The company brochure and a technical specification sheet for every tank series." image="down-banner" crumbs={[{ label: "Downloads", href: "/downloads" }]} />
       {page.sections.map((s) => {
         const list = docs.filter((d) => (s.id === "brochure" ? d.type === "brochure" : d.type === "datasheet"));
         return (
@@ -30,10 +30,10 @@ export default function DownloadsPage() {
                       PDF · {d.pages} {d.pages === 1 ? "page" : "pages"} · {kb(d.bytes)}
                       {d.series ? ` · ${d.series} series` : ""}
                     </p>
-                    <h3 className="mt-3 font-display text-xl font-bold uppercase tracking-wide text-ink">{d.title}</h3>
+                    <h3 className="mt-3 font-display text-xl font-semibold uppercase tracking-wide text-ink">{d.title}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-taupe-text">{d.summary}</p>
                     {related.length ? <p className="mt-3 text-xs text-taupe-text">Applies to: {related.join(", ")}</p> : null}
-                    <a href={d.localPath} download className="group mt-5 inline-flex min-h-12 items-center gap-2 rounded-md bg-water px-6 font-display text-sm font-bold uppercase tracking-[0.14em] text-white transition-colors hover:bg-water-deep">
+                    <a href={d.localPath} download className="group mt-5 inline-flex min-h-12 items-center gap-2 rounded-md bg-water px-6 font-display text-sm font-semibold uppercase tracking-[0.14em] text-white transition-colors hover:bg-water-deep">
                       Download PDF <FileDown className="size-4" aria-hidden="true" />
                     </a>
                   </StaggerItem>

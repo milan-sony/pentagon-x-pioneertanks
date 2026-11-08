@@ -1,12 +1,12 @@
-# Pioneer Water Tanks – website redesign (two design alternatives)
+# Pioneer Water Tanks – website redesign
 
-Modern, bold, industrial B2B website for **Pioneer Water Tanks L.L.C.** (Abu Dhabi), rebuilt from the content of https://pioneertanks.ae/. Two design alternatives are maintained, each on its own git branch and each implementing **every page** of the site from one centralized content file.
+Modern, bold, industrial B2B website for **Pioneer Water Tanks L.L.C.** (Abu Dhabi), rebuilt from the content of https://pioneertanks.ae/. The chosen design, **Design 1 – Editorial Warm**, lives on the `design-1` branch and implements **every page** of the site from one centralized content file.
 
 See also: [docs/design-comparison.md](docs/design-comparison.md) (side-by-side summary + test results) · [PRD.md](PRD.md) · [ARCHITECTURE.md](ARCHITECTURE.md) · [TASKS.md](TASKS.md) · [CHANGELOG.md](CHANGELOG.md) · [docs/extraction-report.md](docs/extraction-report.md)
 
 ## Technology stack
 
-Next.js 16.4 (App Router, Turbopack, Cache Components) · React 19 · TypeScript 5 · Tailwind CSS 4 · shadcn/ui · lucide-react · next/font (Google Fonts) · framer-motion · Playwright + axe-core · Lighthouse · sharp · pdf-parse
+Next.js 16.4 (App Router, Turbopack, Cache Components) · React 19 · TypeScript 5 · Tailwind CSS 4 · shadcn/ui · lucide-react · next/font (Google Fonts) · framer-motion · Lenis (smooth scrolling) · Playwright + axe-core · Lighthouse · sharp · pdf-parse
 
 Requirements: Node.js ≥ 20 (developed on 24), npm.
 
@@ -52,7 +52,8 @@ Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_WHATSAPP_NUMBER` once t
 | Typed content selectors | `src/lib/content.ts` |
 | Contact / WhatsApp constants | `src/lib/constants.ts` |
 | Pages | `src/app/` – `page.tsx` (home), `products/`, `product/[slug]/`, `about/`, `licenses/`, `gallery/`, `downloads/`, `news/`, `news/[slug]/`, `contact/` |
-| Shared components | `src/components/shared/` (FloatingActions, EnquiryForm, GalleryGrid, Counter, Marquee, Parallax, Reveal, SpecTable, CapacityChart, …) |
+| Shared components | `src/components/shared/` (FloatingActions, EnquiryForm, GalleryGrid, Counter, Marquee, Parallax, Reveal/MaskReveal/WordsReveal, SpecTable, CapacityChart, Preloader, SmoothScroll, ScrollProgress, NotFoundRedirect, …) |
+| 404 page | `src/app/not-found.tsx` + `src/components/shared/NotFoundRedirect.tsx` (3-second countdown home, "Stay on this page" cancels) |
 | Design-specific components | `src/components/{layout,navigation,home,products}/` |
 | Downloaded originals | `public/images/source/`, `public/documents/` |
 | Optimised images | `public/images/optimized/` |

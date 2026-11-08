@@ -37,6 +37,17 @@ Legend: `[x]` done · `[ ]` pending · `[~]` in progress
 - [x] Design 1 `design-1` – every page, full animation, 73/73 tests, Lighthouse a11y 100
 - [x] Design 2 `design-2` – every page, full animation, 73/73 tests, Lighthouse a11y 100 (branch removed 2026-11-08)
 
+## Phase 7 – Design 1 refinement (client feedback, 2026-11-08)
+- [x] Remove source/meta wording from every page (footer design label, brochure/website source notes, contact WhatsApp note, spec-table source tags and verification notes)
+- [x] Desktop dropdowns and mobile menu close after a choice
+- [x] Round, icon-only floating Contact and WhatsApp buttons
+- [x] Smooth scrolling, scroll progress, word-by-word headings, mask image reveals, more parallax, auto-scrolling product strip with pause
+- [x] "Built to last" band: short statement + three figures
+- [x] 404 page with water-filled numerals and a cancellable 3-second redirect
+- [x] Brand preloader (once per session)
+- [x] Lighter type (Urbanist 600), refreshed tokens, shorter home copy, mobile pass (floating buttons side by side on phones)
+- [x] Every link and button verified in a real browser at 1440 and 390 px; new `tests/experience.spec.ts`
+
 ## Next phase (not started)
 - [x] Client shortlisted Design 1 and Design 2; first-round branches removed
 - [x] Client picked Design 1; `design-2` deleted (2026-11-08)

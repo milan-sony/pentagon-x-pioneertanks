@@ -1,7 +1,25 @@
+import { test as base, expect } from "@playwright/test";
 import type { Page, ConsoleMessage, Request } from "@playwright/test";
 import { designConfig } from "../src/data/design-config";
 
 export const DESIGN_ID: string = designConfig.designId;
+
+/**
+ * `test` with the once-per-session preloader marked as already seen, so content checks start on the
+ * page itself. The preloader has its own spec (experience.spec.ts) that uses the plain Playwright test.
+ */
+export const test = base.extend({
+  // The fixture callback is usually called `use`; renamed so the React hooks lint rule does not misfire.
+  page: async ({ page }, provide) => {
+    await page.addInitScript(() => {
+      try {
+        sessionStorage.setItem("pwt-preloaded", "1");
+      } catch {}
+    });
+    await provide(page);
+  },
+});
+export { expect };
 export const SCREENSHOT_DIR = `screenshots/${DESIGN_ID}`;
 
 /** The two primary pages get the full viewport matrix. */

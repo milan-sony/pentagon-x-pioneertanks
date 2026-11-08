@@ -2,6 +2,27 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-08 – Design 1 refinement from client feedback
+
+**Changed**
+- Removed visitor-facing source and meta wording: the footer design label, "From the PWT company brochure", the About-page source line, the Contact-page WhatsApp/hours note, "as published by…" phrasing on Downloads and Licenses, the product-page source line, spec-table "(datasheet …)" tags and verification notes. These notes remain in `website-content.js` as internal records; the capacity-chart verification sentence moved into the product's `verificationNotes`.
+- Navigation: desktop dropdowns now use explicit state (hover, chevron button, focus) and close on selection, route change, Escape and outside click; the mobile menu also collapses its submenu after a choice.
+- Floating actions: round, icon-only Contact and WhatsApp buttons with accessible names (56 px stacked on desktop, 48 px side by side on phones so they cover less content).
+- Motion: Lenis smooth scrolling (paused while dialogs/menus are open, off for reduced motion), scroll-progress bar, word-by-word headings, mask image reveals, more parallax, hero photo zoom-settle, header that hides on scroll down and returns on scroll up.
+- Home: shorter copy throughout; hero quick facts; auto-scrolling product strip with pause/play, previous/next and progress; "Built to last" band rebuilt as a short statement plus three figures (1993, 10-year warranty, under 6 days to install 500 m³); applications as four short icon cards; gallery bento sized to the source photos.
+- New 404 page: water moving inside the numerals, 3-second countdown to home with a "Stay on this page" button (WCAG 2.2.1).
+- New brand preloader: logo over a tank filling with water, once per browser session, skipped for reduced motion and without JavaScript.
+- Type and theme: Urbanist headings at weight 600 with a shared scale (`heading-1/2/3`), slightly lighter cream/paper tokens, refined buttons with press feedback.
+- Smaller client bundle: the preloader and mobile menu receive logo/contact as props instead of importing the content module.
+- Tests: new `tests/experience.spec.ts` (preloader, 404, menus closing, carousel pause, icon-only floating buttons, no meta wording); the desktop-dropdown keyboard test follows the new disclosure button; specs use a fixture that marks the preloader as seen.
+
+**Checked**
+- `npm run lint` and `npm run typecheck` exit 0; `npm run build` succeeds (19 routes).
+- Real-browser sweep of every page at 1440 and 390 px: 543 links resolve (internal 200, anchors present, downloads present, mailto/tel/WhatsApp well-formed); every visible button clicked on a fresh load changes the page (108 at desktop, 95 at mobile) with no page errors – the only non-responder is the Next.js dev-tools badge, which exists in dev mode only.
+- Behaviour checks: dropdown closes after a mouse or keyboard choice and on Escape; mobile menu closes after a choice; product strip advances on its own and stops when paused; Lenis active; header hides and returns; preloader shows once per session; 404 "Stay" cancels and the redirect fires otherwise.
+- Rendered-text scan of all 12 routes plus a scan of the tab-rendered product fields: no source/meta wording.
+- Not yet complete: the full Playwright suite was interrupted at 43 passed when the machine ran low on memory (the 3 failures were browser crashes, not assertions). It needs a clean re-run before the screenshots are refreshed.
+
 ## 2026-11-08 – Dev-server warnings cleared
 
 **Changed**

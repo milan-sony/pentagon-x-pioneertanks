@@ -761,7 +761,7 @@ const capacityChart = {
   documentRef: "brochure",
   page: 7,
   title: "Gross Capacity Chart",
-  note: "Net tank capacity depends on position and size of tank nozzles. Model/diameter pairing follows the row order printed in the brochure (the PDF text layer lists PWT-18 before PWT-17; sequential order is assumed – confirm with client).",
+  note: "Net tank capacity depends on position and size of tank nozzles.",
   unitsNote: "KL = kilolitre. 1 Cubic Meter = 1,000 Liter | 1 US Gallon = 3.785 Liter | 1 Imperial Gallon = 4.546 Liter",
   columns: [
     { ring: "R1", wallHeight: "1.14m" },
@@ -927,6 +927,7 @@ const products = [
       "Capacity units on the live page and brochure text layer read 'm' where 'm³' is meant (superscript lost in HTML/PDF); corrected to m³ here.",
       "Bolt sizes, truss coating and liner figures differ between the web page and the PLT datasheet (see specification notes).",
       "Brand spelling: the site writes 'Zincalum'; the datasheets and brochure use the registered name 'ZINCALUME®'.",
+      "Capacity chart: Model/diameter pairing follows the row order printed in the brochure (the PDF text layer lists PWT-18 before PWT-17; sequential order is assumed – confirm with client).",
     ],
   },
 

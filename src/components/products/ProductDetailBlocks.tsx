@@ -20,7 +20,7 @@ export function ProductFacts({ product }: { product: Product }) {
         {product.keyFacts.map((f) => (
           <div key={f.label}>
             <dt className="eyebrow text-taupe-text">{f.label}</dt>
-            <dd className="mt-1 font-display text-2xl font-bold text-ink">{f.value}</dd>
+            <dd className="mt-1 font-display text-2xl font-semibold text-ink">{f.value}</dd>
           </div>
         ))}
       </dl>
@@ -41,7 +41,7 @@ export function ProductFacts({ product }: { product: Product }) {
 
 /** Tabbed technical content: specification, features, accessories & foundation, applications, benefits, capacity chart. */
 export function ProductTechnicalTabs({ product }: { product: Product }) {
-  const tabClass = "rounded-none border-b-2 border-transparent px-4 py-3 font-display text-xs font-bold uppercase tracking-[0.18em] text-taupe-text data-[state=active]:border-water data-[state=active]:text-ink data-[state=active]:shadow-none";
+  const tabClass = "rounded-none border-b-2 border-transparent px-4 py-3 font-display text-xs font-semibold uppercase tracking-[0.18em] text-taupe-text data-[state=active]:border-water data-[state=active]:text-ink data-[state=active]:shadow-none";
   return (
     <Tabs defaultValue="specification" className="w-full">
       <TabsList className="h-auto w-full flex-wrap justify-start gap-1 rounded-none border-b border-border bg-transparent p-0">
@@ -74,7 +74,7 @@ export function ProductTechnicalTabs({ product }: { product: Product }) {
           <Accordion type="multiple" defaultValue={product.variants.map((v) => v.id)} className="mt-8">
             {product.variants.map((v) => (
               <AccordionItem key={v.id} value={v.id} className="border-border">
-                <AccordionTrigger className="py-4 font-display text-lg font-bold uppercase tracking-wide hover:no-underline">{v.name}</AccordionTrigger>
+                <AccordionTrigger className="py-4 font-display text-lg font-semibold uppercase tracking-wide hover:no-underline">{v.name}</AccordionTrigger>
                 <AccordionContent className="pb-6">
                   <p className="text-taupe-text">{v.summary}</p>
                   <SpecTable specs={v.specifications} caption={`${v.name} specification`} className="mt-4" classNames={specClasses} />
@@ -88,9 +88,8 @@ export function ProductTechnicalTabs({ product }: { product: Product }) {
         <Stagger as="ul" className="grid gap-5 md:grid-cols-2">
           {product.features.map((f) => (
             <StaggerItem as="li" key={f.title} className="rounded-md border border-border bg-paper p-5">
-              <h3 className="font-display text-base font-bold uppercase tracking-wide text-ink">{f.title}</h3>
+              <h3 className="font-display text-base font-semibold uppercase tracking-wide text-ink">{f.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-taupe-text">{f.body}</p>
-              {f.source === "document" ? <p className="mt-2 text-xs text-taupe-text">Source: PWT brochure / datasheet</p> : null}
             </StaggerItem>
           ))}
         </Stagger>
@@ -98,7 +97,7 @@ export function ProductTechnicalTabs({ product }: { product: Product }) {
       <TabsContent value="accessories" className="pt-6">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
-            <h3 className="font-display text-base font-bold uppercase tracking-wide text-ink">Accessories</h3>
+            <h3 className="font-display text-base font-semibold uppercase tracking-wide text-ink">Accessories</h3>
             <ul className="mt-3 grid gap-2 text-ink/85">
               {product.accessories.map((a) => (
                 <li key={a} className="flex gap-3">
@@ -109,7 +108,7 @@ export function ProductTechnicalTabs({ product }: { product: Product }) {
             </ul>
           </div>
           <div>
-            <h3 className="font-display text-base font-bold uppercase tracking-wide text-ink">Foundation</h3>
+            <h3 className="font-display text-base font-semibold uppercase tracking-wide text-ink">Foundation</h3>
             {product.foundation?.length ? (
               <ul className="mt-3 grid gap-2 text-ink/85">
                 {product.foundation.map((f) => (

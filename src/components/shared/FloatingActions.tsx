@@ -19,37 +19,24 @@ export interface FloatingActionsProps {
  * its own classes. Both links are real actions – never decorative.
  */
 export function FloatingActions({ whatsappClassName, contactClassName, contactHref = `/#${ENQUIRY_ANCHOR}`, className }: FloatingActionsProps) {
+  const base =
+    "group inline-flex size-12 items-center md:size-14 justify-center rounded-full shadow-[0_12px_28px_-10px_rgb(0_0_0/0.45)] transition-[translate,scale,box-shadow] duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_18px_34px_-12px_rgb(0_0_0/0.5)] active:translate-y-0";
   return (
-    <aside
-      aria-label="Quick contact"
-      className={cn("fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3 print:hidden md:bottom-6 md:right-6", className)}
-      data-testid="floating-actions"
-    >
-      <a
-        href={contactHref}
-        className={cn(
-          "inline-flex min-h-12 min-w-12 items-center justify-center gap-2 px-3 text-sm font-semibold shadow-lg md:px-4 transition-transform focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 motion-safe:hover:-translate-y-0.5",
-          contactClassName,
-        )}
-        data-testid="floating-contact"
-      >
-        <PhoneCall className="size-5" aria-hidden="true" />
-        <span className="sr-only md:not-sr-only">Contact us</span>
+    <aside aria-label="Quick contact" className={cn("fixed bottom-4 right-4 z-50 flex flex-row-reverse items-center gap-3 print:hidden md:bottom-6 md:right-6 md:flex-col md:items-center", className)} data-testid="floating-actions">
+      <a href={contactHref} className={cn(base, contactClassName)} aria-label="Contact us" title="Contact us" data-testid="floating-contact">
+        <PhoneCall className="size-5 md:size-6 transition-transform duration-300 group-hover:rotate-12" aria-hidden="true" />
       </a>
       <a
         href={whatsappHref()}
         target="_blank"
         rel="noopener noreferrer"
-        className={cn(
-          "inline-flex min-h-14 min-w-14 items-center justify-center gap-2 bg-[#25D366] px-4 text-[#062a16] shadow-lg transition-transform focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/50 focus-visible:ring-offset-2 motion-safe:hover:-translate-y-0.5",
-          whatsappClassName,
-        )}
-        aria-label={WHATSAPP_CONFIGURED ? "Chat with Pioneer Water Tanks on WhatsApp" : "Open WhatsApp with a pre-filled enquiry message"}
+        className={cn(base, "bg-[#25D366] text-[#062a16] focus-visible:ring-[#25D366]/50", whatsappClassName)}
+        aria-label={WHATSAPP_CONFIGURED ? "Chat with Pioneer Water Tanks on WhatsApp (opens in a new tab)" : "Open WhatsApp with a pre-filled enquiry message (opens in a new tab)"}
+        title="WhatsApp"
         data-testid="floating-whatsapp"
         data-whatsapp-configured={WHATSAPP_CONFIGURED ? "true" : "false"}
       >
-        <WhatsAppIcon className="size-7" />
-        <span className="sr-only md:not-sr-only md:text-sm md:font-semibold">WhatsApp</span>
+        <WhatsAppIcon className="size-6 md:size-7 transition-transform duration-300 group-hover:scale-110" />
       </a>
     </aside>
   );

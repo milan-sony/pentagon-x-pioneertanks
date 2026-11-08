@@ -15,9 +15,9 @@ export default function NewsPage() {
   const articles = getNewsArticles();
   return (
     <>
-      <PageHero title={page.title} eyebrow="Company news" intro="Updates from Pioneer Water Tanks LLC, Abu Dhabi." image="news-banner" crumbs={[{ label: "News", href: "/news" }]} />
+      <PageHero title={page.title} eyebrow="Pioneer Water Tanks" intro="Updates from Pioneer Water Tanks LLC, Abu Dhabi." image="news-banner" crumbs={[{ label: "News", href: "/news" }]} />
       <Section className="bg-cream py-16 lg:py-24" aria-labelledby="news-list-title">
-        <SectionHeading id="news-list-title" eyebrow="Latest" title={`${articles.length} ${articles.length === 1 ? "article" : "articles"}`} description="Follow Pioneer on Facebook and Twitter for day-to-day updates; longer announcements are published here." />
+        <SectionHeading id="news-list-title" eyebrow="Company news" title="Latest news" description="Announcements and project updates from Pioneer Water Tanks." />
         <Stagger as="ul" className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {articles.map((n) => {
             const img = n.image ? getAsset(n.image) : null;
@@ -32,7 +32,7 @@ export default function NewsPage() {
                   <p className="eyebrow mt-5 text-taupe-text">
                     {n.dateLabel} {n.isoDate?.slice(0, 4)}
                   </p>
-                  <h2 className="mt-2 font-display text-xl font-bold uppercase leading-tight tracking-wide text-ink group-hover:text-water">{n.title}</h2>
+                  <h2 className="mt-2 font-display text-xl font-semibold uppercase leading-tight tracking-wide text-ink group-hover:text-water">{n.title}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-taupe-text">{n.excerpt}</p>
                 </Link>
               </StaggerItem>

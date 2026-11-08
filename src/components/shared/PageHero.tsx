@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { Entrance } from "@/components/shared/Reveal";
+import { Entrance, WordsReveal } from "@/components/shared/Reveal";
 import { Parallax } from "@/components/shared/Parallax";
 import { assetSrc, getAsset } from "@/lib/content";
 import { cn } from "@/lib/utils";
@@ -46,17 +46,16 @@ export function PageHero({ title, eyebrow, intro, image, crumbs = [], className,
           </Entrance>
         ) : null}
         {eyebrow ? (
-          <Entrance as="p" y={10} delay={0.05} className="eyebrow text-bronze">
+          <Entrance as="p" y={10} delay={0.05} className="eyebrow flex items-center gap-3 text-bronze">
+            <span className="h-px w-8 bg-bronze/60" aria-hidden="true" />
             {eyebrow}
           </Entrance>
         ) : null}
-        <Entrance as="div" delay={0.1}>
-          <h1 id="page-title" className="mt-3 max-w-[16ch] font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold uppercase leading-[1] tracking-wide text-white">
-            {title}
-          </h1>
-        </Entrance>
+        <h1 id="page-title" className="mt-4 max-w-[18ch] font-display text-[clamp(2.3rem,5.4vw,4.75rem)] font-semibold uppercase leading-[1] tracking-[0.01em] text-white">
+          <WordsReveal text={title} trigger="load" delay={0.1} />
+        </h1>
         {intro ? (
-          <Entrance as="p" delay={0.2} className="mt-6 max-w-2xl text-lg text-cream/85">
+          <Entrance as="p" delay={0.35} className="mt-6 max-w-2xl text-[1.0625rem] leading-relaxed text-cream/85 sm:text-lg">
             {intro}
           </Entrance>
         ) : null}

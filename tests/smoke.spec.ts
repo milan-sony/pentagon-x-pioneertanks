@@ -1,5 +1,4 @@
-import { test, expect } from "@playwright/test";
-import { PRIMARY_PAGES, ALL_PAGES, watchPage, settle } from "./helpers";
+import { expect, test, PRIMARY_PAGES, ALL_PAGES, watchPage, settle } from "./helpers";
 
 for (const p of PRIMARY_PAGES) {
   test.describe(`${p.name} page`, () => {

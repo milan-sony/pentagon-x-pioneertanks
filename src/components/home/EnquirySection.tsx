@@ -13,7 +13,7 @@ export function EnquirySection({ defaultProduct, heading = "Request a quote" }: 
       <div className="grid gap-12 lg:grid-cols-12">
         <Reveal className="lg:col-span-5">
           <p className="eyebrow text-bronze-text">Enquiry</p>
-          <h2 id="enquiry-title" className="mt-3 font-display text-[clamp(2rem,4vw,3.5rem)] font-bold uppercase leading-[1.02] tracking-wide text-ink">
+          <h2 id="enquiry-title" className="mt-3 font-display text-[clamp(2rem,4vw,3.5rem)] font-semibold uppercase leading-[1.02] tracking-wide text-ink">
             {heading}
           </h2>
           <p className="mt-5 text-taupe-text">Tell us the capacity, the liquid to be stored and the site. Our Abu Dhabi office replies with a specification and price.</p>

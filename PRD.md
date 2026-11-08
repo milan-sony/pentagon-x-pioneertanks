@@ -79,6 +79,10 @@ Functionality
 - [ ] Navigation, product links and contact actions work on every page.
 - [ ] WhatsApp action uses the configured number (or the documented placeholder behaviour).
 - [ ] No decorative/broken buttons; no broken local assets.
+- [ ] Desktop and mobile submenus close once an item is chosen.
+- [ ] Floating Contact and WhatsApp actions are round, icon-only and labelled for assistive tech.
+- [ ] A branded preloader (once per session) and a 404 page that returns home after 3 s with a way to stay.
+- [ ] No source notes, verification notes or design labels in visitor-facing copy.
 
 Quality
 - [ ] WCAG 2.2 AA evaluated with axe; desktop + mobile tested at 6 viewports; no horizontal overflow.
