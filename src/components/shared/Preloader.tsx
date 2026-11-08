@@ -4,8 +4,8 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const SEEN_KEY = "pwt-preloaded";
-const MIN_MS = 1100;
-const MAX_MS = 2600;
+const MIN_MS = 900;
+const MAX_MS = 2000;
 
 /**
  * Runs before first paint (inlined in <head>): returning visitors in this session and visitors who
@@ -24,26 +24,24 @@ export function Preloader({ logo }: { logo: { src: string; width: number; height
   useEffect(() => {
     const el = ref.current;
     if (!el || document.documentElement.classList.contains("preloader-off")) return;
-    const started = performance.now();
-    let leaveTimer = 0;
     let goneTimer = 0;
+    let done = false;
     const leave = () => {
-      window.clearTimeout(leaveTimer);
-      const wait = Math.max(0, MIN_MS - (performance.now() - started));
-      leaveTimer = window.setTimeout(() => {
-        el.dataset.state = "leaving";
-        try {
-          sessionStorage.setItem(SEEN_KEY, "1");
-        } catch {}
-        goneTimer = window.setTimeout(() => (el.dataset.state = "gone"), 700);
-      }, wait);
+      if (done) return;
+      done = true;
+      el.dataset.state = "leaving";
+      try {
+        sessionStorage.setItem(SEEN_KEY, "1");
+      } catch {}
+      goneTimer = window.setTimeout(() => (el.dataset.state = "gone"), 700);
     };
-    if (document.readyState === "complete") leave();
-    else window.addEventListener("load", leave, { once: true });
+    // Leave once the fonts are ready and the minimum time has passed – not after every image has loaded,
+    // so the page underneath becomes visible as early as possible.
+    const minTime = new Promise((r) => window.setTimeout(r, MIN_MS));
+    Promise.all([document.fonts?.ready ?? Promise.resolve(), minTime]).then(leave);
     const fallback = window.setTimeout(leave, MAX_MS);
     return () => {
-      window.removeEventListener("load", leave);
-      window.clearTimeout(leaveTimer);
+      done = true;
       window.clearTimeout(goneTimer);
       window.clearTimeout(fallback);
     };

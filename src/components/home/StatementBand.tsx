@@ -43,7 +43,7 @@ export function StatementBand({ showCta = true }: { showCta?: boolean }) {
         </div>
         <Stagger as="div" className="mt-14 grid gap-px overflow-hidden rounded-md bg-cream/15 sm:grid-cols-3">
           {FIGURES.map((f) => (
-            <StaggerItem key={f.label} className="flex flex-col-reverse bg-espresso/70 p-6 backdrop-blur-sm sm:p-8">
+            <StaggerItem key={f.label} className="flex flex-col-reverse bg-espresso/85 p-6 sm:p-8">
               <p className="mt-2 max-w-[24ch] text-sm leading-snug text-cream/75">{f.label}</p>
               <p className="font-display text-4xl font-semibold text-white lg:text-5xl">
                 {"static" in f ? f.value : <Counter value={f.value} prefix={f.prefix} suffix={f.suffix} duration={1.4} />}

@@ -21,7 +21,8 @@ Newest first. Every entry says what changed and how it was checked.
 - Real-browser sweep of every page at 1440 and 390 px: 543 links resolve (internal 200, anchors present, downloads present, mailto/tel/WhatsApp well-formed); every visible button clicked on a fresh load changes the page (108 at desktop, 95 at mobile) with no page errors – the only non-responder is the Next.js dev-tools badge, which exists in dev mode only.
 - Behaviour checks: dropdown closes after a mouse or keyboard choice and on Escape; mobile menu closes after a choice; product strip advances on its own and stops when paused; Lenis active; header hides and returns; preloader shows once per session; 404 "Stay" cancels and the redirect fires otherwise.
 - Rendered-text scan of all 12 routes plus a scan of the tab-rendered product fields: no source/meta wording.
-- Not yet complete: the full Playwright suite was interrupted at 43 passed when the machine ran low on memory (the 3 failures were browser crashes, not assertions). It needs a clean re-run before the screenshots are refreshed.
+- Full Playwright suite on the production build: 82/82 passed (axe WCAG 2.2 AA zero serious/critical on 12 routes × 2 viewports, no overflow at 360–1920 px, new experience spec). An earlier run was interrupted by low memory; the re-run is clean. Screenshots refreshed in `screenshots/design-1/`.
+- Lighthouse: home 84 mobile / 70 desktop, products 94 / 74; accessibility, best practices and SEO 100 on all four. The preloader now leaves once fonts are ready and 0.9 s have passed instead of waiting for every image (first run: home desktop 59), and the figure cards dropped `backdrop-filter`.
 
 ## 2026-11-08 – Dev-server warnings cleared
 
