@@ -2,6 +2,14 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-08 – Hero scroll cue removed
+
+**Changed**
+- Removed the "Scroll" mouse icon from the bottom of the home hero (client request) and its `scroll-cue` keyframes.
+
+**Checked**
+- Home hero at 1440 and 390 px: no scroll icon, headline, intro, buttons and quick facts unchanged; no console errors. `npm run lint` and typecheck pass.
+
 ## 2026-11-08 – Product strip auto-scrolls for every visitor
 
 **Changed**

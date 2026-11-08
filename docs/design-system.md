@@ -53,7 +53,7 @@ An editorial, magazine-like presentation of an industrial product: large photogr
 
 - Preloader: once per browser session – the logo above a tank that fills with water (≈1.1 s), then a fade; skipped for reduced motion and without JavaScript.
 - Smooth scrolling: Lenis inertial wheel/trackpad scrolling (touch stays native), paused while a dialog or menu is open; thin water-to-bronze progress bar along the top.
-- Hero: the photo settles from a slow zoom (2.6 s) and drifts with the scroll; the headline rises in word by word, then the intro, actions and quick facts; a short scroll cue (3 cycles).
+- Hero: the photo settles from a slow zoom (2.6 s) and drifts with the scroll; the headline rises in word by word, then the intro, actions and quick facts.
 - Scroll: section titles rise in word by word (`WordsReveal`); images open from a clipped frame while settling from a zoom (`MaskReveal`); `Reveal`/`Stagger` fade-and-rise on blocks and card grids.
 - Counters: count up over 1.6 s when the stats row enters view.
 - Product strip (home): auto-scrolls one card every 3.5 s and loops; pauses on hover, keyboard focus, off screen and for 6 s after manual scrolling; visible pause/play button; runs for reduced-motion visitors too (client decision).

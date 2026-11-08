@@ -317,18 +317,3 @@ html.lenis body {
     stroke-dashoffset: 132;
   }
 }
-
-@keyframes scroll-cue {
-  0% {
-    transform: translate(-50%, 0);
-    opacity: 1;
-  }
-  70% {
-    transform: translate(-50%, 12px);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(-50%, 0);
-    opacity: 0;
-  }
-}

@@ -57,13 +57,6 @@ export function Hero() {
             </dl>
           </Entrance>
         </div>
-
-        <a href="#about" className="group mt-10 hidden items-center gap-3 self-start text-xs uppercase tracking-[0.2em] text-cream/70 hover:text-white lg:inline-flex" aria-label="Scroll to the next section">
-          <span className="relative h-10 w-6 rounded-full border border-cream/40" aria-hidden="true">
-            <span className="absolute left-1/2 top-2 h-2 w-0.5 -translate-x-1/2 rounded-full bg-cream motion-safe:animate-[scroll-cue_1.8s_ease-in-out_3]" />
-          </span>
-          Scroll
-        </a>
       </div>
     </section>
   );
