@@ -2,6 +2,15 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-08 – Design 2 removed; Design 1 chosen
+
+**Changed**
+- Deleted the `design-2` branch (Design 2 – Corporate Bento) at the client's request. A backup bundle of the branch was kept outside the repository.
+- README, PRD, ARCHITECTURE, TASKS and `docs/design-comparison.md` now describe Design 1 as the single chosen design.
+
+**Checked**
+- `git branch` lists only `main` and `design-1`. No tracked file outside this changelog still points at `design-2` as a live branch.
+
 ## 2026-11-08 – Dev-mode navigation error on detail pages fixed
 
 **Changed**
