@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { animate, useInView, useReducedMotion } from "framer-motion";
+import { animate, useInView } from "framer-motion";
+import { usePrefersReducedMotion } from "@/lib/use-prefers-reduced-motion";
 
 export interface CounterProps {
   /** Final value. */
@@ -23,7 +24,7 @@ export interface CounterProps {
 export function Counter({ value, prefix = "", suffix = "", decimals = 0, duration = 1.6, className }: CounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "0px 0px -10% 0px" });
-  const reduce = useReducedMotion();
+  const reduce = usePrefersReducedMotion();
   const [display, setDisplay] = useState<number | null>(null);
   const started = useRef(false);
 

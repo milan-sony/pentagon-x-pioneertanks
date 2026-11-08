@@ -2,6 +2,16 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-08 – Product strip timing and reduced-motion hydration fixed
+
+**Changed**
+- Product strip: only real visitor input (pointer, touch, horizontal wheel, arrow buttons) holds auto-scroll back, for 6 s. Before, the strip's own smooth scrolling outlasted a 700 ms guard and was mistaken for a manual swipe, so it advanced only every 7–10 s. A mouse click on its buttons no longer pauses it indefinitely; keyboard focus still pauses it.
+- New `usePrefersReducedMotion` hook (`src/lib/use-prefers-reduced-motion.ts`, `useSyncExternalStore` with a `false` server snapshot) replaces framer-motion's `useReducedMotion` in the product strip, `Parallax` and `Counter`. For visitors who prefer reduced motion the first client render differed from the server HTML (pause-button label, parallax style) and React reported "Hydration failed".
+
+**Checked**
+- Probe in Chromium on `next dev`: the strip advances every 3.5 s and resumes 6 s after a click on Next; with `reducedMotion: reduce` there are no console or page errors on load and the strip starts paused.
+- `npm run lint`, typecheck and `npm run build` pass; `experience`, `smoke` and `a11y` specs on the production build: 47/47.
+
 ## 2026-11-08 – Design 1 refinement from client feedback
 
 **Changed**

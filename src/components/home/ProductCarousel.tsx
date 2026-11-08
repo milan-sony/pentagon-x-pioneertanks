@@ -3,9 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useInView, useReducedMotion } from "framer-motion";
+import { useInView } from "framer-motion";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Pause, Play } from "lucide-react";
 import type { ImageAsset } from "@/types/content";
+import { usePrefersReducedMotion } from "@/lib/use-prefers-reduced-motion";
 
 export interface CarouselCard {
   href: string;
@@ -16,50 +17,49 @@ export interface CarouselCard {
 }
 
 const INTERVAL_MS = 3500;
-/** After a manual swipe/click, wait this long before auto-scrolling again. */
-const RESUME_AFTER_MS = 8000;
+/** After the visitor scrolls the strip or uses the arrows, wait this long before auto-scrolling again. */
+const RESUME_AFTER_MS = 6000;
 
 /** Scroll the strip by one card; with `loop`, wrap around at either end. */
-function advance(el: HTMLUListElement | null, programmatic: React.RefObject<boolean>, dir: 1 | -1, loop: boolean) {
+function advance(el: HTMLUListElement | null, dir: 1 | -1, loop: boolean, smooth: boolean) {
   if (!el) return;
   const card = el.querySelector("li");
   const w = card ? card.getBoundingClientRect().width + 20 : 360;
   const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 8;
   const atStart = el.scrollLeft <= 8;
-  programmatic.current = true;
-  if (loop && dir === 1 && atEnd) el.scrollTo({ left: 0, behavior: "smooth" });
-  else if (loop && dir === -1 && atStart) el.scrollTo({ left: el.scrollWidth, behavior: "smooth" });
-  else el.scrollBy({ left: dir * w, behavior: "smooth" });
-  window.setTimeout(() => (programmatic.current = false), 700);
+  const behavior: ScrollBehavior = smooth ? "smooth" : "auto";
+  if (loop && dir === 1 && atEnd) el.scrollTo({ left: 0, behavior });
+  else if (loop && dir === -1 && atStart) el.scrollTo({ left: el.scrollWidth, behavior });
+  else el.scrollBy({ left: dir * w, behavior });
 }
 
 /**
  * Auto-scrolling strip of image-overlay cards.
  * - Advances one card every 3.5 s and loops back to the start.
- * - Pauses while hovered or focused, while off screen, and for a while after any manual scroll.
+ * - Pauses while the pointer is over it, while it has keyboard focus, while off screen, and for 6 s
+ *   after the visitor swipes, wheels or uses the arrows (only real input counts – the strip's own
+ *   smooth scrolling never pauses it).
  * - Visible pause/play button (WCAG 2.2.2); starts paused for visitors who prefer reduced motion.
  */
 export function ProductCarousel({ cards, label }: { cards: CarouselCard[]; label: string }) {
   const listRef = useRef<HTMLUListElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const inView = useInView(wrapRef, { margin: "-20% 0px -20% 0px" });
-  const reduce = useReducedMotion();
+  const reduce = usePrefersReducedMotion();
   const [userPaused, setUserPaused] = useState<boolean | null>(null);
   const [hovering, setHovering] = useState(false);
+  const [keyboardFocus, setKeyboardFocus] = useState(false);
   const [progress, setProgress] = useState(0);
   const resumeAt = useRef(0);
-  const programmatic = useRef(false);
 
-  const paused = userPaused ?? !!reduce;
-  const running = !paused && !hovering && inView;
-
-  const step = (dir: 1 | -1, loop = false) => advance(listRef.current, programmatic, dir, loop);
+  const paused = userPaused ?? reduce;
+  const running = !paused && !hovering && !keyboardFocus && inView;
 
   useEffect(() => {
     if (!running) return;
     const id = window.setInterval(() => {
       if (Date.now() < resumeAt.current) return;
-      advance(listRef.current, programmatic, 1, true);
+      advance(listRef.current, 1, true, true);
     }, INTERVAL_MS);
     return () => window.clearInterval(id);
   }, [running]);
@@ -69,19 +69,33 @@ export function ProductCarousel({ cards, label }: { cards: CarouselCard[]; label
     if (!el) return;
     const max = el.scrollWidth - el.clientWidth;
     setProgress(max > 0 ? el.scrollLeft / max : 0);
-    if (!programmatic.current) resumeAt.current = Date.now() + RESUME_AFTER_MS;
+  };
+
+  /** Real visitor input on the strip: hold auto-scroll back for a while. */
+  const holdOff = () => {
+    resumeAt.current = Date.now() + RESUME_AFTER_MS;
   };
 
   const manual = (dir: 1 | -1) => {
-    resumeAt.current = Date.now() + RESUME_AFTER_MS;
-    step(dir, true);
+    holdOff();
+    advance(listRef.current, dir, true, !reduce);
   };
 
   return (
-    <div ref={wrapRef} className="relative" onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)} onFocus={() => setHovering(true)} onBlur={(e) => !e.currentTarget.contains(e.relatedTarget as Node | null) && setHovering(false)}>
+    <div
+      ref={wrapRef}
+      className="relative"
+      onMouseEnter={() => setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
+      onFocus={(e) => setKeyboardFocus((e.target as HTMLElement).matches(":focus-visible"))}
+      onBlur={(e) => !e.currentTarget.contains(e.relatedTarget as Node | null) && setKeyboardFocus(false)}
+    >
       <ul
         ref={listRef}
         onScroll={onScroll}
+        onPointerDown={holdOff}
+        onTouchStart={holdOff}
+        onWheel={(e) => Math.abs(e.deltaX) > Math.abs(e.deltaY) && holdOff()}
         className="-mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-2 [scrollbar-width:none] sm:-mx-6 sm:px-6 xl:-mx-10 xl:px-10 [&::-webkit-scrollbar]:hidden"
         aria-label={label}
         data-testid="product-carousel"
