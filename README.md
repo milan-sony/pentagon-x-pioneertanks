@@ -10,21 +10,20 @@ Next.js 16.4 (App Router, Turbopack, Cache Components) · React 19 · TypeScript
 
 Requirements: Node.js ≥ 20 (developed on 24), npm.
 
-## Branches – how to switch between designs
+## Branches
 
 | Branch | Design | Direction |
 |---|---|---|
 | `main` | Baseline | Content, shared components, test harness, docs. Plain unstyled pages for every route. |
 | `design-1` | **Design 1 – Editorial Warm** | Cream/espresso + water blue, Urbanist + Nunito Sans, photography-led, reveals, counters, marquee, parallax |
-| `design-2` | **Design 2 – Corporate Bento** | Navy/sky/mint + orange, rounded bento panels, Plus Jakarta Sans + DM Sans, reveals, counters, marquee |
 
 ```bash
-git switch design-1   # or design-2
+git switch design-1
 npm install
 npm run dev          # http://localhost:3000
 ```
 
-Each branch is self-contained: it builds, runs and tests on its own and carries its own `docs/design-system.md`, `docs/test-report.md` and `screenshots/design-<x>/`. The two designs are never merged into one another. Both implement every page: home, products, three product details, about, licenses, gallery, downloads, news + article and contact.
+`design-1` is the chosen design (Design 2 – Corporate Bento was removed on 2026-11-08 at the client's request). It builds, runs and tests on its own and carries its own `docs/design-system.md`, `docs/test-report.md` and `screenshots/design-1/`. It implements every page: home, products, three product details, about, licenses, gallery, downloads, news + article and contact.
 
 ## Commands
 

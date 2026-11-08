@@ -54,14 +54,13 @@ All content comes from a single, curated content file (`src/data/website-content
 - WhatsApp: the site publishes no WhatsApp number. **BLOCKER-1: client must supply the WhatsApp business number** (`NEXT_PUBLIC_WHATSAPP_NUMBER`). Until then the button opens WhatsApp's contact-picker share link with the pre-filled message so it still functions.
 - Stack: Next.js (App Router) + TypeScript + Tailwind CSS v4 + shadcn/ui + Lucide + next/font (Google Fonts) + Framer Motion + Playwright.
 
-## 8. Design alternatives
+## 8. Design
 
 | Branch | Direction | Palette | Type |
 |---|---|---|---|
 | `design-1` | Editorial Warm – photography-led, editorial | cream, espresso, water blue, bronze | Urbanist + Nunito Sans |
-| `design-2` | Corporate Bento – rounded bento panels | white, navy, sky, mint, orange | Plus Jakarta Sans + DM Sans |
 
-Full tokens per design: `docs/design-system.md` on each branch.
+Design 1 is the chosen design; Design 2 (Corporate Bento) was removed on 2026-11-08 at the client's request. Full tokens: `docs/design-system.md` on `design-1`.
 
 ## 9. Acceptance criteria
 
