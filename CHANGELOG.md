@@ -2,6 +2,16 @@
 
 Newest first. Every entry says what changed and how it was checked.
 
+## 2026-11-08 – Product strip auto-scrolls for every visitor
+
+**Changed**
+- At the client's request the home product strip now auto-scrolls for every visitor, including those whose browser asks for reduced motion (before, it started paused for them). The visible pause/play button, pausing on hover and keyboard focus, and the 6 s hold-off after manual scrolling are unchanged, so it still meets WCAG 2.2.2. All other motion still rests under reduced motion.
+- New test in `experience.spec.ts`: the strip advances with `reducedMotion: "reduce"`.
+
+**Checked**
+- Probe in Chromium on `next dev` with `reducedMotion: "reduce"`: no console or page errors on load, the toggle reads "Pause automatic scrolling", and the strip advances every 3.5 s, looping back to the start.
+- `npm run lint`, typecheck and `npm run build` pass; `experience` + `smoke` specs on the production build: 22/22, including the new reduced-motion test.
+
 ## 2026-11-08 – Product strip timing and reduced-motion hydration fixed
 
 **Changed**

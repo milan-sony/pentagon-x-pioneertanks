@@ -56,7 +56,7 @@ An editorial, magazine-like presentation of an industrial product: large photogr
 - Hero: the photo settles from a slow zoom (2.6 s) and drifts with the scroll; the headline rises in word by word, then the intro, actions and quick facts; a short scroll cue (3 cycles).
 - Scroll: section titles rise in word by word (`WordsReveal`); images open from a clipped frame while settling from a zoom (`MaskReveal`); `Reveal`/`Stagger` fade-and-rise on blocks and card grids.
 - Counters: count up over 1.6 s when the stats row enters view.
-- Product strip (home): auto-scrolls one card every 3.5 s and loops; pauses on hover/focus, off screen and after manual scrolling; visible pause/play button; starts paused under reduced motion.
+- Product strip (home): auto-scrolls one card every 3.5 s and loops; pauses on hover, keyboard focus, off screen and for 6 s after manual scrolling; visible pause/play button; runs for reduced-motion visitors too (client decision).
 - Marquee: applications strip loops in 55 s, pauses on hover and via a visible pause button.
 - Parallax: hero (±60 px), statement band (±70 px), about photo and page banners (±24–30 px).
 - Hover: image zoom 1.03–1.05, card lift, arrow nudge, colour steps.

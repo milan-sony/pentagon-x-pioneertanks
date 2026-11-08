@@ -85,6 +85,19 @@ test.describe("home interactions", () => {
     await expect(page.getByTestId("carousel-toggle")).toHaveAccessibleName("Start automatic scrolling");
   });
 
+  test("product strip auto-scrolls even when the visitor prefers reduced motion", async ({ browser }) => {
+    const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: "reduce" });
+    const page = await ctx.newPage();
+    await page.goto("/");
+    const list = page.getByTestId("product-carousel");
+    await list.scrollIntoViewIfNeeded();
+    await page.mouse.move(2, 2);
+    await expect(page.getByTestId("carousel-toggle")).toHaveAccessibleName("Pause automatic scrolling");
+    const start = await list.evaluate((e) => e.scrollLeft);
+    await expect.poll(() => list.evaluate((e) => e.scrollLeft), { timeout: 8000 }).toBeGreaterThan(start);
+    await ctx.close();
+  });
+
   test("floating actions are round, icon-only and labelled", async ({ page }) => {
     await page.goto("/");
     for (const id of ["floating-contact", "floating-whatsapp"]) {

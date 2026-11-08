@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useInView } from "framer-motion";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Pause, Play } from "lucide-react";
 import type { ImageAsset } from "@/types/content";
-import { usePrefersReducedMotion } from "@/lib/use-prefers-reduced-motion";
 
 export interface CarouselCard {
   href: string;
@@ -39,20 +38,20 @@ function advance(el: HTMLUListElement | null, dir: 1 | -1, loop: boolean, smooth
  * - Pauses while the pointer is over it, while it has keyboard focus, while off screen, and for 6 s
  *   after the visitor swipes, wheels or uses the arrows (only real input counts – the strip's own
  *   smooth scrolling never pauses it).
- * - Visible pause/play button (WCAG 2.2.2); starts paused for visitors who prefer reduced motion.
+ * - Visible pause/play button (WCAG 2.2.2). Runs for every visitor, including those who prefer
+ *   reduced motion (client decision, 2026-11-08); the pause button and hover/focus pauses still apply.
  */
 export function ProductCarousel({ cards, label }: { cards: CarouselCard[]; label: string }) {
   const listRef = useRef<HTMLUListElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const inView = useInView(wrapRef, { margin: "-20% 0px -20% 0px" });
-  const reduce = usePrefersReducedMotion();
   const [userPaused, setUserPaused] = useState<boolean | null>(null);
   const [hovering, setHovering] = useState(false);
   const [keyboardFocus, setKeyboardFocus] = useState(false);
   const [progress, setProgress] = useState(0);
   const resumeAt = useRef(0);
 
-  const paused = userPaused ?? reduce;
+  const paused = userPaused ?? false;
   const running = !paused && !hovering && !keyboardFocus && inView;
 
   useEffect(() => {
@@ -78,7 +77,7 @@ export function ProductCarousel({ cards, label }: { cards: CarouselCard[]; label
 
   const manual = (dir: 1 | -1) => {
     holdOff();
-    advance(listRef.current, dir, true, !reduce);
+    advance(listRef.current, dir, true, true);
   };
 
   return (

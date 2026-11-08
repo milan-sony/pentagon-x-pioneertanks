@@ -90,6 +90,7 @@ main ─ baseline: scaffold + content + shared components + test harness + docs
 | 2026-11-08 | Preloader once per browser session, decided before first paint by an inline script (`preloader-off` on `<html>`) | No flash for returning visitors; skipped for reduced motion and without JavaScript; page content is rendered underneath throughout |
 | 2026-11-08 | 404 redirects home after 3 s but shows a "Stay on this page" button | Client asked for an automatic redirect; WCAG 2.2.1 requires a way to stop a time limit |
 | 2026-11-08 | Home product strip auto-scrolls with a visible pause button and pauses on hover/focus/off-screen | Client asked for auto-scroll; WCAG 2.2.2 requires pause for moving content |
+| 2026-11-08 | The product strip auto-scrolls even for visitors who prefer reduced motion | Client decision after seeing it paused in a reduced-motion browser; pause control and hover/focus pauses keep it WCAG 2.2.2 compliant. All other motion still rests under reduced motion |
 | 2026-11-08 | Source and verification notes stay in the content file but are never rendered | They are internal records for the client, not visitor-facing copy |
 | 2026-11-06 | Lorem-ipsum news post, `/sample-page/`, WP theme docs recorded but not rendered | Not business content |
 | 2026-11-06 | Fonts through `next/font/google` | Performance + CLS; still Google Fonts as required |
