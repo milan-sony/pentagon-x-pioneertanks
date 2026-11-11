@@ -70,7 +70,7 @@ export function SiteFooter() {
           </div>
           <div className="lg:col-span-5">
             <div className="flex items-start justify-between gap-6">
-              <h2 className="font-display text-4xl font-semibold uppercase tracking-wide text-white lg:text-5xl">Get in touch</h2>
+              <h2 className="font-display text-[clamp(1.75rem,3vw,2.5rem)] font-normal uppercase leading-[1.02] tracking-wide text-white">Get in touch</h2>
               <Link href="/contact" className="inline-flex size-14 shrink-0 items-center justify-center rounded-full border border-cream/30 text-cream transition-colors hover:border-bronze hover:text-bronze" aria-label="Go to the contact page">
                 <ArrowUpRight className="size-6" aria-hidden="true" />
               </Link>
@@ -78,7 +78,7 @@ export function SiteFooter() {
             <dl className="mt-8 grid gap-5">
               <div>
                 <dt className="eyebrow text-cream/65">Email</dt>
-                <dd className="mt-1 font-display text-xl font-semibold">
+                <dd className="mt-1 font-display text-lg font-normal">
                   <a href={`mailto:${contact.email}`} className="hover:text-bronze">
                     {contact.email}
                   </a>
@@ -86,7 +86,7 @@ export function SiteFooter() {
               </div>
               <div>
                 <dt className="eyebrow text-cream/65">Phone</dt>
-                <dd className="mt-1 font-display text-xl font-semibold">
+                <dd className="mt-1 font-display text-lg font-normal">
                   <a href={contact.phoneHref} className="hover:text-bronze">
                     {contact.phone}
                   </a>
@@ -95,7 +95,7 @@ export function SiteFooter() {
               </div>
               <div>
                 <dt className="eyebrow text-cream/65">Office location</dt>
-                <dd className="mt-1 font-display text-xl font-semibold">
+                <dd className="mt-1 font-display text-lg font-normal">
                   <address className="not-italic">{contact.address.full}</address>
                 </dd>
               </div>
